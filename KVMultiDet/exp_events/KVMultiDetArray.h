@@ -312,6 +312,7 @@ public:
    }
    void MakeHistogramsForAllIDTelescopes(KVSeqCollection* list, Int_t dimension = 100);
    void FillHistogramsForAllIDTelescopes(KVSeqCollection* list);
+   void CalculateIdentificationGrids();
 
    void SetDetectorTransparency(Char_t);
    virtual void FillDetectorList(KVReconstructedNucleus* rnuc, KVHashList* DetList, const KVString& DetNames);
