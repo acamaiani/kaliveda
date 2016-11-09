@@ -325,7 +325,7 @@ public:
       tree->Branch(branchname, classname, event, bufsize, 0)->SetAutoDelete(kFALSE);
    }
 
-   void MergeEventFragments(TCollection*);
+   void MergeEventFragments(TCollection*, Option_t* opt = "");
    static KVEvent* Factory(const char*);
    void SetFrameName(const KVString&);
    template<typename ValType> void SetParameter(const Char_t* name, ValType value) const
