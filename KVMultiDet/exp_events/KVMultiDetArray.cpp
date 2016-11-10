@@ -1879,13 +1879,25 @@ void KVMultiDetArray::PrintStatusOfIDTelescopes()
                                       << GetCurrentRunNumber();
    cout << "------" << endl << endl;
    //get list of active telescopes
-   TString id_labels = gDataSet->GetDataSetEnv("ActiveIdentifications");
+   KVString id_labels;
+   if (gDataSet) id_labels = gDataSet->GetDataSetEnv("ActiveIdentifications");
+   else {
+      unique_ptr<KVUniqueNameList> typelist(GetIDTelescopeTypes());
+      TIter it(typelist.get());
+      TObjString* type;
+      while ((type = (TObjString*)it())) {
+         if (id_labels == "") id_labels += type->GetString().Data();
+         else {
+            id_labels += Form(" %s", type->GetString().Data());
+         }
+      }
+   }
    if (id_labels == "") {
       cout << " *** No active identifications *** " << endl;
       return;
    }
-   //split list of labels
-   TObjArray* toks = id_labels.Tokenize(' ');
+   // iterate over labels
+   unique_ptr<TObjArray> toks(id_labels.Tokenize(' '));
 
    //update status infos
    GetStatusOfIDTelescopes();
@@ -1918,7 +1930,6 @@ void KVMultiDetArray::PrintStatusOfIDTelescopes()
       cout << endl;
 
    }
-   delete toks;
 }
 
 //_________________________________________________________________________________
@@ -1965,21 +1976,20 @@ TList* KVMultiDetArray::GetStatusOfIDTelescopes()
 
 //_________________________________________________________________________________
 
-KVList* KVMultiDetArray::GetIDTelescopeTypes()
+KVUniqueNameList* KVMultiDetArray::GetIDTelescopeTypes()
 {
    // Create, fill and return pointer to a list of TObjString containing the name of each type
    // of ID telescope in the array.
    //
-   // Delete the KVList after use (it owns the TObjString objects)
+   // Delete the list after use (it owns the TObjString objects)
 
-   KVList* type_list = new KVList;
+   KVUniqueNameList* type_list = new KVUniqueNameList(kTRUE);
+   type_list->SetOwner();
    if (!fIDTelescopes || !fIDTelescopes->GetEntries()) return type_list;
    TIter next(fIDTelescopes);
    KVIDTelescope* idt = 0;
    while ((idt = (KVIDTelescope*)next())) {
-      if (!type_list->FindObject(idt->GetLabel())) {
-         type_list->Add(new TObjString(idt->GetLabel()));
-      }
+      type_list->Add(new TObjString(idt->GetLabel()));
    }
    return type_list;
 }
@@ -2723,7 +2733,6 @@ void KVMultiDetArray::AssociateTrajectoriesAndNodes()
 {
    // Eliminate any trajectories which are just sub-trajectories of others
    // For each trajectory in list fTrajectories, we add a reference to the trajectory to each node on the trajectory
-   // We also fill the trajectory list of each group
 
    TIter it(&fTrajectories);
    KVGeoDNTrajectory* tr;
@@ -2752,8 +2761,55 @@ void KVMultiDetArray::AssociateTrajectoriesAndNodes()
    it.Reset();
    while ((tr = (KVGeoDNTrajectory*)it())) {
       tr->AddToNodes();
-      tr->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(tr);
    }
+}
+
+void KVMultiDetArray::RecursiveTrajectoryClustering(KVGeoDetectorNode* N, KVUniqueNameList& tried_trajectories, KVUniqueNameList& multitraj_nodes, KVUniqueNameList& detectors_of_group)
+{
+   if (!multitraj_nodes.FindObject(N) && N->GetNTraj() > 1) { // look for any detectors which are on multiple trajectories
+      cout << "multitraj node found: " << N->GetName() << " (" << N->GetNTraj() << ")" << endl;
+      multitraj_nodes.Add(N);
+      TIter tr(N->GetTrajectories());
+      KVGeoDNTrajectory* traj;
+      while ((traj = (KVGeoDNTrajectory*)tr())) { // for each trajectory associated with detector
+         if (tried_trajectories.FindObject(traj)) continue; // trajectory already used
+         tried_trajectories.Add(traj);
+         traj->IterateFrom();
+         KVGeoDetectorNode* node;
+         while ((node = traj->GetNextNode())) { // store names of all detectors on trajectory
+            detectors_of_group.Add(node);
+            RecursiveTrajectoryClustering(node, tried_trajectories, multitraj_nodes, detectors_of_group);
+         }
+      }
+   }
+}
+
+void KVMultiDetArray::DeduceGroupsFromTrajectories()
+{
+   // Deduce the "groups" in the array from the trajectories
+   // Any trajectories with 1 or more common detectors define a group.
+   // The group is constituted of all detectors belonging to the trajectories of the group.
+
+   Int_t number_of_groups = 0;
+   TIter next_det(GetDetectors());
+   KVDetector* det;
+   KVUniqueNameList tried_trajectories;//avoid double-counting/infinite loops
+   KVUniqueNameList multitraj_nodes;//avoid double-counting/infinite loops
+   while ((det = (KVDetector*) next_det())) {
+      if (det->GetGroup()) continue; // group assignment already done
+      KVUniqueNameList detectors_of_group;
+      RecursiveTrajectoryClustering(det->GetNode(), tried_trajectories, multitraj_nodes, detectors_of_group);
+      if (!detectors_of_group.GetEntries()) continue;
+      KVGroup* Group = new KVGroup;
+      Group->SetNumber(++number_of_groups);
+      Add(Group);
+      TIter next_node(&detectors_of_group);
+      KVGeoDetectorNode* d;
+      while ((d = (KVGeoDetectorNode*)next_node())) Group->Add(d->GetDetector());
+   }
+   TIter tr(&fTrajectories);
+   KVGeoDNTrajectory* t;
+   while ((t = (KVGeoDNTrajectory*)tr())) t->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(t);
 }
 
 void KVMultiDetArray::FillDetectorList(KVReconstructedNucleus*, KVHashList* DetList, const KVString& DetNames)
