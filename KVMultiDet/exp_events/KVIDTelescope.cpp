@@ -126,7 +126,9 @@ void KVIDTelescope::init()
 void KVIDTelescope::Initialize(void)
 {
    // Default initialisation for ID telescopes.
-   // kReadyForID is set to kFALSE, unless the current dataset (if defined)
+   // If telescope has two detectors (dE & E) and at least 1 grid
+   // then it is ready to identify particles after we initialise the grid (kReadyForID=true);
+   // otherwise kReadyForID is set to kFALSE, unless the current dataset (if defined)
    // has been declared to have no associated identification/calibration parameters,
    // in which case kReadyForID is by default set to kTRUE (for filtering simulations).
    //
@@ -149,8 +151,12 @@ void KVIDTelescope::Initialize(void)
    // To implement identification, make a class derived from KVIDTelescope
    // and set kReadyForID to kTRUE in Initialize() method of derived class if
    // necessary conditions for identification are met (has an ID grid etc.).
-   ResetBit(kReadyForID);
-   if (gDataSet && !gDataSet->HasCalibIdentInfos()) SetBit(kReadyForID);
+
+   if (GetDetectors()->GetEntries() == 2 && GetIDGrid()) {
+      GetIDGrid()->Initialize();
+      SetBit(kReadyForID);
+   } else if (gDataSet && !gDataSet->HasCalibIdentInfos()) SetBit(kReadyForID);
+   else ResetBit(kReadyForID);
 
    if (gDataSet) {
       SetHasMassID(gDataSet->GetDataSetEnv(Form("%s.MassID", GetLabel()), kFALSE));
@@ -347,20 +353,6 @@ TGraph* KVIDTelescope::MakeIDLine(KVNucleus* nuc, Double_t Emin,
    delete[]x;
    delete[]y;
    return tmp;
-}
-
-void KVIDTelescope::Initialize()
-{
-   // Default initialization method
-   // If telescope has two detectors (dE & E) and at least 1 grid
-   // then it is ready to identify particles, after we initialise
-   // the grid
-
-   if (GetDetectors()->GetEntries() == 2 && GetIDGrid()) {
-      GetIDGrid()->Initialize();
-      SetBit(kReadyForID);
-   } else
-      ResetBit(kReadyForID);
 }
 
 //____________________________________________________________________________________
