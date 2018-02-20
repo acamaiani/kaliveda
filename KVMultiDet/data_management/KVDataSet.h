@@ -64,6 +64,7 @@ protected:
    const Char_t* GetDBName() const;
    const Char_t* GetFullPathToDB() const;
    void SetDataSetSpecificTaskParameters(KVDataAnalysisTask*) const;
+   TObject* open_runfile(const Char_t* type, Int_t run);
 
 public:
 
@@ -151,7 +152,12 @@ public:
    TString GetFullPathToRunfile(const Char_t* type, Int_t run) const;
    const Char_t* GetRunfileName(const Char_t* type, Int_t run) const;
    TDatime GetRunfileDate(const Char_t* type, Int_t run);
-   virtual TObject* OpenRunfile(const Char_t* type, Int_t run);
+   template <typename FileType = TObject>
+   FileType * OpenRunfile(const Char_t* type, Int_t run)
+   {
+      return dynamic_cast<FileType*>(open_runfile(type, run));
+   }
+
    Bool_t CheckRunfileAvailable(const Char_t* type, Int_t run);
    void UpdateAvailableRuns(const Char_t* type);
    TFile* NewRunfile(const Char_t* type, Int_t run);

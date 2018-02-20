@@ -69,7 +69,7 @@ void KVFAZIAReconDataAnalyser::ProcessRun()
    // For further customisation, the pre/post-methods are called just before and just after
    // each of these methods (preInitRun(), postAnalysis(), etc. etc.)
    TString fullPathToRunfile = gDataSet->GetFullPathToRunfile(GetDataType(), fRunNumber);
-   TFile* f = (TFile*)gDataSet->OpenRunfile(GetDataType(), fRunNumber);
+   TFile* f = gDataSet->OpenRunfile<TFile>(GetDataType(), fRunNumber);
    if (!(f && !f->IsZombie())) {
       Error("ProcessRun", "file %s does not exist or is made zombie", fullPathToRunfile.Data());
       return;
@@ -80,7 +80,7 @@ void KVFAZIAReconDataAnalyser::ProcessRun()
    TFile* ffriend = 0;
    if (fLinkRawData) {
       fullPathToRunfile = gDataSet->GetFullPathToRunfile("raw", fRunNumber);
-      ffriend = (TFile*)gDataSet->OpenRunfile("raw", fRunNumber);
+      ffriend = gDataSet->OpenRunfile<TFile>("raw", fRunNumber);
       if (!(ffriend && !ffriend->IsZombie())) {
          Warning("ProcessRun", "file %s does not exist or is made zombie\n Reading of raw data is not possible", fullPathToRunfile.Data());
       } else {

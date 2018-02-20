@@ -103,7 +103,7 @@ public:
       AbstractMethod("WriteObjects");
    }
 
-   void ReadObjects(TFile*)
+   virtual void ReadObjects(TFile*)
    {
       // Abstract method. Can be overridden in child classes.
       // When the database is read from disk (by the currently active dataset, see

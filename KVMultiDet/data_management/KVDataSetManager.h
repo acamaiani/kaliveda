@@ -52,8 +52,8 @@ public:
    virtual Bool_t Init(KVDataRepository* /*rep*/ = 0);
    virtual void CheckAvailability();
    virtual void Print(Option_t* opt = "") const;
-   virtual KVDataSet* GetDataSet(Int_t) const;
-   virtual KVDataSet* GetDataSet(const Char_t*);
+   KVDataSet* GetDataSet(Int_t) const;
+   KVDataSet* GetDataSet(const Char_t*);
    virtual KVDataSet* GetAvailableDataSet(Int_t) const;
    virtual Int_t GetNavailable() const
    {

@@ -72,8 +72,8 @@ void KVGroupReconstructor::Process()
 {
    // Perform full reconstruction for group: reconstruct, identify, calibrate
    Reconstruct();
-   Identify();
-   Calibrate();
+   //Identify();
+   //Calibrate();
 }
 
 void KVGroupReconstructor::Reconstruct()
@@ -136,6 +136,7 @@ void KVGroupReconstructor::ReconstructParticle(KVReconstructedNucleus* part, con
 
    const KVReconNucTrajectory* Rtraj = (const KVReconNucTrajectory*)GetGroup()->GetTrajectoryForReconstruction(traj, node);
    part->SetReconstructionTrajectory(Rtraj);
+   part->SetParameter("ARRAY", GetGroup()->GetArray()->GetName());
 
    Rtraj->IterateFrom();// iterate over trajectory
    KVGeoDetectorNode* n;

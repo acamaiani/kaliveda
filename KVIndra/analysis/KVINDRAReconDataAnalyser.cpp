@@ -104,7 +104,7 @@ void KVINDRAReconDataAnalyser::SubmitTask()
       run = GetRunList().Next();
       TString fullPathToRunfile = gDataSet->GetFullPathToRunfile(GetDataType(), run);
       cout << "Opening file " << fullPathToRunfile << endl;
-      TFile* f = (TFile*)gDataSet->OpenRunfile(GetDataType(), run);
+      TFile* f = gDataSet->OpenRunfile<TFile>(GetDataType(), run);
       cout << "Adding file " << fullPathToRunfile;
       cout << " to the TChain." << endl;
       dynamic_cast<TChain*>(theChain)->Add(fullPathToRunfile);

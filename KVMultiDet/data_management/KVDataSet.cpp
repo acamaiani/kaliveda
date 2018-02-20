@@ -449,7 +449,7 @@ void KVDataSet::OpenDataBase(Option_t* opt) const
       // open the database file and read in the database
 
       //load plugin for database
-      if (!LoadPlugin("KVDataBase", GetName())) {
+      if (!LoadPlugin("KVExpDB", GetName())) {
          Error("GetDataBase", "Cannot load required plugin library");
          return;
       }
@@ -759,7 +759,7 @@ Bool_t KVDataSet::GetDataSetEnv(const Char_t* dataset, const Char_t* type, Bool_
 
 //__________________________________________________________________________________________________________________
 
-TObject* KVDataSet::OpenRunfile(const Char_t* type, Int_t run)
+TObject* KVDataSet::open_runfile(const Char_t* type, Int_t run)
 {
    // Open file containing data of given datatype for given run number of this dataset.
    // Returns a pointer to the opened file; if the file is not available, we return nullptr.

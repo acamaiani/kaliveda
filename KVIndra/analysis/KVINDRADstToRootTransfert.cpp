@@ -205,7 +205,7 @@ void KVINDRADstToRootTransfert::ProcessRun()
    // the event numbers of the two trees must be synchronised
    TString raw_opt = "arrays";
 
-   KVGANILDataReader* raw_data = (KVGANILDataReader*)gDataSet->OpenRunfile("raw", fRunNumber);
+   KVGANILDataReader* raw_data = gDataSet->OpenRunfile<KVGANILDataReader>("raw", fRunNumber);
    if (!raw_data) {
       Error("ProcessRun", "No RAW data file available for this run. ABORT!!");
       exit(1);

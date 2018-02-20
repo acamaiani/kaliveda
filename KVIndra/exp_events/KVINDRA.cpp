@@ -909,6 +909,7 @@ void KVINDRA::CreateROOTGeometry()
    KVDetector* d;
    while ((d = (KVDetector*)it())) d->GetNode()->RehashLists();// make sure detector nodes are correct
    AssociateTrajectoriesAndNodes();
+   DeduceGroupsFromTrajectories();
    FillTrajectoryIDTelescopeLists();
    CalculateReconstructionTrajectories();
    GetNavigator()->AbsorbDetectorPaths(&gimp);

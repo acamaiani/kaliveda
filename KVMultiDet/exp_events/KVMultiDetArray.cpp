@@ -2792,6 +2792,7 @@ void KVMultiDetArray::DeduceGroupsFromTrajectories()
    // Any trajectories with 1 or more common detectors define a group.
    // The group is constituted of all detectors belonging to the trajectories of the group.
 
+   Info("DeduceGroupsFromTrajectories", "Deducing groups of detectors from trajectories");
    Int_t number_of_groups = 0;
    TIter next_det(GetDetectors());
    KVDetector* det;
@@ -2811,7 +2812,10 @@ void KVMultiDetArray::DeduceGroupsFromTrajectories()
    }
    TIter tr(&fTrajectories);
    KVGeoDNTrajectory* t;
-   while ((t = (KVGeoDNTrajectory*)tr())) t->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(t);
+   Info("DeduceGroupsFromTrajectories", "Filling group trajectory lists");
+   while ((t = (KVGeoDNTrajectory*)tr())) {
+      t->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(t);
+   }
 }
 
 void KVMultiDetArray::FillDetectorList(KVReconstructedNucleus*, KVHashList* DetList, const KVString& DetNames)
