@@ -68,9 +68,17 @@ public:
    {
       // Return pointer to list of detectors through which particle passed,
       // in reverse order (i.e. first detector in list is the one in which particle stopped).
+      // This is the particle's reconstruction trajectory
 
-      Obsolete("GetDetectorList", "1.10", "1.11");
-      return nullptr;
+      if (fReconTraj) {
+         Obsolete("GetDetectorList", "1.10", "1.11");
+         return nullptr;
+      }
+      // backwards compatibility for old data
+      if (fDetList.IsEmpty()) {
+         const_cast<KVReconstructedNucleus*>(this)->MakeDetectorList();
+      }
+      return &fDetList;
    }
    KVDetector* GetDetector(int i) const
    {
@@ -80,7 +88,10 @@ public:
       //must have passed before stopping, in inverse order (i.e. i=0 is the last
       //detector, as i increases we get the detectors closer to the target).
 
-      return (fReconTraj ? fReconTraj->GetNodeAt(i)->GetDetector() : nullptr);
+      if (fReconTraj) return fReconTraj->GetNodeAt(i)->GetDetector();
+      // backwards compatibility for old data
+      if (i >= GetDetectorList()->GetEntries()) return 0;
+      return (KVDetector*) GetDetectorList()->At(i);
    }
 
    const Char_t* GetDetectorNames() const
@@ -102,6 +113,7 @@ public:
    {
       // Number of detectors on reconstruction trajectory
       if (fReconTraj) return fReconTraj->GetN();
+      // backwards compatibility for old data
       return GetDetectorList()->GetEntries();
    }
    Int_t GetNSegDet() const
@@ -121,7 +133,12 @@ public:
       // recalculate segmentation index of particle used by Identify() and
       // KVGroup::AnalyseParticles
 
-      fNSegDet = fReconTraj->GetNumberOfIndependentIdentifications();
+      if (fReconTraj) fNSegDet = fReconTraj->GetNumberOfIndependentIdentifications();
+      // backwards compatibility for old data
+      fNSegDet = 0;
+      KVDetector* det;
+      TIter nxt(&fDetList);
+      while ((det = (KVDetector*)nxt())) fNSegDet += det->GetSegment();
    }
    inline Int_t GetStatus() const
    {
@@ -161,14 +178,16 @@ public:
 
    virtual void Copy(TObject&) const;
 
-   KVSeqCollection* GetIDTelescopes() const
+   const KVSeqCollection* GetIDTelescopes() const
    {
-      //Gets from detector in which particle stopped the list of all ID telescopes
-      //made from the stopping detector and all those aligned in front of it.
-      //The first ID telescope in the list is that in which the particle stopped.
+      // Get list of all ID telescopes on the particle's reconstruction trajectory
+      // i.e. all those made from the stopping detector and all detectors aligned in front of it.
+      // The first ID telescope in the list is that in which the particle stopped.
 
+      if (fReconTraj) return fReconTraj->GetIDTelescopes();
+      // backwards compatibility for old data
       return (GetStoppingDetector() ? GetStoppingDetector()->GetAlignedIDTelescopes() : 0);
-   };
+   }
    virtual void Identify();
    virtual void Calibrate();
 
@@ -211,33 +230,41 @@ public:
       //When the "identification" state of the particle is set, we add 1 identified particle and
       //subtract 1 unidentified particle from each detector in its list
       SetBit(kIsIdentified);
+      if (fReconTraj) {
+         fReconTraj->AddIdentifiedParticle();
+         return;
+      }
       const_cast<KVSeqCollection*>(GetDetectorList())->R__FOR_EACH(KVDetector, IncrementIdentifiedParticles)(1);
       const_cast<KVSeqCollection*>(GetDetectorList())->R__FOR_EACH(KVDetector, IncrementUnidentifiedParticles)(-1);
-   };
+   }
    void SetIsCalibrated()
    {
       SetBit(kIsCalibrated);
-   };
+   }
    void SetIsUnidentified()
    {
       //When the "identification" state of the particle is reset, i.e. it becomes an "unidentified particle",
       //we add 1 unidentified particle and subtract 1 identified particle from each detector in its list
+      if (fReconTraj) {
+         fReconTraj->AddUnidentifiedParticle();
+         return;
+      }
       ResetBit(kIsIdentified);
       const_cast<KVSeqCollection*>(GetDetectorList())->R__FOR_EACH(KVDetector, IncrementIdentifiedParticles)(-1);
       const_cast<KVSeqCollection*>(GetDetectorList())->R__FOR_EACH(KVDetector, IncrementUnidentifiedParticles)(1);
-   };
+   }
    void SetIsUncalibrated()
    {
       ResetBit(kIsCalibrated);
-   };
+   }
    Bool_t IsIdentified() const
    {
       return TestBit(kIsIdentified);
-   };
+   }
    Bool_t IsCalibrated() const
    {
       return TestBit(kIsCalibrated);
-   };
+   }
 
    void SetRealZ(Float_t zz)
    {
@@ -396,6 +423,7 @@ public:
    void CopyAndMoveReferences(const KVReconstructedNucleus*);
 
    ClassDef(KVReconstructedNucleus, 17)  //Nucleus detected by multidetector array
+   void PrintStatusString() const;
 };
 
 

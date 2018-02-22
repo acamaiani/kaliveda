@@ -56,6 +56,10 @@ INDRA_e494s.KVDataSet.DataType.Subdir.root:   root4
 # acquisition parameters must be fired in order for a particle to be reconstructed from the detector:
 INDRA_e494s.Reconstruction.DataAnalysisTask.ParticleSeedCond:     any
 INDRA_e503.Reconstruction.DataAnalysisTask.ParticleSeedCond:     any
+# the 2 previous variable are for backwards compatibility.
+# the 2 following variables will eventually replace them
+INDRA_e494s.INDRA.ReconstructedNuclei.ParticleSeedCond:     any
+INDRA_e503.INDRA.ReconstructedNuclei.ParticleSeedCond:     any
 
 # Same thing for VAMOS's detectors. The list of acquisition parameters can contain
 # Q, E, T, T_HF, X and Y. The last two types are not exactly acquisition parameter types

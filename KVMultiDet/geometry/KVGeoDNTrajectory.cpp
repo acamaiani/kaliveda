@@ -2,6 +2,7 @@
 //Author: John Frankland,,,
 
 #include "KVGeoDNTrajectory.h"
+#include "KVDetector.h"
 
 #include <TPluginManager.h>
 
@@ -125,6 +126,17 @@ void KVGeoDNTrajectory::rebuild_title()
    }
    if (fPathInTitle) SetTitle(t);
    else SetName(t);
+}
+
+void KVGeoDNTrajectory::increment_identified_particle_counters(int identified, int unidentified) const
+{
+   // increment counters in all detectors on trajectory
+   IterateFrom();
+   KVGeoDetectorNode* node;
+   while ((node = GetNextNode())) {
+      node->GetDetector()->IncrementIdentifiedParticles(identified);
+      node->GetDetector()->IncrementUnidentifiedParticles(unidentified);
+   }
 }
 
 void KVGeoDNTrajectory::Copy(TObject& obj) const

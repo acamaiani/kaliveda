@@ -85,7 +85,18 @@ public:
       return d;
    };
    KVDetector* GetDetector(const Char_t* name) const;
-   UInt_t GetDetectorRank(KVDetector* kvd);
+   Bool_t HasDetector(const KVDetector* d) const
+   {
+      // return true if detector is part of telescope
+      return GetDetectorRank(d) > 0;
+   }
+   UInt_t GetDetectorRank(const KVDetector* kvd) const
+   {
+      // returns position (1=front, 2=next, etc.) detector in the telescope structure
+      // returns 0 if detector not found in telescope
+
+      return fDetectors->IndexOf(kvd) + 1;
+   }
    UInt_t GetSize() const
    {
       //returns number of detectors in telescope

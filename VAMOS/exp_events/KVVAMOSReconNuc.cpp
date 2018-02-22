@@ -513,7 +513,7 @@ void KVVAMOSReconNuc::IdentifyZ()
    //Unidentified nuclei receive the general ID code for non-identified particles (kIDCode14)
 
    Bool_t ok = kFALSE;
-   KVSeqCollection* idt_list = GetIDTelescopes();
+   const KVSeqCollection* idt_list = GetIDTelescopes();
    if (idt_list && idt_list->GetSize() > 0) {
 
       KVIDTelescope* idt;
@@ -583,7 +583,7 @@ void KVVAMOSReconNuc::IdentifyQandA()
    //without any application of data corrections
    //and save the associated informations.
    Bool_t ok = kFALSE;
-   KVSeqCollection* idt_list = GetIDTelescopes();
+   const KVSeqCollection* idt_list = GetIDTelescopes();
    if (idt_list && idt_list->GetSize() > 0) {
 
       KVIDTelescope* idt;

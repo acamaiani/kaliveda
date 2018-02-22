@@ -135,6 +135,51 @@ void KVReconstructedNucleus::Streamer(TBuffer& R__b)
 
 //___________________________________________________________________________
 
+void KVReconstructedNucleus::PrintStatusString() const
+{
+   switch (GetStatus()) {
+      case kStatusOK:
+         cout <<
+              "Particle alone in group, or identification independently of other particles in group is directly possible." << endl;
+         break;
+
+      case kStatusOKafterSub:
+         cout <<
+              "Particle reconstructed after identification of others in group and subtraction of their calculated energy losses in common detectors."
+              << endl;
+         break;
+
+      case kStatusOKafterShare:
+         cout <<
+              "Particle identification estimated after arbitrary sharing of energy lost in common detectors between several reconstructed particles."
+              << endl;
+         break;
+
+      case kStatusStopFirstStage:
+         cout <<
+              "Particle stopped in first stage of telescope. Estimation of minimum Z."
+              << endl;
+         break;
+
+      case kStatusPileupDE:
+         cout <<
+              "Undetectable pile-up in first member of identifying telesscope (apparent status=OK). Would lead to incorrect identification by DE-E method (Z and/or A overestimated)."
+              << endl;
+         break;
+
+      case kStatusPileupGhost:
+         cout <<
+              "Undetectable ghost particle in filtered simulation. Another particle passed through all of the same detectors (pile-up)."
+              << endl;
+         break;
+
+
+      default:
+         cout << GetStatus() << endl;
+         break;
+   }
+}
+
 void KVReconstructedNucleus::Print(Option_t*) const
 {
 
@@ -169,61 +214,9 @@ void KVReconstructedNucleus::Print(Option_t*) const
       cout << "(uncalibrated)" << endl;
    }
    cout << "RECONSTRUCTION STATUS : " << endl;
-   switch (GetStatus()) {
-      case kStatusOK:
-         cout <<
-              "Particle alone in group, or identification independently of other"
-              << endl;
-         cout << "particles in group is directly possible." << endl;
-         break;
-
-      case kStatusOKafterSub:
-         cout <<
-              "Particle reconstructed after identification of others in group"
-              << endl;
-         cout <<
-              "and subtraction of their calculated energy losses in common detectors."
-              << endl;
-         break;
-
-      case kStatusOKafterShare:
-         cout <<
-              "Particle identification estimated after arbitrary sharing of"
-              << endl;
-         cout <<
-              "energy lost in common detectors between several reconstructed particles."
-              << endl;
-         break;
-
-      case kStatusStopFirstStage:
-         cout <<
-              "Particle stopped in first stage of telescope. Estimation of minimum Z."
-              << endl;
-         break;
-
-      case kStatusPileupDE:
-         cout <<
-              "Undetectable pile-up in first member of identifying telesscope (apparent status=OK)."
-              << endl;
-         cout << "Would lead to incorrect identification by DE-E method (Z and/or A overestimated)."
-              << endl;
-         break;
-
-      case kStatusPileupGhost:
-         cout <<
-              "Undetectable ghost particle in filtered simulation."
-              << endl;
-         cout << "Another particle passed through all of the same detectors (pile-up)."
-              << endl;
-         break;
-
-
-      default:
-         cout << GetStatus() << endl;
-         break;
-   }
+   PrintStatusString();
    cout << "NSegDet = " << GetNSegDet() << endl;
-   GetReconstructionTrajectory()->ls();
+   if (fReconTraj) fReconTraj->ls();
    if (GetParameters()->GetNpar()) GetParameters()->Print();
 }
 
@@ -317,9 +310,7 @@ void KVReconstructedNucleus::SetReconstructionTrajectory(const KVReconNucTraject
 
    fReconTraj = t;
    fNSegDet = t->GetNumberOfIndependentIdentifications();
-   t->IterateFrom();
-   KVGeoDetectorNode* n;
-   while ((n = t->GetNextNode())) n->GetDetector()->IncrementUnidentifiedParticles();
+   t->AddUnidentifiedParticle(0);
 }
 
 //______________________________________________________________________________________________//
@@ -660,9 +651,26 @@ void KVReconstructedNucleus::SubtractEnergyFromAllDetectors()
    // Subtract the calculated energy loss of this particle from the measured energy
    // loss of all detectors it passed through.
 
+   Double_t Einc = GetEnergy() - GetTargetEnergyLoss(); // energy before first detector
+   if (fReconTraj) {
+      fReconTraj->IterateBackFrom();
+      KVGeoDetectorNode* node;
+      while ((node = fReconTraj->GetNextNode())) {
+         KVDetector* det = node->GetDetector();
+         Double_t Edet = det->GetEnergy();
+         Double_t dE = det->GetDeltaE(GetZ(), GetA(), Einc); // calculate apparent energy loss in active layer
+         Double_t Eres = det->GetERes(GetZ(), GetA(), Einc); // calculate energy after detector
+         Edet -= dE;
+         if (Edet < 0.1) Edet = 0.;
+         det->SetEnergyLoss(Edet);
+         Einc = Eres;
+         if (Einc < 0.1) break;
+      }
+      return;
+   }
+   // backwards compatibility for old data
    TIter nxt(GetDetectorList(), kIterBackward);
    KVDetector* det;
-   Double_t Einc = GetEnergy() - GetTargetEnergyLoss(); // energy before first detector
    while ((det = (KVDetector*)nxt())) {
       Double_t Edet = det->GetEnergy();
       Double_t dE = det->GetDeltaE(GetZ(), GetA(), Einc); // calculate apparent energy loss in active layer

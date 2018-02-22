@@ -228,21 +228,6 @@ void KVIDTelescope::Print(Option_t* opt) const
    }
 }
 
-UInt_t KVIDTelescope::GetDetectorRank(KVDetector* kvd)
-{
-   //returns position (1=front, 2=next, etc.) detector in the telescope structure
-
-   TIter next(fDetectors);
-   KVDetector* d;
-   UInt_t i = 1;
-   while ((d = (KVDetector*) next())) {
-      if (d == kvd)
-         return i;
-      i++;
-   }
-   return 0;
-}
-
 //____________________________________________________________________________________
 
 KVDetector* KVIDTelescope::GetDetector(const Char_t* name) const

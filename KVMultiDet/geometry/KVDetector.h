@@ -257,6 +257,7 @@ public:
          fParticles->SetCleanup();
       }
       fParticles->Add(part);
+      SetAnalysed();
    }
 
    // Return the list of particles hitting this detector in an event

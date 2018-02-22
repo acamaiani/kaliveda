@@ -1617,7 +1617,7 @@ Bool_t KVVAMOSDataCorrection_e503::IdentifyCorrectedNucleus(KVVAMOSReconNuc* nuc
    }
 
    //Find the KVIDQA telescopes
-   KVSeqCollection* idt_list = nuc->GetIDTelescopes();
+   const KVSeqCollection* idt_list = nuc->GetIDTelescopes();
    if (fkverbose) {
       Info("IdentifyCorrectedNucleus", "... list of nucleus' associated KVIDTelescopes follows ...");
       idt_list->Print();

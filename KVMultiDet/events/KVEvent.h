@@ -155,6 +155,16 @@ public:
 
          return *(current());
       }
+      template<typename PointerType>
+      PointerType* pointer() const
+      {
+         return dynamic_cast<PointerType*>(current());
+      }
+      template<typename ReferenceType>
+      ReferenceType& reference() const
+      {
+         return dynamic_cast<ReferenceType&>(*current());
+      }
       Bool_t operator!= (const Iterator& it) const
       {
          // returns kTRUE if the 2 iterators are not pointing to the same particle
@@ -234,7 +244,7 @@ public:
       ClassDef(Iterator, 0) //Iterator class for KVEvent
    };
 protected:
-   Iterator fIter;//! internal iterator used by GetNextParticle()
+   mutable Iterator fIter;//! internal iterator used by GetNextParticle()
 
 public:
    KVNameValueList* GetParameters() const
@@ -253,7 +263,7 @@ public:
 
    KVNucleus* AddParticle();
    KVNucleus* GetParticle(Int_t npart) const;
-   virtual Int_t GetMult(Option_t* opt = "");
+   virtual Int_t GetMult(Option_t* opt = "") const;
    Int_t GetMultiplicity(Int_t Z, Int_t A = 0, Option_t* opt = "");
    void GetMultiplicities(Int_t mult[], const TString& species);
    Double_t GetSum(const Char_t* KVNucleus_method, Option_t* opt = "");
@@ -280,8 +290,8 @@ public:
       return Iterator::End();
    }
 
-   KVNucleus* GetNextParticle(Option_t* opt = "");
-   void ResetGetNextParticle();
+   KVNucleus* GetNextParticle(Option_t* opt = "") const;
+   void ResetGetNextParticle() const;
 
    void ResetEnergies();
 

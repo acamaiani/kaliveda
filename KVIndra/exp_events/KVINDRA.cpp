@@ -938,4 +938,21 @@ void KVINDRA::SetMinimumOKMultiplicity(KVEvent* e) const
    if (GetTrigger() > 0) e->SetMinimumOKMultiplicity(GetTrigger());
 }
 
+KVGroupReconstructor* KVINDRA::GetReconstructorForGroup(const KVGroup* g) const
+{
+   // Special INDRA group reconstructors:
+   //   KVINDRAEtalonGroupReconstructor for groups with etalon telescopes
+   //   KVINDRAGroupReconstructor       for all other INDRA groups
+
+   KVGroupReconstructor* gr(nullptr);
+   if (GetGroup(g->GetName())) { // make sure group belongs to us
+      // etalons ?
+      if (g->GetDetectorByType("SILI") || g->GetDetectorByType("SI75"))
+         gr = KVGroupReconstructor::Factory("INDRA.etalon");
+      else
+         gr = KVGroupReconstructor::Factory("INDRA");
+   }
+   return gr;
+}
+
 

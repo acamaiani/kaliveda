@@ -97,6 +97,7 @@ public:
       }
       return nullptr;
    }
+   void PrintData() const;
 
    ClassDef(KVGroup, 1)//Group of detectors having similar angular positions.
 };

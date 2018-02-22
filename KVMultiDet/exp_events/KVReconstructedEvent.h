@@ -59,6 +59,7 @@ public:
    virtual void CalibrateEvent();
 
    virtual void Print(Option_t* t = "") const;
+   void ls(Option_t* = "") const;
 
    inline void UseMeanAngles()
    {

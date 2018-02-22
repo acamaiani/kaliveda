@@ -24,6 +24,7 @@
 #include "KVDetector.h"
 #include "KVTarget.h"
 #include "KVMultiDetArray.h"
+#include <iomanip>
 
 using namespace std;
 
@@ -167,6 +168,27 @@ void KVReconstructedEvent::Print(Option_t* option) const
 
 }
 
+void KVReconstructedEvent::ls(Option_t*) const
+{
+   // compact listing of reconstructed event
+   printf(":::%s   #%07d    M=%03d\n", ClassName(), GetNumber(), GetMult());
+   int i(0);
+   for (KVEvent::Iterator it = begin(); it != end(); ++it) {
+      KVReconstructedNucleus& nuc = it.reference<KVReconstructedNucleus>();
+      printf(" %3d", i);
+      printf("  D:%10s", nuc.GetStoppingDetector()->GetName());
+      if (nuc.GetIdentifyingTelescope()) printf(" ID:%15s", nuc.GetIdentifyingTelescope()->GetName());
+      else printf(" ID:%15s", "(none)");
+      if (nuc.IsZMeasured()) printf(" Z=%2d", nuc.GetZ());
+      else printf("     ");
+      if (nuc.IsAMeasured()) printf(" A=%3d  : ", nuc.GetA());
+      else printf("        : ");
+      if (!nuc.IsIdentified()) nuc.PrintStatusString();
+      else printf("IDCODE=%2d\n", nuc.GetIDCode());
+      ++i;
+   }
+}
+
 //____________________________________________________________________________
 
 void KVReconstructedEvent::IdentifyEvent()
@@ -250,11 +272,13 @@ void KVReconstructedEvent::MergeEventFragments(TCollection* events, Option_t* op
    KVReconstructedEvent* e;
    while ((e = (KVReconstructedEvent*)it())) {
       KVReconstructedNucleus* n;
-      e->ResetGetNextParticle();
-      while ((n = e->GetNextParticle())) {
-         AddParticle()->CopyAndMoveReferences(n);
+      if (e->GetMult()) {
+         e->ResetGetNextParticle();
+         while ((n = e->GetNextParticle())) {
+            AddParticle()->CopyAndMoveReferences(n);
+         }
+         e->Clear(opt);
       }
-      e->Clear(opt);
    }
 }
 

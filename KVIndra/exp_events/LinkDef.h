@@ -11,4 +11,6 @@
 #pragma link C++ class INDRAGeometryBuilder+;
 #pragma link C++ class KVINDRAReconEvent-;//customized streamer
 #pragma link C++ class KVINDRAReconNuc+;
+#pragma link C++ class KVINDRAGroupReconstructor+;
+#pragma link C++ class KVINDRAEtalonGroupReconstructor+;
 #endif

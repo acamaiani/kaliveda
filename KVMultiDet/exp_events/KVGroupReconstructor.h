@@ -12,13 +12,19 @@ class KVGroupReconstructor : public KVBase {
 
    KVGroup*              fGroup;//!        the group where we are reconstructing
    KVReconstructedEvent* fGrpEvent;//!     event containing particles reconstructed in this group
+   TString               fPartSeedCond;//! condition for seeding reconstructed particles
 
 protected:
-   virtual void ReconstructParticle(KVReconstructedNucleus* part, const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
-   virtual void IdentifyParticle(KVReconstructedNucleus* PART);
+   virtual KVReconstructedNucleus* ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
+   void ReconstructParticle(KVReconstructedNucleus* part, const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
+   virtual void IdentifyParticle(KVReconstructedNucleus& PART);
    virtual void CalibrateParticle(KVReconstructedNucleus* PART);
 
    Double_t GetTargetEnergyLossCorrection(KVReconstructedNucleus* ion);
+   TString GetPartSeedCond() const
+   {
+      return fPartSeedCond;
+   }
 
 public:
    KVGroupReconstructor();
@@ -31,16 +37,13 @@ public:
    {
       return fGrpEvent;
    }
-   void SetGroup(KVGroup* g)
-   {
-      fGroup = g;
-   }
+   void SetGroup(KVGroup* g);
    KVGroup* GetGroup() const
    {
       return fGroup;
    }
 
-   static KVGroupReconstructor* Factory(const char*);
+   static KVGroupReconstructor* Factory(const TString& plugin = "");
 
    void Process();
    void Reconstruct();

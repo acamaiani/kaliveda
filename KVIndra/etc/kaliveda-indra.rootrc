@@ -127,51 +127,6 @@ INDRA_e503_woVAMOS.DataSet.RunFile.DoNotDelete: raw
 # INDRA analyser for Reconstruction DataAnalysisTask
 Reconstruction.DataAnalysisTask.Analyser:     INDRARawDataRecon
 
-# The following variable controls the way that particles are reconstructed from raw data
-# In the detector in which the particle stops, we require KVDetector::Fired( "option" )
-# with "option" = "all" or "any".
-#
-# In addition with these 2 options, it is possible that the test include the pedestal value
-# using the "P" letter in front of "all" or "any"
-# Exemple : the "Pall" option means that all of the associated acquisition parameters must be
-# fired ABOVE the pedestal value.
-#
-# By default for INDRA data, "option" = "all", which means that all of the associated
-# acquisition parameters must be fired in order for a particle to be reconstructed from the detector:
-Reconstruction.DataAnalysisTask.ParticleSeedCond:     all
-# To change this condition to the less strict "any" (meaning that KVDetector::Fired() returns
-# kTRUE if the detector has at least one fired acquisition parameter, of any type), either
-# change the previous value (this will affect ALL datasets), or, to change behaviour for a
-# specific dataset, use a variable such as the following:
-INDRA_e475s.Reconstruction.DataAnalysisTask.ParticleSeedCond:     Pall
-#
-# You can "fine-tune" what is meant by "all" acquisition parameters using the following
-# variables. For each detector type, give a comma-separated list of the acquisition
-# parameter types to be taken into account in the KVDetector::Fired method.
-# Only those parameters which appear in the list will be considered:
-#  then "all" means => all parameters in the list
-#  and  "any" means => any of the parameters in the list
-# These lists are read during construction of multidetector arrays (KVMultiDetArray::Build),
-# the method KVMultiDetArray::SetACQParams uses them to define a mask for each detector
-# of the array.
-KVINDRADetector.Fired.ACQParameterList.CI: PG,GG,T
-KVINDRADetector.Fired.ACQParameterList.SI: PG,GG,T
-KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG,T
-KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG,T
-KVINDRADetector.Fired.ACQParameterList.CSI: R,L,T
-
-INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.CI: PG,GG
-INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SI: PG,GG
-INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG
-INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG
-INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.CSI: R,L
-
-t10_02.KVINDRADetector.Fired.ACQParameterList.CI: PG,GG
-t10_02.KVINDRADetector.Fired.ACQParameterList.SI: PG,GG
-t10_02.KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG
-t10_02.KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG
-t10_02.KVINDRADetector.Fired.ACQParameterList.CSI: R,L
-
 # Experience e613
 # The marqueuers de temps for silicon detectors from SI_0101 to SI_0324
 # are replaced by TDC modules, the parameter names are 'SI_0101_TOF' etc.
@@ -462,6 +417,63 @@ Plugin.KVMultiDetArray:    INDRA_camp1    KVINDRA     KVIndraexp_events    "KVIN
 +Plugin.KVMultiDetArray:    INDRA_e613    KVINDRA     KVIndraexp_events    "KVINDRA()"
 +Plugin.KVMultiDetArray:    INDRA_e494s_woVAMOS    KVINDRA     KVIndraexp_events  "KVINDRA()"
 +Plugin.KVMultiDetArray:    INDRA_e503_woVAMOS    KVINDRA     KVIndraexp_events  "KVINDRA()"
+
+# Plugins for reconstruction of particles from data/simulation
++Plugin.KVGroupReconstructor:   INDRA KVINDRAGroupReconstructor KVIndraexp_events "KVINDRAGroupReconstructor()"
++Plugin.KVGroupReconstructor:   INDRA.etalon KVINDRAEtalonGroupReconstructor KVIndraexp_events "KVINDRAEtalonGroupReconstructor()"
+
+# Conditions for seeding reconstructed particles in event reconstruction
+# Dataset-dependent values can be set with [Dataset].INDRA.ReconstructedNuclei.ParticleSeedCond
+INDRA.ReconstructedNuclei.ParticleSeedCond: all
+INDRA_e475s.INDRA.ReconstructedNuclei.ParticleSeedCond: all
+
+# The above variables control the way that particles are reconstructed from raw data
+# The explanation follows, including 2 variables which are kept for backwards-compatibility
+# (Reconstruction.DataAnalysisTask.ParticleSeedCond & INDRA_e475s.Reconstruction.DataAnalysisTask.ParticleSeedCond)
+#
+# In the detector in which the particle stops, we require KVDetector::Fired( "option" )
+# with "option" = "all" or "any".
+#
+# In addition with these 2 options, it is possible that the test include the pedestal value
+# using the "P" letter in front of "all" or "any"
+# Exemple : the "Pall" option means that all of the associated acquisition parameters must be
+# fired ABOVE the pedestal value.
+#
+# By default for INDRA data, "option" = "all", which means that all of the associated
+# acquisition parameters must be fired in order for a particle to be reconstructed from the detector:
+Reconstruction.DataAnalysisTask.ParticleSeedCond:     all
+# To change this condition to the less strict "any" (meaning that KVDetector::Fired() returns
+# kTRUE if the detector has at least one fired acquisition parameter, of any type), either
+# change the previous value (this will affect ALL datasets), or, to change behaviour for a
+# specific dataset, use a variable such as the following:
+INDRA_e475s.Reconstruction.DataAnalysisTask.ParticleSeedCond:     Pall
+#
+# You can "fine-tune" what is meant by "all" acquisition parameters using the following
+# variables. For each detector type, give a comma-separated list of the acquisition
+# parameter types to be taken into account in the KVDetector::Fired method.
+# Only those parameters which appear in the list will be considered:
+#  then "all" means => all parameters in the list
+#  and  "any" means => any of the parameters in the list
+# These lists are read during construction of multidetector arrays (KVMultiDetArray::Build),
+# the method KVMultiDetArray::SetACQParams uses them to define a mask for each detector
+# of the array.
+KVINDRADetector.Fired.ACQParameterList.CI: PG,GG,T
+KVINDRADetector.Fired.ACQParameterList.SI: PG,GG,T
+KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG,T
+KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG,T
+KVINDRADetector.Fired.ACQParameterList.CSI: R,L,T
+
+INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.CI: PG,GG
+INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SI: PG,GG
+INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG
+INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG
+INDRA_e475s.KVINDRADetector.Fired.ACQParameterList.CSI: R,L
+
+t10_02.KVINDRADetector.Fired.ACQParameterList.CI: PG,GG
+t10_02.KVINDRADetector.Fired.ACQParameterList.SI: PG,GG
+t10_02.KVINDRADetector.Fired.ACQParameterList.SILI: PG,GG
+t10_02.KVINDRADetector.Fired.ACQParameterList.SI75: PG,GG
+t10_02.KVINDRADetector.Fired.ACQParameterList.CSI: R,L
 
 # Acceptable identification & energy codes for INDRA reconstructed particles
 # Dataset-dependent values can be set with [Dataset].INDRA.ReconstructedNuclei.Accept[ID/E]Codes

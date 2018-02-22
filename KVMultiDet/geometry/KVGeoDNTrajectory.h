@@ -30,6 +30,8 @@ class KVGeoDNTrajectory : public KVBase {
 
    void rebuild_title();
 
+   void increment_identified_particle_counters(int identified, int unidentified) const;
+
 protected:
    Bool_t fAddToNodes;// if kTRUE, add trajectory to node's list
 
@@ -264,6 +266,16 @@ public:
    {
       // returns kTRUE if path is contained in title, kFALSE if in name
       return fPathInTitle;
+   }
+   void AddIdentifiedParticle(int modify_unidentified = -1) const
+   {
+      // update counters of identified/unidentified particles in detectors on trajectory
+      increment_identified_particle_counters(1, modify_unidentified);
+   }
+   void AddUnidentifiedParticle(int modify_identified = -1) const
+   {
+      // update counters of identified/unidentified particles in detectors on trajectory
+      increment_identified_particle_counters(modify_identified, 1);
    }
 
    ClassDef(KVGeoDNTrajectory, 1) //Path taken by particles through multidetector geometry

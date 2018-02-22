@@ -218,3 +218,11 @@ Int_t KVGroup::CalculateReconstructionTrajectories()
    return fReconTraj.GetEntries();
 }
 
+void KVGroup::PrintData() const
+{
+   // list detectors of group with any data they contain
+   KVDetector* det;
+   TIter it(GetDetectors());
+   while ((det = (KVDetector*)it())) det->Print("data");
+}
+
