@@ -12,10 +12,12 @@ set(build_targets
    debug KaliVedaGUI
 )
 if(USE_INDRA)
-   list(APPEND build_targets KVDataBaseGUI)
+   list(APPEND build_targets KVDataBaseGUI test_reconstruction)
 endif()
 
 set(debug_SRC debug.cxx)
+
+set(test_reconstruction_SRC test_reconstruction.C)
 
 set(kaliveda_SRC kaliveda.cpp)
 

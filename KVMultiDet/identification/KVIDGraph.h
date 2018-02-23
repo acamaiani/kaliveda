@@ -374,7 +374,7 @@ public:
    }
    void TestIdentification(TH2F* data, TH1F* id_real, TH2F* id_real_vs_e_res, TH2F* z_a_real);
 
-   const Char_t* GetNamesOfIDTelescopes();
+   TString GetNamesOfIDTelescopes();
 
    //---- The following redeclarations are here just to remove the *MENU* tag which
    //---- is present in TGraph.h, to stop these methods appearing in the ID line context menus

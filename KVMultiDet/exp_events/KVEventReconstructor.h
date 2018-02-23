@@ -11,12 +11,15 @@
 #include "KVReconstructedEvent.h"
 
 class KVEventReconstructor : public KVBase {
+   int multithread = 0;
+   int singlethread = 0;
+private:
+   void reconstruct_groups(int first, int last);
 
    KVMultiDetArray*       fArray;//!       Array for which events are to be reconstructed
    KVReconstructedEvent*  fEvent;//!       The reconstructed event
    TObjArray       fGroupReconstructor;//! array of group reconstructors
    Int_t           fNGrpRecon;//!          number of group reconstructors for current event
-   TList           fThreads;//!            list of threads for parallel reconstruction
    Bool_t          fThreaded;
    std::vector<int> fHitGroups;//!         group indices in current event
    KVDetectorEvent detev;//!               list of hit groups in event
@@ -40,7 +43,15 @@ public:
    {
       return fEvent;
    }
+#ifndef WITH_CPP11
    static void ThreadedReconstructor(void* arg);
+#endif
+   void bilan()
+   {
+      double tot = singlethread + multithread;
+      Info("bilan", "%g %% single-thread, %g %% multi-thread",
+           100.*singlethread / tot, 100.*multithread / tot);
+   }
 
    ClassDef(KVEventReconstructor, 0) //Base class for handling event reconstruction
 };

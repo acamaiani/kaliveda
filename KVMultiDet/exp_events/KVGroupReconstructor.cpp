@@ -84,18 +84,12 @@ void KVGroupReconstructor::Process()
 {
    // Perform full reconstruction for group: reconstruct, identify, calibrate
 
-//   if(InheritsFrom("KVINDRAEtalonGroupReconstructor")) {
-//      GetGroup()->PrintData();
-//   }
    Reconstruct();
    if (GetEventFragment()->GetMult() == 0) {
       return;
    }
    Identify();
-//   if(InheritsFrom("KVINDRAEtalonGroupReconstructor")) {
-//      GetEventFragment()->Print();
-//   }
-   //Calibrate();
+   Calibrate();
 }
 
 void KVGroupReconstructor::Reconstruct()
@@ -337,6 +331,7 @@ void KVGroupReconstructor::CalibrateParticle(KVReconstructedNucleus* PART)
    //using gMultiDetArray->GetTargetEnergyLossCorrection().
 
    KVIDTelescope* idt = PART->GetIdentifyingTelescope();
+   if (!idt) return;
    idt->CalculateParticleEnergy(PART);
    if (idt->GetCalibStatus() != KVIDTelescope::kCalibStatus_NoCalibrations) {
       PART->SetIsCalibrated();
@@ -407,7 +402,6 @@ void KVGroupReconstructor::Calibrate()
    }
 
 }
-
 
 Double_t KVGroupReconstructor::GetTargetEnergyLossCorrection(KVReconstructedNucleus* ion)
 {
