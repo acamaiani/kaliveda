@@ -60,6 +60,13 @@ private:
    UChar_t fEMask;              //8-bit mask with e-calibration codes
 
 public:
+   void Copy(TObject& object) const
+   {
+      KVINDRACodeMask& i = (KVINDRACodeMask&)object;
+      i.fIDMask = fIDMask;
+      i.fEMask = fEMask;
+      TObject::Copy(object);
+   }
 
    KVINDRACodeMask()
    {

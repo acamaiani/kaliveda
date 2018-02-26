@@ -7,6 +7,7 @@
 #include <iostream>
 #include "TApplication.h"
 #include "TROOT.h"
+#include "KVINDRAReconEvent.h"
 using namespace std;
 
 int main(int argc, char* argv[])

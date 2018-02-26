@@ -151,9 +151,22 @@ void KVINDRAReconNuc::Copy(TObject& obj) const
 void KVINDRAReconNuc::Copy(TObject& obj)
 #endif
 {
-   //
-   //Copy this to obj
-   //
+   KVINDRAReconNuc& robj = (KVINDRAReconNuc&)obj;
+   fCodes.Copy(robj.fCodes);
+   robj.fCoherent = fCoherent;
+   robj.fPileup = fPileup;
+   robj.fUseFullChIoEnergyForCalib = fUseFullChIoEnergyForCalib;
+   robj.fECsI = fECsI;
+   robj.fESi = fESi;
+   robj.fEChIo = fEChIo;
+   robj.fESi75 = fESi75;
+   robj.fESiLi = fESiLi;
+   robj.fCorrectCalib = fCorrectCalib;
+   robj.fCoherentSi75SiLiCsI = robj.fCoherentSi75SiLiCsI;
+   robj.fPileupChIo = fPileupChIo;
+   robj.fPileupSiLi = fPileupSiLi;
+   robj.fPileupSi75 = fPileupSi75;
+   robj.fIncludeEtalonsInCalibration = fIncludeEtalonsInCalibration;
    KVReconstructedNucleus::Copy(obj);
 }
 

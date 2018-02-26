@@ -35,7 +35,7 @@ class KVCsI;
 
 class KVINDRAReconNuc: public KVReconstructedNucleus {
 
-   KVINDRACodes fCodes;//VEDA6-style calibration and identification codes
+   mutable KVINDRACodes fCodes;//VEDA6-style calibration and identification codes
    Bool_t fCoherent;//coherency of CsI & Si-CsI identifications
    Bool_t fPileup;//apparent pileup in Si, revealed by inconsistency between CsI & Si-CsI identifications
    Bool_t fUseFullChIoEnergyForCalib;//decided by coherency analysis
@@ -255,7 +255,7 @@ public:
    Bool_t StoppedInSiLi();
    Bool_t StoppedInCsI();
 
-   KVINDRACodes& GetCodes()
+   KVINDRACodes& GetCodes() const
    {
       return fCodes;
    }
@@ -263,6 +263,9 @@ public:
    {
       // Sets code for identification
       GetCodes().SetIDCode(code_mask);
+      Info("SetIDCode", "Setting idcode=%d", (int)code_mask);
+      KVReconstructedNucleus::SetIDCode(GetCodes().GetVedaIDCode());
+      Info("SetIDCode", "Translated to veda %d", GetCodes().GetVedaIDCode());
    }
 
    virtual void SetECode(UChar_t code_mask)
@@ -273,12 +276,12 @@ public:
    virtual Int_t GetIDCode() const
    {
       // Returns value of VEDA ID code
-      return const_cast<KVINDRAReconNuc*>(this)->GetCodes().GetVedaIDCode();
+      return GetCodes().GetVedaIDCode();
    }
    virtual Int_t GetECode() const
    {
       // Return value of VEDA E code
-      return const_cast<KVINDRAReconNuc*>(this)->GetCodes().GetVedaECode();
+      return GetCodes().GetVedaECode();
    }
 
    Int_t GetIDSubCode(const Char_t* id_tel_type = "") const;
