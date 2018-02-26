@@ -117,6 +117,12 @@ void KVNamedParameter::Set(const char* nom, const KVNamedParameter& p)
    SetType(p.GetType());
 }
 
+void KVNamedParameter::Add(const KVNamedParameter& p)
+{
+   // Add the numerical value of "p" to this parameter
+   fNumber += p.fNumber;
+}
+
 void KVNamedParameter::Set(Int_t val)
 {
    SetTitle("Int_t");

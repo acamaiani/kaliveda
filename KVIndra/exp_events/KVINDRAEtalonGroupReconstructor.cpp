@@ -31,7 +31,10 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
    // the best way to choose the right reconstruction trajectory is to see if sili-csi
    // provides an identification, and if so is it coherent with that of the csi.
 
-   if (node->GetDetector()->Fired(GetPartSeedCond()) && node->GetDetector()->IsType("CSI") && node->GetNTrajForwards() > 1) {
+   if (!node->GetDetector()->IsAnalysed() &&
+         node->GetDetector()->Fired(GetPartSeedCond()) &&
+         node->GetDetector()->IsType("CSI") &&
+         node->GetNTrajForwards() > 1) {
       ++nfireddets;
       const KVSeqCollection* idt_list = traj->GetIDTelescopes();
       TIter next_idt(idt_list);
@@ -47,11 +50,8 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
             IDR[idt->GetType()].IDattempted = kFALSE;
       }
       // cases:
-      //  gamma in CsI: * if this is the short trajectory (CSI-CI), accept this identification
-      //                this will set the CsI analysed state, so that when the long trajectory is
-      //                treated it will be ignored unless SILI or SI75 have fired.
-      //                * if this is the long trajectory, we ignore the gamma and wait for next
-      //                 iteration to see what is in SILI & SI75
+      //  gamma in CsI: * same as general INDRA reconstruction: count the gammmas, do not
+      //                  reconstruct a particle (but set CsI analysed state)
       // particle identified in CsI:
       //                * if this is the long trajectory, check the SILI-CSI identification
       //                  if SILI-CSI identification no good, then short trajectory should be used
@@ -60,10 +60,12 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
       KVIdentificationResult&  idcsi = IDR["CSI_R_L"];
       if (idcsi.IDattempted) {
          if (idcsi.IDOK) {
-            if (idcsi.IDcode == kIDCode0) { // gamma
+            if (idcsi.IDcode == kIDCode0) {
+               // gamma
                //Info("ReconstructTrajectory","Gamma in CsI: with_etalon=%d",with_etalon);
-               if (!with_etalon) return GetEventFragment()->AddParticle();
-               else return nullptr;
+               GetEventFragment()->GetParameters()->IncrementValue("INDRA_GAMMA_MULT", 1);
+               node->GetDetector()->SetAnalysed();
+               return nullptr;
             } else { // charged particle identified
                //Info("ReconstructTrajectory","Charged particle in CsI: with_etalon=%d",with_etalon);
                if (with_etalon) {

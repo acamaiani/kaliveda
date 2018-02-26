@@ -115,6 +115,7 @@ public:
    void WriteToEnv(TEnv*, const TString& p = "");
 
    const Char_t* GetSQLType() const;
+   void Add(const KVNamedParameter& p);
 
    ClassDef(KVNamedParameter, 1) //A generic parameter with a name and a value
 };

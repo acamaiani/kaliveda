@@ -963,6 +963,7 @@ const Char_t* KVEvent::GetPartitionName()
 void KVEvent::MergeEventFragments(TCollection* events, Option_t* opt)
 {
    // Merge all events in the list into one event (this one)
+   // We also merge/sum the parameter lists of the events
    // First we clear this event, then we fill it with copies of each particle in each event
    // in the list.
    // If option "opt" is given, it is given as argument to each call to
@@ -979,6 +980,7 @@ void KVEvent::MergeEventFragments(TCollection* events, Option_t* opt)
       while ((n = e->GetNextParticle())) {
          n->Copy(*AddParticle());
       }
+      GetParameters()->Merge(*(e->GetParameters()));
       e->Clear(opt);
    }
 }

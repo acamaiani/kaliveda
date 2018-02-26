@@ -172,10 +172,12 @@ void KVReconstructedEvent::ls(Option_t*) const
 {
    // compact listing of reconstructed event
    printf(":::%s   #%07d    M=%03d\n", ClassName(), GetNumber(), GetMult());
+   GetParameters()->Print();
    int i(0);
    for (KVEvent::Iterator it = begin(); it != end(); ++it) {
       KVReconstructedNucleus& nuc = it.reference<KVReconstructedNucleus>();
       printf(" %3d", i);
+      printf(" A:%6s", nuc.GetParameters()->GetStringValue("ARRAY"));
       printf("  D:%10s", nuc.GetStoppingDetector()->GetName());
       if (nuc.GetIdentifyingTelescope()) printf(" ID:%15s", nuc.GetIdentifyingTelescope()->GetName());
       else printf(" ID:%15s", "(none)");
@@ -277,6 +279,7 @@ void KVReconstructedEvent::MergeEventFragments(TCollection* events, Option_t* op
          while ((n = e->GetNextParticle())) {
             AddParticle()->CopyAndMoveReferences(n);
          }
+         GetParameters()->Merge(*(e->GetParameters()));
          e->Clear(opt);
       }
    }

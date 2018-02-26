@@ -188,6 +188,16 @@ void KVNameValueList::SetValue(const KVNamedParameter& p)
    par ? par->Set(p.GetName(), p) : fList.Add(new KVNamedParameter(p));
 
 }
+void KVNameValueList::AddValue(const KVNamedParameter& p)
+{
+   // if a parameter with the same name & type as 'p' exists,
+   // add numerical value of p to value of parameter in list.
+   // otherwise, add a copy of p to list
+
+   KVNamedParameter* par = FindParameter(p.GetName());
+   par ? par->Add(p) : fList.Add(new KVNamedParameter(p));
+
+}
 
 //______________________________________________
 KVNamedParameter* KVNameValueList::FindParameter(const Char_t* name) const
@@ -406,6 +416,18 @@ void KVNameValueList::WriteToEnv(TEnv* tenv, const TString& prefix)
    // optionally using the given prefix.
 
    for (int i = 0; i < GetNpar(); ++i) GetParameter(i)->WriteToEnv(tenv, prefix);
+}
+
+void KVNameValueList::Merge(const KVNameValueList& other)
+{
+   // Merge other list into this one.
+   // Any parameters in 'other' which do not exist in this one are added.
+   // Any parameters which exist in both have their values summed.
+
+   for (int i = 0; i < other.GetNpar(); ++i) {
+      KVNamedParameter* np_other = other.GetParameter(i);
+      AddValue(*np_other);
+   }
 }
 
 

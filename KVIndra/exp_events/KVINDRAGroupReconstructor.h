@@ -11,6 +11,7 @@ public:
    KVINDRAGroupReconstructor();
 
    virtual ~KVINDRAGroupReconstructor();
+   KVReconstructedNucleus* ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
 
    ClassDef(KVINDRAGroupReconstructor, 1) //Reconstruct particles in INDRA groups
 };
