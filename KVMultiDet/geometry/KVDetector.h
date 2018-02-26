@@ -242,9 +242,9 @@ public:
    virtual Bool_t IsCalibrated() const;
 
    virtual void Clear(Option_t* opt = "");
-   virtual void Reset()
+   virtual void Reset(Option_t* opt = "")
    {
-      Clear();
+      Clear(opt);
    }
    virtual void Print(Option_t* option = "") const;
 

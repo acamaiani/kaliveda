@@ -62,7 +62,7 @@ public:
    virtual void Clear(Option_t* option = "");
    virtual void Reconstruct(KVDetector* kvd);
 
-   virtual void SetIdentification(KVIdentificationResult*);
+   void SetIdentification(KVIdentificationResult*, KVIDTelescope* = nullptr);
 
    const KVSeqCollection* GetDetectorList() const
    {

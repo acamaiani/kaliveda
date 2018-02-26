@@ -32,6 +32,7 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
    // provides an identification, and if so is it coherent with that of the csi.
 
    if (node->GetDetector()->Fired(GetPartSeedCond()) && node->GetDetector()->IsType("CSI") && node->GetNTrajForwards() > 1) {
+      ++nfireddets;
       const KVSeqCollection* idt_list = traj->GetIDTelescopes();
       TIter next_idt(idt_list);
       KVIDTelescope* idt;

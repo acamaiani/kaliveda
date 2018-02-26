@@ -13,8 +13,8 @@ class KVGroupReconstructor : public KVBase {
    KVGroup*              fGroup;//!        the group where we are reconstructing
    KVReconstructedEvent* fGrpEvent;//!     event containing particles reconstructed in this group
    TString               fPartSeedCond;//! condition for seeding reconstructed particles
-
 protected:
+   mutable int nfireddets;//! number of fired detectors in group for current event
    virtual KVReconstructedNucleus* ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
    void ReconstructParticle(KVReconstructedNucleus* part, const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
    virtual void IdentifyParticle(KVReconstructedNucleus& PART);
@@ -32,6 +32,10 @@ public:
 
    void SetReconEventClass(TClass* c);
    void Copy(TObject& obj) const;
+   int GetNFiredDets() const
+   {
+      return nfireddets;
+   }
 
    KVReconstructedEvent* GetEventFragment() const
    {

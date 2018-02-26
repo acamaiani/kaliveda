@@ -43,7 +43,7 @@ public:
 
    virtual UInt_t GetNumberOfDetectorLayers();
 
-   void Reset();
+   void Reset(Option_t* opt = "");
 
    virtual TList* GetDetectorsInLayer(UInt_t lay);
    virtual TList* GetAlignedDetectors(KVDetector*, UChar_t dir = kBackwards);

@@ -66,9 +66,10 @@ void KVDetectorEvent::Clear(Option_t* opt)
    // Reset the list of hit groups, ready for analysis of a new event.
    // Each 'hit' group is cleared (energy losses in detectors set to zero, etc.).
    // unless option "NGR" (No Group Reset) is given
+   // Any other option is passed to KVGroup::Reset
 
    if (strncmp(opt, "NGR", 3)) {
-      fHitGroups->R__FOR_EACH(KVGroup, Reset)();
+      fHitGroups->R__FOR_EACH(KVGroup, Reset)(opt);
    }
    fHitGroups->Clear();
 }

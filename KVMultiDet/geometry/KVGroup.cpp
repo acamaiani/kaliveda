@@ -75,17 +75,19 @@ TList* KVGroup::GetDetectorsInLayer(UInt_t lay)
 
 //______________________________________________________________________________
 
-void KVGroup::Reset()
+void KVGroup::Reset(Option_t* opt)
 {
-   //Reset the group, i.e. wipe the list of reconstructed nuclei and call "Clear" method of
+   //Reset the group, i.e. wipe the list of reconstructed nuclei and call "Reset" method of
    //each and every detector in the group.
+   // The option 'opt' is passed to KVDetector::Reset
+
    //Info("Reset","Call %s",GetName());
    if (fReconstructedNuclei && fReconstructedNuclei->GetSize()) {
       fReconstructedNuclei->Clear();
    }
    //reset energy loss and KVDetector::IsAnalysed() state
-   //plus ACQParams set to zero
-   const_cast<KVSeqCollection*>(GetDetectors())->R__FOR_EACH(KVDetector, Clear)();
+   //plus ACQParams set to zero if opt!="N" (for No Reset)
+   const_cast<KVSeqCollection*>(GetDetectors())->R__FOR_EACH(KVDetector, Reset)(opt);
 }
 
 //_________________________________________________________________________________

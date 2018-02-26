@@ -25,15 +25,12 @@ int main(int argc, char* argv[])
    KVEventReconstructor erec(gMultiDetArray, new KVReconstructedEvent);
 
    auto start = std::chrono::steady_clock::now();
-   for (int i = 0; i < 1000; ++i) {
-      //std::cout << std::endl << "==============================================EVENT " << i << std::endl << std::endl;
-
+   for (int i = 0; i < 5; ++i) {
+      std::cout << std::endl << "==============================================EVENT " << i << std::endl << std::endl;
       if (!raw_file->GetNextEvent()) break;
-
       erec.ReconstructEvent(raw_file->GetFiredDataParameters());
-
-      //erec.GetEvent()->SetNumber(i);
-      //erec.GetEvent()->ls();
+      erec.GetEvent()->SetNumber(i + 1);
+      erec.GetEvent()->ls();
    }
    auto end = std::chrono::steady_clock::now();
    auto diff = end - start;

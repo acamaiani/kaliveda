@@ -274,10 +274,10 @@ void KVReconstructedNucleus::CopyAndMoveReferences(const KVReconstructedNucleus*
 void KVReconstructedNucleus::Clear(Option_t* opt)
 {
    // Reset nucleus. Calls KVNucleus::Clear.
-   // if opt!="NGR": Calls KVGroup::Reset for the group where it was reconstructed.
+   // if opt!="N": Calls KVGroup::Reset for the group where it was reconstructed.
 
    KVNucleus::Clear(opt);
-   if (GetGroup() && strncmp(opt, "NGR", 3))
+   if (GetGroup() && strncmp(opt, "N", 1))
       GetGroup()->Reset();
    fDetList.Clear();
    fIDResults.Clear("C");
@@ -627,14 +627,17 @@ void KVReconstructedNucleus::MakeDetectorList()
    if (gMultiDetArray) gMultiDetArray->FillDetectorList(this, &fDetList, fDetNames);
 }
 
-void KVReconstructedNucleus::SetIdentification(KVIdentificationResult* idr)
+void KVReconstructedNucleus::SetIdentification(KVIdentificationResult* idr, KVIDTelescope* idt)
 {
    // Set identification of nucleus from informations in identification result object
    // The mass (A) information in KVIdentificationResult is only used if the mass
    // was measured as part of the identification. Otherwise the nucleus' mass formula
    // will be used to calculate A from the measured Z.
+   // The IDTelescope pointer, if given, will be used to modulate the particle's ID code
+   // depending on the nature of the particle's class.
 
-   SetIDCode(idr->IDcode);
+   if (idt) idt->SetIDCode(this, idr->IDcode);
+   else SetIDCode(idr->IDcode);
    SetZMeasured(idr->Zident);
    SetAMeasured(idr->Aident);
    SetZ(idr->Z);

@@ -84,12 +84,19 @@ void KVGroupReconstructor::Process()
 {
    // Perform full reconstruction for group: reconstruct, identify, calibrate
 
+   nfireddets = 0;
    Reconstruct();
+   if (!nfireddets) {
+      // odd - not a single fired parameter in the group, yet this group is in the
+      // list of fired groups for the event?
+      Warning("Process", "Group with 0 fired detectors/parameters");
+      GetGroup()->PrintData();
+   }
    if (GetEventFragment()->GetMult() == 0) {
       return;
    }
    Identify();
-   Calibrate();
+   //Calibrate();
 }
 
 void KVGroupReconstructor::Reconstruct()
@@ -126,13 +133,14 @@ void KVGroupReconstructor::Reconstruct()
 KVReconstructedNucleus* KVGroupReconstructor::ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node)
 {
    KVDetector* d = node->GetDetector();
+   nfireddets += d->Fired();
    // if d has fired and is either independent (only one trajectory passes through it)
    // or, if several trajectories pass through it,
    // only if the detector directly in front of it on this trajectory fired also
    if (!d->IsAnalysed() && d->Fired(fPartSeedCond)
          && (node->GetNTraj() == 1 ||
              (traj->GetNodeInFront(node) &&
-              traj->GetNodeInFront(node)->GetDetector()->Fired(fPartSeedCond)))) {
+              traj->GetNodeInFront(node)->GetDetector()->Fired()))) {
       return GetEventFragment()->AddParticle();
    }
    return nullptr;
@@ -305,7 +313,7 @@ void KVGroupReconstructor::IdentifyParticle(KVReconstructedNucleus& PART)
       if (ok) {
          PART.SetIsIdentified();
          PART.SetIdentifyingTelescope(identifying_telescope);
-         PART.SetIdentification(&partID);
+         PART.SetIdentification(&partID, identifying_telescope);
       }
 
    }

@@ -94,8 +94,8 @@ void KVEventReconstructor::ReconstructEvent(TSeqCollection* fired)
       GetArray()->GetTarget()->SetOutgoing(kTRUE);
    }
 
-   GetEvent()->Clear("NGR");// No Group Reset (would not reset groups with no reconstructed particles)
-   detev.Clear();// reset all groups, even if no particles were reconstructed in them
+   GetEvent()->Clear("N");// No Group Reset (would not reset groups with no reconstructed particles)
+   detev.Clear("N");// reset all groups (but not acquisition parameters), even if no particles were reconstructed in them
 
    GetArray()->GetDetectorEvent(&detev, fired);
 
@@ -186,5 +186,5 @@ void KVEventReconstructor::MergeGroupEventFragments()
       int i = fHitGroups[k];
       to_merge.Add(((KVGroupReconstructor*)fGroupReconstructor[i])->GetEventFragment());
    }
-   GetEvent()->MergeEventFragments(&to_merge, "NGR");// "NGR" = no group reset
+   GetEvent()->MergeEventFragments(&to_merge, "N");// "N" = no group reset
 }
