@@ -89,8 +89,8 @@ void KVGroupReconstructor::Process()
    if (!nfireddets) {
       // odd - not a single fired parameter in the group, yet this group is in the
       // list of fired groups for the event?
-      Warning("Process", "Group with 0 fired detectors/parameters");
-      GetGroup()->PrintData();
+//      Warning("Process", "Group with 0 fired detectors/parameters");
+//      GetGroup()->PrintData();
    }
    if (GetEventFragment()->GetMult() == 0) {
       return;
@@ -250,6 +250,8 @@ void KVGroupReconstructor::IdentifyParticle(KVReconstructedNucleus& PART)
    // The identification code corresponding to the identifying telescope is set as the identification code of the particle.
 
    const KVSeqCollection* idt_list = PART.GetReconstructionTrajectory()->GetIDTelescopes();
+   identifying_telescope = nullptr;
+   id_by_type.clear();
 
    if (idt_list->GetEntries() > 0) {
 
@@ -260,6 +262,7 @@ void KVGroupReconstructor::IdentifyParticle(KVReconstructedNucleus& PART)
       while ((idt = (KVIDTelescope*) next())) {
 
          KVIdentificationResult* IDR = PART.GetIdentificationResult(idnumber++);
+         id_by_type[IDR->GetType()] = IDR;
 
          if (idt->IsReadyForID()) { // is telescope able to identify for this run ?
 
@@ -294,11 +297,9 @@ void KVGroupReconstructor::IdentifyParticle(KVReconstructedNucleus& PART)
       // as long as the id telescope concerned contains the stopping detector!
       Int_t id_no = 1;
       Bool_t ok = kFALSE;
-      KVIdentificationResult partID;
       KVIdentificationResult* pid = PART.GetIdentificationResult(id_no);
       next.Reset();
       idt = (KVIDTelescope*)next();
-      KVIDTelescope* identifying_telescope = nullptr;
       while (pid->IDattempted && idt->HasDetector(PART.GetStoppingDetector())) {
          if (pid->IDOK) {
             ok = kTRUE;
@@ -379,9 +380,8 @@ void KVGroupReconstructor::Identify()
             if (zmin) {
                d.SetZ(zmin);
                d.SetIsIdentified();
-               // "Identifying" telescope is taken from list of ID telescopes
-               // to which stopping detector belongs
-               d.SetIdentifyingTelescope((KVIDTelescope*) d.GetReconstructionTrajectory()->GetIDTelescopes()->First());
+               KVGeoDNTrajectory* t = (KVGeoDNTrajectory*)d.GetStoppingDetector()->GetNode()->GetTrajectories()->First();
+               d.SetIdentifyingTelescope((KVIDTelescope*) t->GetIDTelescopes()->Last());
             }
          }
       }

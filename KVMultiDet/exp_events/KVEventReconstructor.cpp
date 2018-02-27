@@ -59,8 +59,10 @@ KVEventReconstructor::KVEventReconstructor(KVMultiDetArray* a, KVReconstructedEv
             Warning("KVEventReconstructor", "%s array has non-unique group numbers!!!", a->GetName());
          } else {
             fGroupReconstructor[i] = a->GetReconstructorForGroup(gr);
-            ((KVGroupReconstructor*)fGroupReconstructor[i])->SetReconEventClass(e->IsA());
-            ((KVGroupReconstructor*)fGroupReconstructor[i])->SetGroup(gr);
+            if (fGroupReconstructor[i]) {
+               ((KVGroupReconstructor*)fGroupReconstructor[i])->SetReconEventClass(e->IsA());
+               ((KVGroupReconstructor*)fGroupReconstructor[i])->SetGroup(gr);
+            }
          }
       }
    }
@@ -112,18 +114,20 @@ void KVEventReconstructor::ReconstructEvent(TSeqCollection* fired)
    KVGroup* group;
    while ((group = (KVGroup*)it())) {
       KVGroupReconstructor* grec = (KVGroupReconstructor*)fGroupReconstructor[group->GetNumber()];
-      fHitGroups[fNGrpRecon] = group->GetNumber();
-      if (!fThreaded) {
-         grec->Process();
-      }
+      if (grec) {
+         fHitGroups[fNGrpRecon] = group->GetNumber();
+         if (!fThreaded) {
+            grec->Process();
+         }
 #ifndef WITH_CPP11
-      else {
-         TThread* t = new TThread(Form("grp_rec_%d", fNGrpRecon), (TThread::VoidRtnFunc_t)&ThreadedReconstructor, (void*)grec);
-         fThreads.Add(t);
-         t->Run();
-      }
+         else {
+            TThread* t = new TThread(Form("grp_rec_%d", fNGrpRecon), (TThread::VoidRtnFunc_t)&ThreadedReconstructor, (void*)grec);
+            fThreads.Add(t);
+            t->Run();
+         }
 #endif
-      ++fNGrpRecon;
+         ++fNGrpRecon;
+      }
    }
    if (fThreaded) {
 #ifndef WITH_CPP11

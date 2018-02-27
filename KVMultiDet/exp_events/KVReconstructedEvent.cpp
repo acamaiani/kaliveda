@@ -179,14 +179,19 @@ void KVReconstructedEvent::ls(Option_t*) const
       printf(" %3d", i);
       printf(" A:%6s", nuc.GetParameters()->GetStringValue("ARRAY"));
       printf("  D:%10s", nuc.GetStoppingDetector()->GetName());
-      if (nuc.GetIdentifyingTelescope()) printf(" ID:%15s", nuc.GetIdentifyingTelescope()->GetName());
-      else printf(" ID:%15s", "(none)");
-      if (nuc.IsZMeasured()) printf(" Z=%2d", nuc.GetZ());
-      else printf("     ");
-      if (nuc.IsAMeasured()) printf(" A=%3d  : ", nuc.GetA());
-      else printf("        : ");
+      printf(" IDCODE=%2d", nuc.GetIDCode());
+      if (nuc.IsIdentified()) {
+         if (!nuc.GetIdentifyingTelescope()) nuc.Print();
+         printf(" ID:%15s", nuc.GetIdentifyingTelescope()->GetName());
+         if (nuc.IsZMeasured()) printf(" Z=%2d", nuc.GetZ());
+         else printf("     ");
+         if (nuc.IsAMeasured()) printf(" A=%3d  : ", nuc.GetA());
+         else printf("        : ");
+         if (nuc.GetParameters()->IsValue("Coherent", false)) printf("/not coherent/");
+         if (nuc.GetParameters()->IsValue("Pileup", true)) printf("/pileup/");
+      }
       if (!nuc.IsIdentified()) nuc.PrintStatusString();
-      else printf("IDCODE=%2d\n", nuc.GetIDCode());
+      else printf("\n");
       ++i;
    }
 }

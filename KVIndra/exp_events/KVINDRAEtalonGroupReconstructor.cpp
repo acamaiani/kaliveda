@@ -83,3 +83,9 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
    // standard non-etalon treatment
    return KVINDRAGroupReconstructor::ReconstructTrajectory(traj, node);
 }
+
+bool KVINDRAEtalonGroupReconstructor::DoCoherencyAnalysis(KVReconstructedNucleus& PART)
+{
+   // Coherency analysis for etalon groups on rings 10-17 of INDRA
+   return kTRUE;
+}

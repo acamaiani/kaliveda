@@ -7,6 +7,8 @@
 #include "KVBase.h"
 #include "KVGroup.h"
 #include "KVReconstructedEvent.h"
+#include <map>
+#include <string>
 
 class KVGroupReconstructor : public KVBase {
 
@@ -15,6 +17,10 @@ class KVGroupReconstructor : public KVBase {
    TString               fPartSeedCond;//! condition for seeding reconstructed particles
 protected:
    mutable int nfireddets;//! number of fired detectors in group for current event
+   KVIdentificationResult partID;//! identification to be applied to current particle
+   KVIDTelescope* identifying_telescope;//! telescope which identified current particle
+   std::map<std::string, KVIdentificationResult*> id_by_type; //! identification results by type
+
    virtual KVReconstructedNucleus* ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
    void ReconstructParticle(KVReconstructedNucleus* part, const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
    virtual void IdentifyParticle(KVReconstructedNucleus& PART);
@@ -41,7 +47,7 @@ public:
    {
       return fGrpEvent;
    }
-   void SetGroup(KVGroup* g);
+   virtual void SetGroup(KVGroup* g);
    KVGroup* GetGroup() const
    {
       return fGroup;
@@ -51,7 +57,7 @@ public:
 
    void Process();
    void Reconstruct();
-   void Identify();
+   virtual void Identify();
    void Calibrate();
 
    void AnalyseParticles();

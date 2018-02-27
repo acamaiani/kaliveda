@@ -419,7 +419,8 @@ Plugin.KVMultiDetArray:    INDRA_camp1    KVINDRA     KVIndraexp_events    "KVIN
 +Plugin.KVMultiDetArray:    INDRA_e503_woVAMOS    KVINDRA     KVIndraexp_events  "KVINDRA()"
 
 # Plugins for reconstruction of particles from data/simulation
-+Plugin.KVGroupReconstructor:   INDRA KVINDRAGroupReconstructor KVIndraexp_events "KVINDRAGroupReconstructor()"
++Plugin.KVGroupReconstructor:   INDRA.forward KVINDRAForwardGroupReconstructor KVIndraexp_events "KVINDRAForwardGroupReconstructor()"
++Plugin.KVGroupReconstructor:   INDRA.backward KVINDRABackwardGroupReconstructor KVIndraexp_events "KVINDRABackwardGroupReconstructor()"
 +Plugin.KVGroupReconstructor:   INDRA.etalon KVINDRAEtalonGroupReconstructor KVIndraexp_events "KVINDRAEtalonGroupReconstructor()"
 
 # Conditions for seeding reconstructed particles in event reconstruction

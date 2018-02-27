@@ -13,6 +13,8 @@ public:
 
    KVReconstructedNucleus* ReconstructTrajectory(const KVGeoDNTrajectory* traj, const KVGeoDetectorNode* node);
 
+   bool DoCoherencyAnalysis(KVReconstructedNucleus& PART);
+
    ClassDef(KVINDRAEtalonGroupReconstructor, 1) //Reconstruct particles in INDRA groups with etalon telescopes
 };
 

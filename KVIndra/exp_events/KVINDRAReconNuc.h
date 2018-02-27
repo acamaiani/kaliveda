@@ -263,9 +263,7 @@ public:
    {
       // Sets code for identification
       GetCodes().SetIDCode(code_mask);
-      Info("SetIDCode", "Setting idcode=%d", (int)code_mask);
       KVReconstructedNucleus::SetIDCode(GetCodes().GetVedaIDCode());
-      Info("SetIDCode", "Translated to veda %d", GetCodes().GetVedaIDCode());
    }
 
    virtual void SetECode(UChar_t code_mask)
