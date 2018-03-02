@@ -66,9 +66,10 @@ public:
       //number of identified particles reconstructed in group
       Int_t n = 0;
       if (GetEventFragment()->GetMult()) {
-         KVReconstructedNucleus* nuc;
-         GetEventFragment()->ResetGetNextParticle();
-         while ((nuc = GetEventFragment()->GetNextParticle())) n += (Int_t) nuc->IsIdentified();
+         for (KVEvent::Iterator it = GetEventFragment()->begin(); it != GetEventFragment()->end(); ++it) {
+            KVReconstructedNucleus& nuc = it.reference<KVReconstructedNucleus>();
+            n += (Int_t) nuc.IsIdentified();
+         }
       }
       return n;
    }

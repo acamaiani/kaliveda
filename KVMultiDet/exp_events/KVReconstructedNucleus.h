@@ -38,7 +38,7 @@ protected:
    TClonesArray fIDResults;//results of every identification attempt made for this nucleus, in order of the ID telescopes used
 
    void MakeDetectorList();
-
+   void RebuildReconTraj();
 public:
 
    // status codes given to reconstructed particles by KVGroupReconstructor::AnalyseParticles
@@ -403,15 +403,30 @@ public:
    }
 
    virtual void SubtractEnergyFromAllDetectors();
-   inline static UInt_t GetNIdentifiedInGroup(KVGroup*)
+   static UInt_t GetNIdentifiedInGroup(KVGroup* grp)
    {
-      ::Warning("GetNIdentifiedInGroup(KVGroup*)", "DO NOT USE");
-      return 0;
+      // number of identified particles reconstructed in group
+      //
+      // this method is kept only for backwards compatibility. it is used by
+      // AnalyseParticlesInGroup which is called by KVReconstructedEvent::Streamer
+      // when reading old data
+      UInt_t n = 0;
+      if (grp->GetHits()) {
+         TIter next(grp->GetParticles());
+         KVReconstructedNucleus* nuc = 0;
+         while ((nuc = (KVReconstructedNucleus*) next()))
+            n += (UInt_t) nuc->IsIdentified();
+      }
+      return n;
    }
-   inline static UInt_t GetNUnidentifiedInGroup(KVGroup*)
+   static UInt_t GetNUnidentifiedInGroup(KVGroup* grp)
    {
-      ::Warning("GetNUnidentifiedInGroup(KVGroup*)", "DO NOT USE");
-      return 0;
+      //number of unidentified particles reconstructed in group
+      //
+      // this method is kept only for backwards compatibility. it is used by
+      // AnalyseParticlesInGroup which is called by KVReconstructedEvent::Streamer
+      // when reading old data
+      return (grp->GetHits() - GetNIdentifiedInGroup(grp));
    }
    static void AnalyseParticlesInGroup(KVGroup* grp);
 
@@ -421,9 +436,9 @@ public:
    }
    void SetReconstructionTrajectory(const KVReconNucTrajectory* t);
    void CopyAndMoveReferences(const KVReconstructedNucleus*);
+   void PrintStatusString() const;
 
    ClassDef(KVReconstructedNucleus, 17)  //Nucleus detected by multidetector array
-   void PrintStatusString() const;
 };
 
 

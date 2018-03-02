@@ -87,13 +87,14 @@ void KVReconstructedEvent::Streamer(TBuffer& R__b)
       if (gMultiDetArray) {
          //set angles
          KVReconstructedNucleus* par;
-         while ((par = GetNextParticle())) {
+         for (KVEvent::Iterator it = begin(); it != end(); ++it) {
+            par = it.pointer<KVReconstructedNucleus>();
             if (HasMeanAngles())
                par->GetAnglesFromStoppingDetector("mean");
             else
                par->GetAnglesFromStoppingDetector("random");
-            //reconstruct fAnalStatus information for KVReconstructedNucleus
-            if (par->GetStatus() == 99)        //AnalStatus has not been set for particles in group
+            //reconstruct fAnalStatus information for unidentified KVReconstructedNucleus
+            if (!par->IsIdentified() && par->GetStatus() == 99)        //AnalStatus has not been set for particles in group
                if (par->GetGroup())
                   KVReconstructedNucleus::AnalyseParticlesInGroup(par->GetGroup());
             // apply identification & calibration code selection

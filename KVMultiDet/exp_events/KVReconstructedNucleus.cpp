@@ -111,21 +111,27 @@ void KVReconstructedNucleus::Streamer(TBuffer& R__b)
       // if the multidetector object exists, update some informations
       // concerning the detectors etc. hit by this particle
       if (gMultiDetArray) {
-         MakeDetectorList();
-         if (GetGroup()) GetGroup()->AddHit(this);
-         fIDTelescope = 0;
+         MakeDetectorList();//leave for KVVAMOSReconNuc - for now
+         fReconTraj = nullptr;
+         RebuildReconTraj();
+         fIDTelescope = nullptr;
          if (fIDTelName != "") fIDTelescope = gMultiDetArray->GetIDTelescope(fIDTelName.Data());
-         TIter next_det(&fDetList);
-         KVDetector* det;
-         while ((det = (KVDetector*)next_det())) {
-            if (R__v < 16) fNSegDet += det->GetSegment();  // fNSegDet/fAnalStatus non-persistent before v.16
-            det->AddHit(this);
-            det->SetAnalysed();
-            //modify detector's counters depending on particle's identification state
-            if (IsIdentified())
-               det->IncrementIdentifiedParticles();
-            else
-               det->IncrementUnidentifiedParticles();
+         if (fReconTraj) {
+            if (R__v < 16) fNSegDet = fReconTraj->GetNumberOfIndependentIdentifications(); // fNSegDet/fAnalStatus non-persistent before v.16
+         } else {
+            TIter next_det(&fDetList);
+            KVDetector* det;
+            while ((det = (KVDetector*)next_det())) {
+               det->AddHit(this);
+               if (det->IsDetecting()) { //to be coherent with AddDetector() method
+                  if (R__v < 16) fNSegDet += det->GetSegment();  // fNSegDet/fAnalStatus non-persistent before v.16
+                  //modify detector's counters depending on particle's identification state
+                  if (IsIdentified())
+                     det->IncrementIdentifiedParticles();
+                  else
+                     det->IncrementUnidentifiedParticles();
+               }
+            }
          }
       }
    } else {
@@ -306,11 +312,12 @@ void KVReconstructedNucleus::AddDetector(KVDetector* det)
 
 void KVReconstructedNucleus::SetReconstructionTrajectory(const KVReconNucTrajectory* t)
 {
-   // Method called in initial reconstruction of particle
+   // Method called in initial reconstruction of particle.
 
    fReconTraj = t;
    fNSegDet = t->GetNumberOfIndependentIdentifications();
-   t->AddUnidentifiedParticle(0);
+   t->AddUnidentifiedParticle(0);//add 1 unidentified particle to each detector on trajectory
+   fDetNames = t->GetPathString();//to store/retrieve reconstruction trajectory on file
 }
 
 //______________________________________________________________________________________________//
@@ -411,52 +418,11 @@ void KVReconstructedNucleus::Identify()
 
 void KVReconstructedNucleus::AnalyseParticlesInGroup(KVGroup* grp)
 {
-   //The short description of this method is:
+   // First-order coherency analysis of reconstructed particles
    //
-   //      Here we analyse all the particles stopping in this group in order to
-   //      determine 'KVReconstructedNucleus::GetStatus()' for each one.
-   //      This is a sort of 'first-order' coherency analysis necessary prior to
-   //      attempting particle identification.
-   //
-   //The long description of this method is:
-   //
-   //Analyse the different particles reconstructed in this group in order to
-   //establish the strategy necessary to fully reconstruct each one
-   //In a group with >=3-member telescopes, the maximum number of particles which may be
-   //reconstructed correctly is equal to the number of telescopes constituting the
-   //last layer of the group if all particles stop in the last detector of the last
-   //layer.
-   //i.e. in rings 4-9 (ChIo-Si-CsI telescopes) any group can detect up to 4 particles
-   //all going through to the CsI i.e. either light particles identified from CsI R-L
-   //matrices or fragments identified from Si-CsI matrices.
-   //
-   //Any particle detected in a group on its own is perfectly fine (fAnalStatus=0).
-   //
-   //Any particle detected in the final layer of a "3-detector layer" group
-   //(i.e. ChIo-Si-CsI) is perfectly fine (fAnalStatus=0).
-   //
-   //A particle stopping in the 2nd layer of a "3-detector layer" group (i.e. in Si)
-   //can be reconstructed if all the other particles in its group stop in the 3rd
-   //layer (i.e. CsI), once the other particles have been reconstructed and their
-   //calculated energy loss in the ChIo has been subtracted from the measured value
-   //(fAnalStatus=1).
-   //
-   //It's a question of "segmented" or "independent" detectors. The ChIo's are not
-   //"independent" because a particle passing the ChIo can hit several detectors behind
-   //it, whereas any particle passing a given Si can only hit the CsI directly behind
-   //that Si, because the Si (and CsI) are more "segmented" than the ChIo's.
-   //Soooo...any particle crossing at least 2 "independent" detectors can be identified
-   //sans probleme. In fact CsI count for 2 independent detectors themselves, because
-   //light particles can be identified just from CsI information i.e. no need for
-   //"delta-E" signal. Unless of course the R-L attempt fails, at which moment the
-   //particle's AnalStatus may be changed and it may be up for reassessment in
-   //subsequent rounds of analysis.
-   //Particles hitting 0 independent detectors (I.e. stopped in ChIo)
-   //can not be reconstructed. Any particle hitting only 1 independent detector can
-   //be reconstructed if alone in the group i.e. no other particles or all others have
-   //hit >=2 independent detectors. If more than one particle in the same group only
-   //hit 1 independent detector, then one can only make a rough estimation of their
-   //nature.
+   // This method is kept for backwards compatibility. it is called by
+   // KVReconstructedEvent::Streamer when reading old data
+
    if (GetNUnidentifiedInGroup(grp) > 1) { //if there is more than one unidentified particle in the group
 
       UShort_t n_nseg_1 = 0;
@@ -625,6 +591,35 @@ void KVReconstructedNucleus::MakeDetectorList()
 
    fDetList.Clear();
    if (gMultiDetArray) gMultiDetArray->FillDetectorList(this, &fDetList, fDetNames);
+}
+
+void KVReconstructedNucleus::RebuildReconTraj()
+{
+   // Called by Streamer when reading in data
+   // The fDetNames string is used to associate the particle with its reconstruction trajectory
+
+   if (gMultiDetArray) {
+      // for old data, detnames was written as "/DET_1/DET_2/..."
+      // trajectory paths are written as "DET_1/DET_2/..."
+      if (fDetNames[0] == '/') fDetNames.Remove(0, 1);
+      fDetNames.Begin("/");
+      KVString n_stop_det = fDetNames.Next();
+      KVDetector* stop_det = gMultiDetArray->GetDetector(n_stop_det);
+      if (stop_det) {
+         KVGroup* gr = stop_det->GetGroup();
+         gr->AddHit(this);//for backwards compatibility, group coherency analysis performed in KVReconstructedEvent::Streamer (old data)
+         fReconTraj = (KVReconNucTrajectory*)gr->FindReconTraj(fDetNames);
+         if (fReconTraj) {
+            fReconTraj->IterateFrom();
+            KVGeoDetectorNode* n;
+            while ((n = fReconTraj->GetNextNode())) {
+               n->GetDetector()->AddHit(this);
+               if (IsIdentified()) n->GetDetector()->IncrementIdentifiedParticles();
+               else n->GetDetector()->IncrementUnidentifiedParticles();
+            }
+         }
+      }
+   }
 }
 
 void KVReconstructedNucleus::SetIdentification(KVIdentificationResult* idr, KVIDTelescope* idt)

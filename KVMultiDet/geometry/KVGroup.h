@@ -88,6 +88,12 @@ public:
       // Get list of all possible trajectories for particle reconstruction in array
       return &fReconTraj;
    }
+   const KVGeoDNTrajectory* FindReconTraj(const KVString& path)
+   {
+      // Return reconstruction trajectory with given path i.e. "DET_1/DET_2/DET_3"
+      return (KVGeoDNTrajectory*)fReconTraj.FindObjectByTitle(path);
+   }
+
    const KVGeoDNTrajectory* GetTrajectoryForReconstruction(const KVGeoDNTrajectory* t, const KVGeoDetectorNode* n) const
    {
       if (t && n) {
