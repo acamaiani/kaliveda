@@ -214,11 +214,12 @@ Int_t KVMultiDetArray::GetIDTelescopes(KVDetector* de, KVDetector* e, TCollectio
 
    if (fDataSet == "" && gDataSet) fDataSet = gDataSet->GetName();
 
-   //look for ID telescopes with only one of the two detectors
-   if (de->IsOK()) ntels += try_all_singleID_telescopes(de, list);
-   if (e->IsOK() && de != e) ntels += try_all_singleID_telescopes(e, list);
-
-   if (de != e && e->IsOK() && de->IsOK()) ntels += try_all_doubleID_telescopes(de, e, list);
+   //look for ID telescopes starting from furthest from target
+   if (e->IsOK()) ntels += try_all_singleID_telescopes(e, list);
+   if (de != e) {
+      if (e->IsOK() && de->IsOK()) ntels += try_all_doubleID_telescopes(de, e, list);
+      if (de->IsOK()) ntels += try_all_singleID_telescopes(de, list);
+   }
 
    return ntels;
 }
@@ -2770,21 +2771,38 @@ void KVMultiDetArray::AssociateTrajectoriesAndNodes()
 
 void KVMultiDetArray::RecursiveTrajectoryClustering(KVGeoDetectorNode* N, KVUniqueNameList& tried_trajectories, KVUniqueNameList& multitraj_nodes, KVUniqueNameList& detectors_of_group)
 {
-   if (!multitraj_nodes.FindObject(N) && N->GetNTraj() > 1) { // look for any detectors which are on multiple trajectories
-      cout << "multitraj node found: " << N->GetName() << " (" << N->GetNTraj() << ")" << endl;
-      multitraj_nodes.Add(N);
-      TIter tr(N->GetTrajectories());
-      KVGeoDNTrajectory* traj;
-      while ((traj = (KVGeoDNTrajectory*)tr())) { // for each trajectory associated with detector
-         if (tried_trajectories.FindObject(traj)) continue; // trajectory already used
-         tried_trajectories.Add(traj);
-         traj->IterateFrom();
-         KVGeoDetectorNode* node;
-         while ((node = traj->GetNextNode())) { // store names of all detectors on trajectory
-            detectors_of_group.Add(node);
-            RecursiveTrajectoryClustering(node, tried_trajectories, multitraj_nodes, detectors_of_group);
+   if (N->GetNTraj() > 1) {
+      if (!multitraj_nodes.FindObject(N)) { // look for any detectors which are on multiple trajectories
+         cout << "multitraj node found: " << N->GetName() << " (" << N->GetNTraj() << ")" << endl;
+         multitraj_nodes.Add(N);
+         TIter tr(N->GetTrajectories());
+         KVGeoDNTrajectory* traj;
+         while ((traj = (KVGeoDNTrajectory*)tr())) { // for each trajectory associated with detector
+            if (tried_trajectories.FindObject(traj)) continue; // trajectory already used
+            tried_trajectories.Add(traj);
+            traj->IterateFrom();
+            KVGeoDetectorNode* node;
+            while ((node = traj->GetNextNode())) { // store names of all detectors on trajectory
+               detectors_of_group.Add(node);
+               RecursiveTrajectoryClustering(node, tried_trajectories, multitraj_nodes, detectors_of_group);
+            }
          }
       }
+   } else if (N->GetNTraj() == 1) {
+      // single-trajectory node.
+      // work along trajectory adding nodes to group
+      KVGeoDNTrajectory* traj = (KVGeoDNTrajectory*)N->GetTrajectories()->First();
+      if (tried_trajectories.FindObject(traj)) return; // trajectory already used
+      tried_trajectories.Add(traj);
+      traj->IterateFrom();
+      KVGeoDetectorNode* node;
+      while ((node = traj->GetNextNode())) { // store names of all detectors on trajectory
+         detectors_of_group.Add(node);
+         RecursiveTrajectoryClustering(node, tried_trajectories, multitraj_nodes, detectors_of_group);
+      }
+   } else {
+      // orphan node? single-detector array?
+      detectors_of_group.Add(N);
    }
 }
 
@@ -2833,7 +2851,12 @@ void KVMultiDetArray::DeduceGroupsFromTrajectories()
    KVGeoDNTrajectory* t;
    Info("DeduceGroupsFromTrajectories", "Filling group trajectory lists");
    while ((t = (KVGeoDNTrajectory*)tr())) {
-      t->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(t);
+      if (t->GetNodeAt(0)->GetDetector()->GetGroup())
+         t->GetNodeAt(0)->GetDetector()->GetGroup()->AddTrajectory(t);
+      else {
+         t->Print();
+         t->GetNodeAt(0)->GetDetector()->Print();
+      }
    }
 }
 
