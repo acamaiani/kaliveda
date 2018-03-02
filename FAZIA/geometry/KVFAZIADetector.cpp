@@ -74,46 +74,46 @@ KVFAZIADetector::~KVFAZIADetector()
 }
 
 //________________________________________________________________
-KVList* KVFAZIADetector::PrepareIDTelescopeList()
-{
+//KVList* KVFAZIADetector::PrepareIDTelescopeList()
+//{
 
-   KVList* lsub = new KVList();
-   lsub->SetOwner(kFALSE);
+//   KVList* lsub = new KVList();
+//   lsub->SetOwner(kFALSE);
 
-   KVList* ltel = GetAlignedIDTelescopes();
-   TList* ldet = GetAlignedDetectors();
-   KVNumberList nl;
-   nl.SetMinMax(0, ltel->GetEntries() - 1);
-   for (Int_t ii = 0; ii < ldet->GetEntries(); ii += 1) {
-      KVDetector* det = (KVDetector*)ldet->At(ii);
-      for (Int_t jj = 0; jj < ltel->GetEntries(); jj += 1) {
-         KVIDTelescope* tel = (KVIDTelescope*)ltel->At(jj);
-         if (tel->GetDetector(1) == det || (tel->GetSize() == 2 && tel->GetDetector(2) == det)) {
-            if (nl.Contains(jj)) {
-               lsub->Add(tel);
-               nl.Remove(jj);
-            }
-         }
-      }
-   }
-   return lsub;
+//   KVList* ltel = GetAlignedIDTelescopes();
+//   TList* ldet = GetAlignedDetectors();
+//   KVNumberList nl;
+//   nl.SetMinMax(0, ltel->GetEntries() - 1);
+//   for (Int_t ii = 0; ii < ldet->GetEntries(); ii += 1) {
+//      KVDetector* det = (KVDetector*)ldet->At(ii);
+//      for (Int_t jj = 0; jj < ltel->GetEntries(); jj += 1) {
+//         KVIDTelescope* tel = (KVIDTelescope*)ltel->At(jj);
+//         if (tel->GetDetector(1) == det || (tel->GetSize() == 2 && tel->GetDetector(2) == det)) {
+//            if (nl.Contains(jj)) {
+//               lsub->Add(tel);
+//               nl.Remove(jj);
+//            }
+//         }
+//      }
+//   }
+//   return lsub;
 
-}
+//}
 
-//________________________________________________________________
-void KVFAZIADetector::SortIDTelescopes()
-{
+////________________________________________________________________
+//void KVFAZIADetector::SortIDTelescopes()
+//{
 
-   KVList* lsub = PrepareIDTelescopeList();
-   KVList* ltel = GetAlignedIDTelescopes();
-   Int_t nn = ltel->GetEntries();
-   for (Int_t ii = 0; ii < nn; ii += 1)
-      ltel->RemoveAt(0);
-   for (Int_t ii = 0; ii < nn; ii += 1)
-      ltel->Add(lsub->At(ii));
-   delete lsub;
+//   KVList* lsub = PrepareIDTelescopeList();
+//   KVList* ltel = GetAlignedIDTelescopes();
+//   Int_t nn = ltel->GetEntries();
+//   for (Int_t ii = 0; ii < nn; ii += 1)
+//      ltel->RemoveAt(0);
+//   for (Int_t ii = 0; ii < nn; ii += 1)
+//      ltel->Add(lsub->At(ii));
+//   delete lsub;
 
-}
+//}
 
 //________________________________________________________________
 void KVFAZIADetector::SetCalibrators()

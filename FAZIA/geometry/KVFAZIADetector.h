@@ -90,8 +90,8 @@ public:
 
    static const Char_t* GetNewName(KVString oldname);
 
-   KVList* PrepareIDTelescopeList();
-   void SortIDTelescopes();
+//   KVList* PrepareIDTelescopeList();
+//   void SortIDTelescopes();
 
    virtual Bool_t Fired(Option_t* opt = "any");
    Double_t GetCalibratedEnergy();
