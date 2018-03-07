@@ -108,9 +108,9 @@ public:
       {}
 
 #ifdef WITH_CPP11
-      Iterator(const KVEvent* e, Type t = Type::All, TString grp = "")
+      Iterator(const KVEvent* e, Type t = Type::All, const TString& grp = "")
 #else
-      Iterator(const KVEvent* e, Type t = All, TString grp = "")
+      Iterator(const KVEvent* e, Type t = All, const TString& grp = "")
 #endif
          : fIter(e->fParticles), fType(t), fIterating(kTRUE), fGroup(grp)
       {
@@ -129,9 +129,9 @@ public:
       }
 
 #ifdef WITH_CPP11
-      Iterator(const KVEvent& e, Type t = Type::All, TString grp = "")
+      Iterator(const KVEvent& e, Type t = Type::All, const TString& grp = "")
 #else
-      Iterator(const KVEvent& e, Type t = All, TString grp = "")
+      Iterator(const KVEvent& e, Type t = All, const TString& grp = "")
 #endif
          : fIter(e.fParticles), fType(t), fIterating(kTRUE), fGroup(grp)
       {
@@ -245,6 +245,7 @@ public:
    };
 protected:
    mutable Iterator fIter;//! internal iterator used by GetNextParticle()
+   Iterator GetNextParticleIterator(Option_t* opt) const;
 
 public:
    KVNameValueList* GetParameters() const
@@ -357,9 +358,9 @@ public:
 struct EventIterator {
    KVEvent::Iterator it;
 #ifdef WITH_CPP11
-   EventIterator(KVEvent& event, KVEvent::Iterator::Type t = KVEvent::Iterator::Type::All, TString grp = "")
+   EventIterator(KVEvent& event, KVEvent::Iterator::Type t = KVEvent::Iterator::Type::All, const TString& grp = "")
 #else
-   EventIterator(KVEvent& event, KVEvent::Iterator::Type t = KVEvent::Iterator::All, TString grp = "")
+   EventIterator(KVEvent& event, KVEvent::Iterator::Type t = KVEvent::Iterator::All, const TString& grp = "")
 #endif
       : it(event, t, grp)
    {}
@@ -373,4 +374,23 @@ struct EventIterator {
    }
 };
 
+struct OKEventIterator : public EventIterator {
+   OKEventIterator(KVEvent& event) :
+#ifdef WITH_CPP11
+      EventIterator(event, KVEvent::Iterator::Type::OK)
+#else
+      EventIterator(event, KVEvent::Iterator::OK)
+#endif
+   {}
+};
+
+struct GroupEventIterator : public EventIterator {
+   GroupEventIterator(KVEvent& event, const TString& grp) :
+#ifdef WITH_CPP11
+      EventIterator(event, KVEvent::Iterator::Type::Group, grp)
+#else
+      EventIterator(event, KVEvent::Iterator::Group, grp)
+#endif
+   {}
+};
 #endif

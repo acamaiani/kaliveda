@@ -50,12 +50,7 @@ void iterator_examples()
    }
 
    cout << "Loop over all particles (0-9):" << endl;
-#ifdef WITH_CPP11
-   for (KVEvent::Iterator it = std::begin(Event); it != std::end(Event); ++it)
-#else
-   for (KVEvent::Iterator it = Event.begin(); it != Event.end(); ++it)
-#endif
-   {
+   for (KVEvent::Iterator it = Event.begin(); it != Event.end(); ++it) {
       (*it).Print();
    }
 
@@ -76,22 +71,12 @@ void iterator_examples()
 #endif
 
    cout << "\nLoop over OK particles (1,3,5,7,9):" << endl;
-#ifdef WITH_CPP11
-   for (KVEvent::Iterator it(Event, KVEvent::Iterator::Type::OK); it != KVEvent::Iterator::End(); ++it)
-#else
-   for (KVEvent::Iterator it(Event, KVEvent::Iterator::OK); it != KVEvent::Iterator::End(); ++it)
-#endif
-   {
+   for (KVEvent::Iterator it = OKEventIterator(Event).begin(); it != Event.end(); ++it) {
       (*it).Print();
    }
 
    cout << "\nLoop over GROUP particles (5,6,7,8,9):" << endl;
-#ifdef WITH_CPP11
-   for (KVEvent::Iterator it = KVEvent::Iterator(Event, KVEvent::Iterator::Type::Group, "GROUP"); it != KVEvent::Iterator::End(); ++it)
-#else
-   for (KVEvent::Iterator it = KVEvent::Iterator(Event, KVEvent::Iterator::Group, "GROUP"); it != KVEvent::Iterator::End(); ++it)
-#endif
-   {
+   for (KVEvent::Iterator it = GroupEventIterator(Event, "GROUP").begin(); it != Event.end(); ++it) {
       (*it).Print();
    }
 
@@ -118,7 +103,11 @@ void iterator_examples()
 
 #ifdef WITH_CPP11
    cout << "\nLoop over RANDOM particles [range-based for loop]:" << endl;
-   for (KVNucleus& nuc : EventIterator(Event, KVEvent::Iterator::Type::Group, "RANDOM")) {
+   for (KVNucleus& nuc : GroupEventIterator(Event, "RANDOM")) {
+      nuc.Print();
+   }
+   cout << "\nLoop over OK particles [range-based for loop]:" << endl;
+   for (KVNucleus& nuc : OKEventIterator(Event)) {
       nuc.Print();
    }
 #endif
@@ -126,15 +115,13 @@ void iterator_examples()
    cout << "\nSearch using algorithm std::find:" << endl;
    KVNucleus boron;
    boron.SetZ(5);
+#if !defined(__ROOTCINT__) && !defined(__ROOTCLING__)
    KVEvent::Iterator found = std::find(Event.begin(), Event.end(), boron);
    (*found).Print();
+#endif
 
    cout << "\nFind largest Z in RANDOM group using std::max_element:" << endl;
-#ifdef WITH_CPP11
-   EventIterator it(Event, KVEvent::Iterator::Type::Group, "RANDOM");
-#else
-   EventIterator it(Event, KVEvent::Iterator::Group, "RANDOM");
-#endif
+   GroupEventIterator it(Event, "RANDOM");
    KVEvent::Iterator maxZ = std::max_element(it.begin(), it.end(), compareZ);
    (*maxZ).Print();
 
@@ -156,5 +143,35 @@ void iterator_examples()
       n->Print();
    }
 
+   cout << "\nKVEvent::Print():" << endl;
+   Event.Print();
+   cout << "\nKVEvent::Print(\"ok\"): (1,3,5,7,9)" << endl;
+   Event.Print("ok");
+   cout << "\nKVEvent::Print(\"group\"): (5,6,7,8,9)" << endl;
+   Event.Print("group");
+
+   cout << "\nKVEvent::GetParticle(\"group\"): (5)" << endl;
+   Event.GetParticle("group")->Print();
+
+   cout << "\nKVEvent::GetParticle(\"unknown_group\"): (error)" << endl;
+   KVNucleus* nuc = Event.GetParticle("unknown_group");
+   if (nuc) nuc->Print();
+
+   cout << "\nKVEvent::GetMult(\"ok\"): (5)" << endl;
+   cout << Event.GetMult("ok") << endl;
+   cout << "\nKVEvent::GetMult(\"group\"): (5)" << endl;
+   cout << Event.GetMult("group") << endl;
+
+   cout << "\nKVEvent::GetSum(\"GetZ\"): (45)" << endl;
+   cout << Event.GetSum("GetZ") << endl;
+   cout << "\nKVEvent::GetSum(\"GetZ\",\"group\"): (35)" << endl;
+   cout << Event.GetSum("GetZ", "group") << endl;
+   cout << "\nKVEvent::GetSum(\"GetZ\",\"ok\"): (25)" << endl;
+   cout << Event.GetSum("GetZ", "ok") << endl;
+
+   cout << "\nKVEvent::FillHisto(h,\"GetZ\",\"ok\"):" << endl;
+   TH1F* h = new TH1F("h", "KVEvent::GetZ() for \"ok\" particles", 10, -.5, 9.5);
+   Event.FillHisto(h, "GetZ", "ok");
+   h->Draw();
 }
 
