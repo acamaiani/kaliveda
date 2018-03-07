@@ -266,7 +266,7 @@ public:
    KVNucleus* GetParticle(Int_t npart) const;
    virtual Int_t GetMult(Option_t* opt = "") const;
    Int_t GetMultiplicity(Int_t Z, Int_t A = 0, Option_t* opt = "");
-   void GetMultiplicities(Int_t mult[], const TString& species);
+   void GetMultiplicities(Int_t mult[], const TString& species, Option_t* opt = "");
    Double_t GetSum(const Char_t* KVNucleus_method, Option_t* opt = "");
    Double_t GetSum(const Char_t* KVNucleus_method, const Char_t* method_prototype, const Char_t* args, Option_t* opt = "");
    void FillHisto(TH1* h, const Char_t* KVNucleus_method, Option_t* opt = "");
