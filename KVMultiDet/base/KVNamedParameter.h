@@ -6,6 +6,7 @@
 
 #include "TNamed.h"
 #include "TEnv.h"
+#include "KVString.h"
 
 typedef const char* cstring;
 
@@ -132,6 +133,10 @@ template<> inline bool KVNamedParameter::Get<bool>() const
 {
    return GetBool();
 }
+template<> inline KVString KVNamedParameter::Get<KVString>() const
+{
+   return GetTString();
+}
 template<> inline TString KVNamedParameter::Get<TString>() const
 {
    return GetTString();
@@ -156,7 +161,7 @@ template<> inline bool KVNamedParameter::DefaultValue<bool>()
 {
    return false;
 }
-template<> inline TString KVNamedParameter::DefaultValue<TString>()
+template<> inline KVString KVNamedParameter::DefaultValue<KVString>()
 {
    return "-1";
 }
@@ -182,6 +187,9 @@ template<> struct KVNamedParameter::typecode<std::string> {
    static const int VALUE = KVNamedParameter::kIsString;
 };
 template<> struct KVNamedParameter::typecode<cstring> {
+   static const int VALUE = KVNamedParameter::kIsString;
+};
+template<> struct KVNamedParameter::typecode<KVString> {
    static const int VALUE = KVNamedParameter::kIsString;
 };
 template<> struct KVNamedParameter::typecode<TString> {

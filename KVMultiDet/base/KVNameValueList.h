@@ -254,4 +254,33 @@ public:
    ClassDef(KVNameValueList, 4) //A general-purpose list of parameters
 };
 
+/// KVNameValueList::IncrementValue specializations for strings
+/// strings are added to a comma-separated list: "str1,str2,str3,..."
+template <>
+inline TString KVNameValueList::IncrementValue(const Char_t* name, TString value)
+{
+   KVNamedParameter* par = FindParameter(name);
+   if (!par) fList.Add(par = new KVNamedParameter(name, value));
+   else {
+      TString w = par->Get<TString>() + ",";
+      w += value;
+      par->Set(w);
+   }
+   return par->Get<TString>();
+}
+/// KVNameValueList::IncrementValue specializations for strings
+/// strings are added to a comma-separated list: "str1,str2,str3,..."
+template <>
+inline cstring KVNameValueList::IncrementValue(const Char_t* name, cstring value)
+{
+   return IncrementValue(name, TString(value));
+}
+/// KVNameValueList::IncrementValue specializations for strings
+/// strings are added to a comma-separated list: "str1,str2,str3,..."
+template <>
+inline std::string KVNameValueList::IncrementValue(const Char_t* name, std::string value)
+{
+   return IncrementValue(name, value.c_str());
+}
+
 #endif
