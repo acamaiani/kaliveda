@@ -64,6 +64,7 @@ KVReconstructedNucleus* KVINDRAEtalonGroupReconstructor::ReconstructTrajectory(c
                // gamma
                //Info("ReconstructTrajectory","Gamma in CsI: with_etalon=%d",with_etalon);
                GetEventFragment()->GetParameters()->IncrementValue("INDRA_GAMMA_MULT", 1);
+               GetEventFragment()->GetParameters()->IncrementValue("INDRA_GAMMA_DETS", node->GetName());
                node->GetDetector()->SetAnalysed();
                return nullptr;
             } else { // charged particle identified

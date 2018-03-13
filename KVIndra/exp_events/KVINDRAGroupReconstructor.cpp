@@ -21,6 +21,7 @@ KVReconstructedNucleus* KVINDRAGroupReconstructor::ReconstructTrajectory(const K
 {
    // Specialised event reconstruction for INDRA data
    // Triggered CsI detectors are checked: if it is a gamma, we count it (parameter "INDRA_GAMMA_MULT")
+   // and add the name of the detector to the parameter "INDRA_GAMMA_DETS"
    // but do not reconstruct a particle.
 
    if (node->GetDetector()->IsType("CSI")) {
@@ -33,6 +34,7 @@ KVReconstructedNucleus* KVINDRAGroupReconstructor::ReconstructTrajectory(const K
                idt->Identify(&idr);
                if (idr.IDOK && idr.IDcode == kIDCode0) {
                   GetEventFragment()->GetParameters()->IncrementValue("INDRA_GAMMA_MULT", 1);
+                  GetEventFragment()->GetParameters()->IncrementValue("INDRA_GAMMA_DETS", node->GetName());
                   node->GetDetector()->SetAnalysed();
                   return nullptr;
                }
