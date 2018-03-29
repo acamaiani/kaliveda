@@ -1,0 +1,5 @@
+<map id="KVEventSelector" name="KVEventSelector">
+<area shape="rect" id="node3" href="$classKVEventFiltering.html" title="Filter simulated events with multidetector response. " alt="" coords="5,155,125,181"/>
+<area shape="rect" id="node4" href="$classKVFAZIASelector.html" title="selector to analyze FAZIA reconstructed data " alt="" coords="150,155,277,181"/>
+<area shape="rect" id="node5" href="$classKVINDRAEventSelector.html" title="Base class for analysis of reconstructed INDRA events. " alt="" coords="301,155,467,181"/>
+</map>

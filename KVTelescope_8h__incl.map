@@ -1,0 +1,26 @@
+<map id="kaliveda.doxygen/KVMultiDet/geometry/KVTelescope.h" name="kaliveda.doxygen/KVMultiDet/geometry/KVTelescope.h">
+<area shape="rect" id="node2" href="$KVGroup_8h.html" title="KVGroup.h" alt="" coords="494,95,581,121"/>
+<area shape="rect" id="node3" href="$KVGeoStrucElement_8h.html" title="KVGeoStrucElement.h" alt="" coords="639,169,794,196"/>
+<area shape="rect" id="node22" href="$KVList_8h.html" title="KVList.h" alt="" coords="591,319,663,345"/>
+<area shape="rect" id="node26" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="150,319,290,345"/>
+<area shape="rect" id="node30" href="$KVPosition_8h.html" title="KVPosition.h" alt="" coords="1950,244,2048,271"/>
+<area shape="rect" id="node34" href="$KVDetector_8h.html" title="KVDetector.h" alt="" coords="1346,95,1447,121"/>
+<area shape="rect" id="node24" href="$KVGeoDNTrajectory_8h.html" title="KVGeoDNTrajectory.h" alt="" coords="461,169,614,196"/>
+<area shape="rect" id="node4" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="1122,319,1204,345"/>
+<area shape="rect" id="node16" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="314,319,462,345"/>
+<area shape="rect" id="node10" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="1122,393,1218,420"/>
+<area shape="rect" id="node11" href="$KVString_8h.html" title="KVString.h" alt="" coords="1043,468,1128,495"/>
+<area shape="rect" id="node17" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="240,393,342,420"/>
+<area shape="rect" id="node18" href="$KVSeqCollection_8h.html" title="KVSeqCollection.h" alt="" coords="136,468,268,495"/>
+<area shape="rect" id="node25" href="$KVGeoDetectorNode_8h.html" title="KVGeoDetectorNode.h" alt="" coords="738,244,894,271"/>
+<area shape="rect" id="node28" href="$KVNamedParameter_8h.html" title="KVNamedParameter.h" alt="" coords="418,393,572,420"/>
+<area shape="rect" id="node35" href="$KVMaterial_8h.html" title="KVMaterial.h" alt="" coords="1828,244,1925,271"/>
+<area shape="rect" id="node37" href="$KVNucleus_8h.html" title="KVNucleus.h" alt="" coords="1347,169,1446,196"/>
+<area shape="rect" id="node49" href="$KVACQParam_8h.html" title="KVACQParam.h" alt="" coords="1468,244,1586,271"/>
+<area shape="rect" id="node50" href="$Binary__t_8h.html" title="Binary_t.h" alt="" coords="2370,244,2452,271"/>
+<area shape="rect" id="node38" href="$KVParticle_8h.html" title="KVParticle.h" alt="" coords="1349,244,1444,271"/>
+<area shape="rect" id="node44" href="$KVNumberList_8h.html" title="KVNumberList.h" alt="" coords="796,319,914,345"/>
+<area shape="rect" id="node48" href="$KVParticleCondition_8h.html" title="KVParticleCondition.h" alt="" coords="1072,244,1222,271"/>
+<area shape="rect" id="node42" href="$KVFrameTransform_8h.html" title="KVFrameTransform.h" alt="" coords="1495,319,1642,345"/>
+<area shape="rect" id="node52" href="$Hexa__t_8h.html" title="Hexa_t.h" alt="" coords="2460,319,2535,345"/>
+</map>

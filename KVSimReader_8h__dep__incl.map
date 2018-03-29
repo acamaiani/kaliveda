@@ -1,0 +1,20 @@
+<map id="kaliveda.doxygen/KVMultiDet/simulation/KVSimReader.h" name="kaliveda.doxygen/KVMultiDet/simulation/KVSimReader.h">
+<area shape="rect" id="node2" href="$KVSimDirGUI_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVSimDirGUI.cpp" alt="" coords="5,102,180,143"/>
+<area shape="rect" id="node3" href="$KVSimReader_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader.cpp" alt="" coords="205,102,423,143"/>
+<area shape="rect" id="node4" href="$KVSimReader__ELIE_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_ELIE.h" alt="" coords="448,95,641,151"/>
+<area shape="rect" id="node8" href="$KVSimReader__HIPSE_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_HIPSE.h" alt="" coords="665,95,859,151"/>
+<area shape="rect" id="node12" href="$KVSimReader__MMM_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader_MMM.h" alt="" coords="883,102,1127,143"/>
+<area shape="rect" id="node14" href="$KVSimReader__MMM__asym_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_MMM_asym.h" alt="" coords="1151,95,1344,151"/>
+<area shape="rect" id="node16" href="$KVSimReader__SMF_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader_SMF.h" alt="" coords="1368,102,1607,143"/>
+<area shape="rect" id="node18" href="$KVSimReader__SMF__asym_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_SMF_asym.h" alt="" coords="1631,95,1824,151"/>
+<area shape="rect" id="node5" href="$KVSimReader__ELIE_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_ELIE.cpp" alt="" coords="75,199,268,255"/>
+<area shape="rect" id="node6" href="$KVSimReader__ELIE__asym_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_ELIE_asym.h" alt="" coords="292,199,485,255"/>
+<area shape="rect" id="node7" href="$KVSimReader__ELIE__asym_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_ELIE_asym.cpp" alt="" coords="292,303,485,359"/>
+<area shape="rect" id="node9" href="$KVSimReader__HIPSE_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_HIPSE.cpp" alt="" coords="509,199,703,255"/>
+<area shape="rect" id="node10" href="$KVSimReader__HIPSE__asym_8h.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_HIPSE_asym.h" alt="" coords="727,199,920,255"/>
+<area shape="rect" id="node11" href="$KVSimReader__HIPSE__asym_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_HIPSE_asym.cpp" alt="" coords="727,303,920,359"/>
+<area shape="rect" id="node13" href="$KVSimReader__MMM_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_MMM.cpp" alt="" coords="944,199,1137,255"/>
+<area shape="rect" id="node15" href="$KVSimReader__MMM__asym_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_MMM_asym.cpp" alt="" coords="1161,199,1355,255"/>
+<area shape="rect" id="node17" href="$KVSimReader__SMF_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_SMF.cpp" alt="" coords="1391,199,1584,255"/>
+<area shape="rect" id="node19" href="$KVSimReader__SMF__asym_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/simulation/KVSimReader\l_SMF_asym.cpp" alt="" coords="1631,199,1824,255"/>
+</map>

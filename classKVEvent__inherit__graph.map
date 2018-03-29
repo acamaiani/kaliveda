@@ -1,0 +1,9 @@
+<map id="KVEvent" name="KVEvent">
+<area shape="rect" id="node4" href="$classKVReconstructedEvent.html" title="KVReconstructedEvent" alt="" coords="94,229,253,256"/>
+<area shape="rect" id="node8" href="$classKVSimEvent.html" title="Classe dérivée de KVEvent pour la gestion d&#39;événements issus de simulations. " alt="" coords="277,229,374,256"/>
+<area shape="rect" id="node9" href="$classKVTestEvent.html" title="KVTestEvent" alt="" coords="398,229,498,256"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="290,80,361,107"/>
+<area shape="rect" id="node5" href="$classKVINDRAReconEvent.html" title="KVINDRAReconEvent" alt="" coords="5,304,160,331"/>
+<area shape="rect" id="node7" href="$classKVVAMOSReconEvent.html" title="Event reconstructed from energy losses in VAMOS spectrometer. " alt="" coords="184,304,344,331"/>
+<area shape="rect" id="node6" href="$classKVIVReconEvent.html" title="Event reconstructed from energy losses in INDRA array and VAMOS spectrometer. " alt="" coords="20,379,145,405"/>
+</map>

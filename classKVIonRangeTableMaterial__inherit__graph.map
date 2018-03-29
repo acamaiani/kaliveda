@@ -1,0 +1,5 @@
+<map id="KVIonRangeTableMaterial" name="KVIonRangeTableMaterial">
+<area shape="rect" id="node4" href="$classKVedaLossMaterial.html" title="Description of material properties used by KVedaLoss range calculation. " alt="" coords="5,229,140,256"/>
+<area shape="rect" id="node5" href="$classKVRangeYanezMaterial.html" title="Description of absorber for the Range dE/dx and range library (Ricardo Yanez) " alt="" coords="164,229,325,256"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="123,80,193,107"/>
+</map>

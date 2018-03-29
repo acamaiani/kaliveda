@@ -1,0 +1,19 @@
+<map id="kaliveda.doxygen/VAMOS/minimiser/MinimiserData.h" name="kaliveda.doxygen/VAMOS/minimiser/MinimiserData.h">
+<area shape="rect" id="node2" href="$MinimiserData_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/MinimiserData.cpp" alt="" coords="124,102,319,143"/>
+<area shape="rect" id="node3" href="$MonoMinimiserData_8h.html" title="kaliveda.doxygen/VAMOS\l/minimiser/MonoMinimiserData.h" alt="" coords="343,102,556,143"/>
+<area shape="rect" id="node7" href="$SiliconEnergyMinimiser_8h.html" title="kaliveda.doxygen/VAMOS\l/minimiser/SiliconEnergyMinimiser.h" alt="" coords="477,310,710,351"/>
+<area shape="rect" id="node15" href="$ThreadedMinimiserData_8h.html" title="kaliveda.doxygen/VAMOS\l/minimiser/ThreadedMinimiser\lData.h" alt="" coords="631,95,827,151"/>
+<area shape="rect" id="node4" href="$MonoMinimiserData_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/MonoMinimiserData.cpp" alt="" coords="95,206,321,247"/>
+<area shape="rect" id="node5" href="$MonoMinimiserImpl_8h.html" title="kaliveda.doxygen/VAMOS\l/minimiser/MonoMinimiserImpl.h" alt="" coords="345,206,556,247"/>
+<area shape="rect" id="node6" href="$MonoMinimiserImpl_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/MonoMinimiserImpl.cpp" alt="" coords="228,310,452,351"/>
+<area shape="rect" id="node8" href="$KVIDHarpeeSiCsI__e503_8h.html" title="kaliveda.doxygen/VAMOS\l/identification/KVIDHarpeeSi\lCsI_e503.h" alt="" coords="377,407,567,463"/>
+<area shape="rect" id="node14" href="$SiliconEnergyMinimiser_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/SiliconEnergyMinimiser.cpp" alt="" coords="591,414,838,455"/>
+<area shape="rect" id="node9" href="$KVIVUpDater__e503_8h.html" title="kaliveda.doxygen/VAMOS\l/db/KVIVUpDater_e503.h" alt="" coords="10,518,185,559"/>
+<area shape="rect" id="node11" href="$KVVAMOSDataCorrection__e503_8cpp.html" title="kaliveda.doxygen/VAMOS\l/exp_events/KVVAMOSDataCorrection\l_e503.cpp" alt="" coords="209,511,460,567"/>
+<area shape="rect" id="node12" href="$KVVAMOSReconNuc_8cpp.html" title="kaliveda.doxygen/VAMOS\l/exp_events/KVVAMOSReconNuc.cpp" alt="" coords="484,518,735,559"/>
+<area shape="rect" id="node13" href="$KVIDHarpeeSiCsI__e503_8cpp.html" title="kaliveda.doxygen/VAMOS\l/identification/KVIDHarpeeSi\lCsI_e503.cpp" alt="" coords="759,511,948,567"/>
+<area shape="rect" id="node10" href="$KVIVUpDater__e503_8cpp.html" title="kaliveda.doxygen/VAMOS\l/db/KVIVUpDater_e503.cpp" alt="" coords="5,615,189,656"/>
+<area shape="rect" id="node16" href="$ThreadedMinimiserData_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/ThreadedMinimiser\lData.cpp" alt="" coords="631,199,827,255"/>
+<area shape="rect" id="node17" href="$ThreadedMinimiserImpl_8h.html" title="kaliveda.doxygen/VAMOS\l/minimiser/ThreadedMinimiser\lImpl.h" alt="" coords="851,199,1047,255"/>
+<area shape="rect" id="node18" href="$ThreadedMinimiserImpl_8cpp.html" title="kaliveda.doxygen/VAMOS\l/minimiser/ThreadedMinimiser\lImpl.cpp" alt="" coords="851,303,1047,359"/>
+</map>

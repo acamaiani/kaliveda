@@ -1,0 +1,24 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classKVIDentifier.html" title="Base class for graphical cuts used in particle identification. " alt="" coords="115,183,208,209"/>
+<area shape="rect" id="node13" href="$classKVIDGraph.html" title="Base class for particle identification in a 2D map. " alt="" coords="117,259,206,285"/>
+<area shape="rect" id="node3" href="$classKVIDContour.html" title="Basic graphical contour class for use in particle identification. " alt="" coords="256,81,356,108"/>
+<area shape="rect" id="node7" href="$classKVIDLine.html" title="KVIDLine" alt="" coords="267,183,345,209"/>
+<area shape="rect" id="node4" href="$classKVIDCutContour.html" title="Graphical contour for excluding/including regions in particle identification maps. " alt="" coords="408,5,529,32"/>
+<area shape="rect" id="node5" href="$classKVIDZAContour.html" title="Graphical contour associated with a given nucleus for use in particle identification. " alt="" coords="410,56,527,83"/>
+<area shape="rect" id="node6" href="$classKVIDZoneContour.html" title="Graphical contour for including regions with mass identification in PSA(Imax) maps. " alt="" coords="404,107,533,133"/>
+<area shape="rect" id="node8" href="$classKVIDCutLine.html" title="Line in ID grid used to delimit regions where no identification is possible. " alt="" coords="419,157,518,184"/>
+<area shape="rect" id="node9" href="$classKVIDZALine.html" title="KVIDZALine" alt="" coords="421,208,516,235"/>
+<area shape="rect" id="node10" href="$classKVIDCsIRLLine.html" title="KVIDCsIRLLine" alt="" coords="590,132,706,159"/>
+<area shape="rect" id="node11" href="$classKVIDQALine.html" title="Base class for identification ridge lines and spots corresponding to different charge states and mass..." alt="" coords="599,183,697,209"/>
+<area shape="rect" id="node12" href="$classKVIDZLine.html" title="KVIDZLine" alt="" coords="605,233,691,260"/>
+<area shape="rect" id="node14" href="$classKVIDGrid.html" title="KVIDGrid" alt="" coords="267,259,345,285"/>
+<area shape="rect" id="node23" href="$classKVIDMap.html" title="Collection of graphical contours used for particle identification. " alt="" coords="267,309,345,336"/>
+<area shape="rect" id="node15" href="$classKVIDQAGrid.html" title="Base class for 2D Q &amp; A identification grids. " alt="" coords="420,259,517,285"/>
+<area shape="rect" id="node16" href="$classKVIDZAGrid.html" title="Identification grid with lines corresponding to different nuclear isotopes (KVIDZALine) ..." alt="" coords="421,360,516,387"/>
+<area shape="rect" id="node17" href="$classKVIDGChIoSi.html" title="KVIDGChIoSi" alt="" coords="596,284,700,311"/>
+<area shape="rect" id="node19" href="$classKVIDGCsI.html" title="KVIDGCsI" alt="" coords="605,335,691,361"/>
+<area shape="rect" id="node20" href="$classKVIDZAFromZGrid.html" title="Hybrid identification grid. " alt="" coords="581,385,715,412"/>
+<area shape="rect" id="node21" href="$classKVIDZGrid.html" title="KVIDZGrid" alt="" coords="605,436,691,463"/>
+<area shape="rect" id="node22" href="$classKVTGIDGrid.html" title="Grid representing result of fit. " alt="" coords="600,487,696,513"/>
+<area shape="rect" id="node18" href="$classKVIDGChIoSi__e494s.html" title="Specific identification grid for e494s. " alt="" coords="763,284,909,311"/>
+</map>

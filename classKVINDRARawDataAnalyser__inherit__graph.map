@@ -1,0 +1,9 @@
+<map id="KVINDRARawDataAnalyser" name="KVINDRARawDataAnalyser">
+<area shape="rect" id="node6" href="$classKVINDRAOnlineDataAnalyser.html" title="For on&#45;line analysis of INDRA data. " alt="" coords="5,379,204,405"/>
+<area shape="rect" id="node7" href="$classKVINDRARawDataReconstructor.html" title="Reconstruction of events from raw data acquisition files. " alt="" coords="228,379,448,405"/>
+<area shape="rect" id="node9" href="$classKVIVRawDataAnalyser.html" title="Analysis of raw INDRA&#45;VAMOS data. " alt="" coords="472,379,631,405"/>
+<area shape="rect" id="node2" href="$classKVRawDataAnalyser.html" title="Abstract base class for user analysis of raw data. " alt="" coords="265,229,411,256"/>
+<area shape="rect" id="node3" href="$classKVDataSetAnalyser.html" title="Analysis of data in datasets. " alt="" coords="269,155,407,181"/>
+<area shape="rect" id="node4" href="$classKVDataAnalyser.html" title="Set up and run data analysis tasks. " alt="" coords="279,80,397,107"/>
+<area shape="rect" id="node8" href="$classKVIVRawDataReconstructor.html" title="Reconstructs raw data from INDRA&#45;VAMOS experiments. " alt="" coords="243,453,433,480"/>
+</map>

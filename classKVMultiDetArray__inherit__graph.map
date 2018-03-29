@@ -1,0 +1,20 @@
+<map id="KVMultiDetArray" name="KVMultiDetArray">
+<area shape="rect" id="node5" href="$classKVASMultiDetArray.html" title="Axially&#45;Symmetric multidetector array base class. " alt="" coords="603,56,741,83"/>
+<area shape="rect" id="node8" href="$classKVExpSetUp.html" title="Describe an experimental set&#45;up made of several KVMultiDetArray objects. " alt="" coords="622,157,722,184"/>
+<area shape="rect" id="node9" href="$classKVFAZIA.html" title="Base class for description of the FAZIA set up. " alt="" coords="633,208,711,235"/>
+<area shape="rect" id="node18" href="$classKVFocalPlanVamos.html" title="Si and CsI of vamos at FP. " alt="" coords="603,259,741,285"/>
+<area shape="rect" id="node19" href="$classKVINDRA__VAMOS.html" title="KVINDRA_VAMOS" alt="" coords="603,309,741,336"/>
+<area shape="rect" id="node20" href="$classKVVAMOS.html" title="KVVAMOS" alt="" coords="628,360,716,387"/>
+<area shape="rect" id="node2" href="$classKVGeoStrucElement.html" title="A multidetector array geometry structural element. " alt="" coords="244,233,387,260"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="125,233,196,260"/>
+<area shape="rect" id="node6" href="$classKVINDRA.html" title="INDRA multidetector array, 1st campaign configuration. " alt="" coords="814,5,897,32"/>
+<area shape="rect" id="node7" href="$classKVINDRAe503.html" title="INDRA multidetector array, configuration for experiments E503 &amp; E494S. " alt="" coords="969,5,1080,32"/>
+<area shape="rect" id="node10" href="$classKVFAZIA__2B.html" title="FAZIA set&#45;up with two blocks used in LNS 2014 commissioning. " alt="" coords="805,56,906,83"/>
+<area shape="rect" id="node11" href="$classKVFAZIACOR.html" title="Description of the FAZIA set up. " alt="" coords="801,107,909,133"/>
+<area shape="rect" id="node12" href="$classKVFAZIALNS17.html" title="Description of the FAZIA set up. " alt="" coords="796,157,915,184"/>
+<area shape="rect" id="node13" href="$classKVFAZIALNS2016.html" title="Description of the FAZIA set up. " alt="" coords="789,208,921,235"/>
+<area shape="rect" id="node14" href="$classKVFAZIANFS.html" title="configuration of FAZIA telescopes for NFS experiments " alt="" coords="803,259,908,285"/>
+<area shape="rect" id="node15" href="$classKVFAZIASYM.html" title="Description of the FAZIA set up. " alt="" coords="802,309,909,336"/>
+<area shape="rect" id="node16" href="$classKVFAZIETO.html" title="description of the FAZIA&#45;12B demonstrator " alt="" coords="807,360,903,387"/>
+<area shape="rect" id="node17" href="$classKVISOFAZIA.html" title="FAZIA set&#45;up for ISOFAZIA experiment June 2015 &#45; 4 blocks. " alt="" coords="805,411,906,437"/>
+</map>

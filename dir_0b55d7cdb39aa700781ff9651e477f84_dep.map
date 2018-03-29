@@ -1,0 +1,28 @@
+<map id="kaliveda.doxygen/KVIndra/analysis" name="kaliveda.doxygen/KVIndra/analysis">
+<area shape="rect" id="node1" href="dir_0b55d7cdb39aa700781ff9651e477f84.html" title="analysis" alt="" coords="219,52,291,100"/>
+<area shape="rect" id="node2" href="dir_58a98854bcdbb6f7f45eae3134007f77.html" title="identification" alt="" coords="94,340,189,388"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000013_000020.html" title="1" alt="" coords="141,314,149,328"/>
+<area shape="rect" id="node3" href="dir_a29cfbe3105b7b5a8e4b93d9f291f125.html" title="db" alt="" coords="177,148,249,196"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000013_000016.html" title="13" alt="" coords="231,127,246,142"/>
+<area shape="rect" id="node4" href="dir_74c7b176af7644ee55a1ecb9dd61ada5.html" title="KVMultiDet" alt="" coords="141,532,230,580"/>
+<area shape="rect" id="edge15-headlabel" href="dir_000013_000021.html" title="73" alt="" coords="122,509,136,523"/>
+<area shape="rect" id="node5" href="dir_334c0f58892d64c45beb27e5460bacfa.html" title="daq_cec" alt="" coords="416,340,488,388"/>
+<area shape="rect" id="edge16-headlabel" href="dir_000013_000015.html" title="1" alt="" coords="456,314,464,329"/>
+<area shape="rect" id="node6" href="dir_d43f7febdb56b4af8dfdebece50c3e75.html" title="geometry" alt="" coords="189,436,265,484"/>
+<area shape="rect" id="edge17-headlabel" href="dir_000013_000018.html" title="4" alt="" coords="267,422,275,436"/>
+<area shape="rect" id="node7" href="dir_c440a21e3fba0c53aa1c934bc5d7d60c.html" title="exp_events" alt="" coords="251,244,341,292"/>
+<area shape="rect" id="edge18-headlabel" href="dir_000013_000017.html" title="17" alt="" coords="288,217,303,232"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000020_000021.html" title="59" alt="" coords="177,505,191,520"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000020_000018.html" title="28" alt="" coords="192,409,207,424"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000016_000020.html" title="1" alt="" coords="160,318,168,333"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000016_000021.html" title="69" alt="" coords="147,505,161,520"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000016_000018.html" title="8" alt="" coords="229,410,237,425"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000016_000017.html" title="11" alt="" coords="263,217,277,232"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000015_000021.html" title="3" alt="" coords="246,535,254,550"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000018_000021.html" title="43" alt="" coords="203,511,218,526"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000017_000020.html" title="12" alt="" coords="192,330,207,345"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000017_000021.html" title="51" alt="" coords="240,521,255,536"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000017_000015.html" title="1" alt="" coords="401,317,409,332"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000017_000018.html" title="16" alt="" coords="242,414,257,429"/>
+<area shape="rect" id="clust1" href="dir_1c6d1a6aa40091ee37c82f8d5661d54e.html" title="KVIndra" alt="" coords="208,16,301,111"/>
+</map>

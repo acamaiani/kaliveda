@@ -1,0 +1,31 @@
+<map id="kaliveda.doxygen/KVMultiDet/gui/KVIDGridEditor.cpp" name="kaliveda.doxygen/KVMultiDet/gui/KVIDGridEditor.cpp">
+<area shape="rect" id="node2" href="$KVIDGridEditor_8h.html" title="KVIDGridEditor.h" alt="" coords="1503,95,1625,121"/>
+<area shape="rect" id="node49" href="$KVSpIdGUI_8h.html" title="KVSpIdGUI.h" alt="" coords="2934,169,3037,196"/>
+<area shape="rect" id="node59" href="$KVZAFinderDialog_8h.html" title="KVZAFinderDialog.h" alt="" coords="3237,169,3379,196"/>
+<area shape="rect" id="node60" href="$KVTreeAnalyzer_8h.html" title="KVTreeAnalyzer.h" alt="" coords="6240,169,6368,196"/>
+<area shape="rect" id="node95" href="$KVHistogram_8h.html" title="KVHistogram.h" alt="" coords="383,244,494,271"/>
+<area shape="rect" id="node96" href="$KVTestIDGridDialog_8h.html" title="KVTestIDGridDialog.h" alt="" coords="3061,169,3213,196"/>
+<area shape="rect" id="node97" href="$KVItvFinderDialog_8h.html" title="KVItvFinderDialog.h" alt="" coords="3713,169,3852,196"/>
+<area shape="rect" id="node18" href="$KVIDGridEditorCanvas_8h.html" title="KVIDGridEditorCanvas.h" alt="" coords="2545,169,2713,196"/>
+<area shape="rect" id="node21" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="130,319,211,345"/>
+<area shape="rect" id="node29" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="741,393,843,420"/>
+<area shape="rect" id="node30" href="$KVIDGraph_8h.html" title="KVIDGraph.h" alt="" coords="2002,244,2102,271"/>
+<area shape="rect" id="node33" href="$KVIDentifier_8h.html" title="KVIDentifier.h" alt="" coords="1175,319,1279,345"/>
+<area shape="rect" id="node35" href="$KVIDGridManager_8h.html" title="KVIDGridManager.h" alt="" coords="1241,169,1380,196"/>
+<area shape="rect" id="node37" href="$KVIDZALine_8h.html" title="KVIDZALine.h" alt="" coords="1593,244,1700,271"/>
+<area shape="rect" id="node38" href="$KVIDZAGrid_8h.html" title="KVIDZAGrid.h" alt="" coords="1971,319,2077,345"/>
+<area shape="rect" id="node39" href="$KVDropDownDialog_8h.html" title="KVDropDownDialog.h" alt="" coords="925,169,1075,196"/>
+<area shape="rect" id="node40" href="$KVVirtualIDFitter_8h.html" title="KVVirtualIDFitter.h" alt="" coords="158,169,290,196"/>
+<area shape="rect" id="node41" href="$KVInputDialog_8h.html" title="KVInputDialog.h" alt="" coords="1100,169,1217,196"/>
+<area shape="rect" id="node42" href="$KVHistoManipulator_8h.html" title="KVHistoManipulator.h" alt="" coords="4365,319,4515,345"/>
+<area shape="rect" id="node44" href="$KVSpiderIdentificator_8h.html" title="KVSpiderIdentificator.h" alt="" coords="925,244,1081,271"/>
+<area shape="rect" id="node45" href="$KVZALineFinder_8h.html" title="KVZALineFinder.h" alt="" coords="620,244,748,271"/>
+<area shape="rect" id="node19" href="$KVCanvas_8h.html" title="KVCanvas.h" alt="" coords="2329,244,2425,271"/>
+<area shape="rect" id="node27" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="5,393,101,420"/>
+<area shape="rect" id="node32" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="389,319,529,345"/>
+<area shape="rect" id="node36" href="$KVList_8h.html" title="KVList.h" alt="" coords="4147,393,4219,420"/>
+<area shape="rect" id="node89" href="$KVListView_8h.html" title="KVListView.h" alt="" coords="4861,244,4963,271"/>
+<area shape="rect" id="node92" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="4142,319,4290,345"/>
+<area shape="rect" id="node94" href="$KVImpactParameter_8h.html" title="KVImpactParameter.h" alt="" coords="7699,244,7850,271"/>
+<area shape="rect" id="node100" href="$KVIDZAFromZGrid_8h.html" title="KVIDZAFromZGrid.h" alt="" coords="4320,244,4464,271"/>
+</map>

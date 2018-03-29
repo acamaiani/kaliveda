@@ -1,0 +1,32 @@
+<map id="kaliveda.doxygen/KVIndra/geometry/KVChIo.h" name="kaliveda.doxygen/KVIndra/geometry/KVChIo.h">
+<area shape="rect" id="node2" href="$KVINDRADstToRootTransfert_8cpp.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRADstToRootTransfert.cpp" alt="" coords="5,95,285,136"/>
+<area shape="rect" id="node3" href="$KVINDRADB_8cpp.html" title="kaliveda.doxygen/KVIndra\l/db/KVINDRADB.cpp" alt="" coords="310,95,485,136"/>
+<area shape="rect" id="node4" href="$KVINDRAUpDater_8cpp.html" title="kaliveda.doxygen/KVIndra\l/db/KVINDRAUpDater.cpp" alt="" coords="509,95,688,136"/>
+<area shape="rect" id="node5" href="$KVINDRA_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRA.cpp" alt="" coords="263,191,446,233"/>
+<area shape="rect" id="node6" href="$KVINDRAReconEvent_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRAReconEvent.cpp" alt="" coords="1033,95,1287,136"/>
+<area shape="rect" id="node7" href="$KVINDRAReconNuc_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRAReconNuc.cpp" alt="" coords="1312,95,1557,136"/>
+<area shape="rect" id="node8" href="$KVBIC_8h.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVBIC.h" alt="" coords="1582,95,1757,136"/>
+<area shape="rect" id="node13" href="$KVChannelEnergyChIo_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVChannelEnergyChIo.cpp" alt="" coords="1781,95,2025,136"/>
+<area shape="rect" id="node14" href="$KVChIo_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVChIo.cpp" alt="" coords="2049,95,2223,136"/>
+<area shape="rect" id="node15" href="$KVChIo__e475s_8h.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVChIo_e475s.h" alt="" coords="2247,95,2430,136"/>
+<area shape="rect" id="node19" href="$KVCsI_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVCsI.cpp" alt="" coords="2454,95,2629,136"/>
+<area shape="rect" id="node20" href="$KVIDChIoCorrCsI_8h.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCorrCsI.h" alt="" coords="470,191,690,233"/>
+<area shape="rect" id="node24" href="$KVIDChIoCsI_8h.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI.h" alt="" coords="813,95,1008,136"/>
+<area shape="rect" id="node30" href="$KVIDGChIoSi_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDGChIoSi.cpp" alt="" coords="2653,95,2864,136"/>
+<area shape="rect" id="node31" href="$KVFocalPlanVamos_8cpp.html" title="kaliveda.doxygen/VAMOS\l/geometry/KVFocalPlanVamos.cpp" alt="" coords="2888,95,3115,136"/>
+<area shape="rect" id="node9" href="$KVINDRAFNL_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRAFNL.cpp" alt="" coords="1364,191,1572,233"/>
+<area shape="rect" id="node10" href="$KVBIC_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVBIC.cpp" alt="" coords="1597,191,1771,233"/>
+<area shape="rect" id="node11" href="$KVSiB_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVSiB.cpp" alt="" coords="1795,191,1970,233"/>
+<area shape="rect" id="node12" href="$KVTelBlocking_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVTelBlocking.cpp" alt="" coords="1995,191,2189,233"/>
+<area shape="rect" id="node16" href="$KVINDRAUpDater__e475s_8cpp.html" title="kaliveda.doxygen/KVIndra\l/db/KVINDRAUpDater_e475s.cpp" alt="" coords="2213,191,2435,233"/>
+<area shape="rect" id="node17" href="$KVChIo__e475s_8cpp.html" title="kaliveda.doxygen/KVIndra\l/geometry/KVChIo_e475s.cpp" alt="" coords="2459,191,2656,233"/>
+<area shape="rect" id="node18" href="$KVIDCsI__e475s_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDCsI\l_e475s.cpp" alt="" coords="2681,184,2855,240"/>
+<area shape="rect" id="node21" href="$KVIDChIoCorrCsI_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCorrCsI.cpp" alt="" coords="340,295,575,337"/>
+<area shape="rect" id="node22" href="$KVIDChIoCorrCsI__e494s_8h.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCorrCs\lI_e494s.h" alt="" coords="599,288,804,344"/>
+<area shape="rect" id="node23" href="$KVIDChIoCorrCsI__e494s_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCorrCs\lI_e494s.cpp" alt="" coords="599,392,804,448"/>
+<area shape="rect" id="node25" href="$KVIDChIoCsI_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI.cpp" alt="" coords="714,191,923,233"/>
+<area shape="rect" id="node26" href="$KVIDChIoCsI__camp5_8h.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI\l_camp5.h" alt="" coords="948,184,1132,240"/>
+<area shape="rect" id="node28" href="$KVIDChIoCsI__e475s_8h.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI\l_e475s.h" alt="" coords="1156,184,1340,240"/>
+<area shape="rect" id="node27" href="$KVIDChIoCsI__camp5_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI\l_camp5.cpp" alt="" coords="948,288,1132,344"/>
+<area shape="rect" id="node29" href="$KVIDChIoCsI__e475s_8cpp.html" title="kaliveda.doxygen/KVIndra\l/identification/KVIDChIoCsI\l_e475s.cpp" alt="" coords="1156,288,1340,344"/>
+</map>

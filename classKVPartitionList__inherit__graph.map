@@ -1,0 +1,6 @@
+<map id="KVPartitionList" name="KVPartitionList">
+<area shape="rect" id="node6" href="$classKVBreakUp.html" title="Permet de casser aleatoirement un nombre entier (ztot) en un nombre (mtot) d&#39;entiers plus petits d&#39;un..." alt="" coords="29,379,119,405"/>
+<area shape="rect" id="node2" href="$classKVUniqueNameList.html" title="Optimised list in which objects can only be placed once. " alt="" coords="5,229,143,256"/>
+<area shape="rect" id="node3" href="$classKVHashList.html" title="Extended version of ROOT THashList. " alt="" coords="28,155,120,181"/>
+<area shape="rect" id="node4" href="$classKVSeqCollection.html" title="KaliVeda extensions to ROOT collections. " alt="" coords="13,80,135,107"/>
+</map>

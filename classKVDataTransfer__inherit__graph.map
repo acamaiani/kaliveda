@@ -1,0 +1,6 @@
+<map id="KVDataTransfer" name="KVDataTransfer">
+<area shape="rect" id="node5" href="$classKVDataTransferSFTP.html" title="KVDataTransferSFTP" alt="" coords="5,304,156,331"/>
+<area shape="rect" id="node6" href="$classKVDataTransferXRD.html" title="Transfer data from remote repository using xrootd. " alt="" coords="180,304,325,331"/>
+<area shape="rect" id="node2" href="$classKVDataSetAnalyser.html" title="Analysis of data in datasets. " alt="" coords="97,155,235,181"/>
+<area shape="rect" id="node3" href="$classKVDataAnalyser.html" title="Set up and run data analysis tasks. " alt="" coords="107,80,225,107"/>
+</map>

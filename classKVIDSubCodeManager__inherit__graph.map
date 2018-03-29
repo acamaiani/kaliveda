@@ -1,0 +1,40 @@
+<map id="KVIDSubCodeManager" name="KVIDSubCodeManager">
+<area shape="rect" id="node2" href="$classKVINDRAIDTelescope.html" title="KVINDRAIDTelescope" alt="" coords="212,563,369,589"/>
+<area shape="rect" id="node3" href="$classKVIDChIoCsI.html" title="KVIDChIoCsI" alt="" coords="447,81,550,108"/>
+<area shape="rect" id="node8" href="$classKVIDChIoSi.html" title="KVIDChIoSi" alt="" coords="451,335,546,361"/>
+<area shape="rect" id="node18" href="$classKVIDINDRACsI.html" title="KVIDINDRACsI" alt="" coords="439,512,558,539"/>
+<area shape="rect" id="node20" href="$classKVIDPhoswich.html" title="KVIDPhoswich" alt="" coords="443,563,554,589"/>
+<area shape="rect" id="node21" href="$classKVIDSi75SiLi.html" title="KVIDSi75SiLi" alt="" coords="447,613,550,640"/>
+<area shape="rect" id="node24" href="$classKVIDSiCsI.html" title="KVIDSiCsI" alt="" coords="455,791,542,817"/>
+<area shape="rect" id="node34" href="$classKVVAMOSIDTelescope.html" title="A deltaE&#45;E identification telescope in VAMOS. " alt="" coords="417,1044,580,1071"/>
+<area shape="rect" id="node4" href="$classKVIDChIoCorrCsI.html" title="KVIDChIoCorrCsI" alt="" coords="641,5,769,32"/>
+<area shape="rect" id="node6" href="$classKVIDChIoCsI__camp5.html" title="ChIo&#45;CsI id with grids for INDRA_camp5. " alt="" coords="631,56,780,83"/>
+<area shape="rect" id="node7" href="$classKVIDChIoCsI__e475s.html" title="derivation of KVIDChIoCsI class for E475s experiment " alt="" coords="633,107,778,133"/>
+<area shape="rect" id="node5" href="$classKVIDChIoCorrCsI__e494s.html" title="KVIDChIoCorrCsI_e494s" alt="" coords="831,5,1001,32"/>
+<area shape="rect" id="node9" href="$classKVIDBlocking.html" title="KVIDBlocking" alt="" coords="653,157,757,184"/>
+<area shape="rect" id="node10" href="$classKVIDChIoSi5.html" title="INDRA 5th campaign ChIo&#45;Si identification. " alt="" coords="655,208,756,235"/>
+<area shape="rect" id="node11" href="$classKVIDChIoSi75.html" title="KVIDChIoSi75" alt="" coords="651,259,759,285"/>
+<area shape="rect" id="node14" href="$classKVIDChIoSi__e475s.html" title="derivation of KVIDChIoSi class for E475s experiment " alt="" coords="637,309,773,336"/>
+<area shape="rect" id="node15" href="$classKVIDChIoSi__e613.html" title="modification of the sequence of identification for e613 " alt="" coords="641,360,770,387"/>
+<area shape="rect" id="node16" href="$classKVIDChIoSiCorr.html" title="INDRA E503/E494s ChIo&#45;Si identification. " alt="" coords="646,411,765,437"/>
+<area shape="rect" id="node17" href="$classKVIDChIoSiLi.html" title="Identification in ChIo&#45;SiLi matrices of INDRA. " alt="" coords="653,461,757,488"/>
+<area shape="rect" id="node12" href="$classKVIDChIoSi75__camp5.html" title="ChIo&#45;Si(75) identification for INDRA 5th campaign data. " alt="" coords="839,233,993,260"/>
+<area shape="rect" id="node13" href="$classKVIDChIoSi75__e494s.html" title="E503/E494S experiment INDRA identification using ChIo&#45;Si75 matrices. " alt="" coords="841,284,991,311"/>
+<area shape="rect" id="node19" href="$classKVIDCsI__e475s.html" title="derivation of KVIDCsI class for E475s experiment " alt="" coords="647,512,764,539"/>
+<area shape="rect" id="node22" href="$classKVIDSi75SiLi__camp5.html" title="Identification in Si75&#45;SiLi telescopes for INDRA_camp5 dataset. " alt="" coords="631,563,779,589"/>
+<area shape="rect" id="node23" href="$classKVIDSi75SiLi__e494s.html" title="E503/E494S experiment INDRA identification using Si75&#45;SiLi matrices. " alt="" coords="633,613,777,640"/>
+<area shape="rect" id="node25" href="$classKVIDSi150CsI__camp5.html" title="Si(150)&#45;CsI identifications for 5th campaign INDRA data. " alt="" coords="628,664,783,691"/>
+<area shape="rect" id="node26" href="$classKVIDSiCorrCsI.html" title="KVIDSiCorrCsI" alt="" coords="649,715,761,741"/>
+<area shape="rect" id="node27" href="$classKVIDSiCsI5.html" title="KVIDSiCsI5" alt="" coords="658,765,753,792"/>
+<area shape="rect" id="node28" href="$classKVIDSiCsI__e475s.html" title="derivation of KVIDSiCsI class for E475s experiment " alt="" coords="641,816,770,843"/>
+<area shape="rect" id="node29" href="$classKVIDSiCsI__e613.html" title="Si&#45;CsI id with grids for INDRA_e613. " alt="" coords="644,867,767,893"/>
+<area shape="rect" id="node30" href="$classKVIDSiCsIVamos.html" title="KVIDSiCsIVamos" alt="" coords="641,917,769,944"/>
+<area shape="rect" id="node31" href="$classKVIDSiLiCsI.html" title="KVIDSiLiCsI" alt="" coords="657,968,754,995"/>
+<area shape="rect" id="node32" href="$classKVIDSiLiCsI__camp5.html" title="SiLi&#45;CsI identification for INDRA_camp5 dataset. " alt="" coords="845,917,987,944"/>
+<area shape="rect" id="node33" href="$classKVIDSiLiCsI__e494s.html" title="E503/E494S experiment INDRA identification using SiLi&#45;CsI matrices. " alt="" coords="847,968,985,995"/>
+<area shape="rect" id="node35" href="$classKVIDHarpeeICSi.html" title="DeltaE&#45;E identification telescope in VAMOS with Harpee&#39;s IC&#45;Si detectors. " alt="" coords="644,1019,767,1045"/>
+<area shape="rect" id="node37" href="$classKVIDHarpeeSiCsI.html" title="DeltaE&#45;E identification telescope in VAMOS with Harpee&#39;s Si&#45;CsI detectors. " alt="" coords="641,1069,770,1096"/>
+<area shape="rect" id="node39" href="$classKVIDQA.html" title="ID telescope used to identify Q and A with VAMOS. " alt="" coords="669,1120,742,1147"/>
+<area shape="rect" id="node36" href="$classKVIDHarpeeICSi__e503.html" title="DeltaE&#45;E identification with Harpee&#39;s IC&#45;Si detectors for e503. " alt="" coords="837,1019,995,1045"/>
+<area shape="rect" id="node38" href="$classKVIDHarpeeSiCsI__e503.html" title="KVIDHarpeeSiCsI_e503" alt="" coords="834,1069,998,1096"/>
+</map>

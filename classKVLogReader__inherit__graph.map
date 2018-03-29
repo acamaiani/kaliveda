@@ -1,0 +1,4 @@
+<map id="KVLogReader" name="KVLogReader">
+<area shape="rect" id="node2" href="$classKVBQSLogReader.html" title="Read BQS log files. " alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$classKVGELogReader.html" title="Read GE (Grid Engine) log files. " alt="" coords="160,80,283,107"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="KVNuclData" name="KVNuclData">
+<area shape="rect" id="node3" href="$classKVAbundance.html" title="Value of the relative abundance. " alt="" coords="5,155,111,181"/>
+<area shape="rect" id="node4" href="$classKVChargeRadius.html" title="//Simple class for store charge radius information of nucleus " alt="" coords="135,155,258,181"/>
+<area shape="rect" id="node5" href="$classKVElementDensity.html" title="Atomic element with name, symbol and density. " alt="" coords="282,155,415,181"/>
+<area shape="rect" id="node6" href="$classKVLifeTime.html" title="Simple class for store life time information of nucleus. " alt="" coords="439,155,530,181"/>
+<area shape="rect" id="node7" href="$classKVMassExcess.html" title="Simple class for store life time information of nucleus. " alt="" coords="555,155,671,181"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="KVSimReader_HIPSE" name="KVSimReader_HIPSE">
+<area shape="rect" id="node6" href="$classKVSimReader__HIPSE__asym.html" title="Read ascii file for asymptotic events of the HIPSE code after SIMON deexcitation. ..." alt="" coords="5,379,197,405"/>
+<area shape="rect" id="node2" href="$classKVSimReader.html" title="Base class to read output files for simulation and create tree using KVSimEvent class. " alt="" coords="49,229,154,256"/>
+<area shape="rect" id="node3" href="$classKVFileReader.html" title="Manage the reading of file. " alt="" coords="50,155,153,181"/>
+<area shape="rect" id="node4" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="66,80,137,107"/>
+</map>

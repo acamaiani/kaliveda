@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classKVSeqCollection.html" title="KaliVeda extensions to ROOT collections. " alt="" coords="164,83,285,109"/>
+<area shape="rect" id="node3" href="$classKVHashList.html" title="Extended version of ROOT THashList. " alt="" coords="333,44,425,71"/>
+<area shape="rect" id="node8" href="$classKVList.html" title="Extended TList class which owns its objects by default. " alt="" coords="349,120,410,147"/>
+<area shape="rect" id="node4" href="$classKVUniqueNameList.html" title="Optimised list in which objects can only be placed once. " alt="" coords="473,31,611,57"/>
+<area shape="rect" id="node5" href="$classKVGVList.html" title="List of global variables. " alt="" coords="673,5,753,32"/>
+<area shape="rect" id="node6" href="$classKVPartitionList.html" title="Gestion d&#39;une liste de partition (objet de la classe KVIntegerList ou derivee) " alt="" coords="659,56,768,83"/>
+<area shape="rect" id="node7" href="$classKVBreakUp.html" title="Permet de casser aleatoirement un nombre entier (ztot) en un nombre (mtot) d&#39;entiers plus petits d&#39;un..." alt="" coords="816,56,907,83"/>
+<area shape="rect" id="node9" href="$classKVCutList.html" title="KVCutList" alt="" coords="501,81,583,108"/>
+<area shape="rect" id="node10" href="$classKVNDTManager.html" title="Allow to navigate between different tables of nuclear data. " alt="" coords="483,132,601,159"/>
+<area shape="rect" id="node11" href="$classKVWidgetList.html" title="KVWidgetList" alt="" coords="491,183,593,209"/>
+</map>

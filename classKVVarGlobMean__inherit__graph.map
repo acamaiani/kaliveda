@@ -1,0 +1,9 @@
+<map id="KVVarGlobMean" name="KVVarGlobMean">
+<area shape="rect" id="node6" href="$classKVRelativeVelocity.html" title="calculate for a given group of particles the mean relative velocity " alt="" coords="5,379,140,405"/>
+<area shape="rect" id="node7" href="$classKVVGSum.html" title="KVVGSum" alt="" coords="164,379,251,405"/>
+<area shape="rect" id="node8" href="$classKVZBoundMean.html" title="Global variable returning the mean value and the standard deviation of the charge. " alt="" coords="275,379,393,405"/>
+<area shape="rect" id="node9" href="$classKVZmean.html" title="KVZmean" alt="" coords="417,379,497,405"/>
+<area shape="rect" id="node2" href="$classKVVarGlob1.html" title="KVVarGlob1" alt="" coords="223,229,317,256"/>
+<area shape="rect" id="node3" href="$classKVVarGlob.html" title="Base class for global variables. " alt="" coords="227,155,313,181"/>
+<area shape="rect" id="node4" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="235,80,305,107"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KVCaloBase" name="KVCaloBase">
+<area shape="rect" id="node5" href="$classKVCalorimetry.html" title="Bilan énergétique d un ensemble de noyaux. " alt="" coords="5,304,112,331"/>
+<area shape="rect" id="node2" href="$classKVVarGlob.html" title="Base class for global variables. " alt="" coords="15,155,102,181"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="23,80,94,107"/>
+</map>

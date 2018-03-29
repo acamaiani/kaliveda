@@ -1,0 +1,20 @@
+<map id="kaliveda.doxygen/FAZIA/geometry/KVFAZIADetector.h" name="kaliveda.doxygen/FAZIA/geometry/KVFAZIADetector.h">
+<area shape="rect" id="node2" href="$KVFAZIARawDataReconstructor_8cpp.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIARawDataReconstructor.cpp" alt="" coords="5,102,301,143"/>
+<area shape="rect" id="node3" href="$KVFAZIASelector_8cpp.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIASelector.cpp" alt="" coords="326,102,533,143"/>
+<area shape="rect" id="node4" href="$KVFAZIAUpDater_8cpp.html" title="kaliveda.doxygen/FAZIA\l/db/KVFAZIAUpDater.cpp" alt="" coords="557,102,731,143"/>
+<area shape="rect" id="node5" href="$KVFAZIA_8cpp.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIA.cpp" alt="" coords="756,102,921,143"/>
+<area shape="rect" id="node6" href="$KVFAZIACORDetector_8h.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIACORDetector.h" alt="" coords="946,102,1177,143"/>
+<area shape="rect" id="node8" href="$KVFAZIADetector_8cpp.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIADetector.cpp" alt="" coords="1201,102,1415,143"/>
+<area shape="rect" id="node9" href="$KVFAZIAIDCsI_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDCsI.cpp" alt="" coords="1440,102,1659,143"/>
+<area shape="rect" id="node10" href="$KVFAZIAIDSiCsI_8h.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiCsI.h" alt="" coords="1683,102,1901,143"/>
+<area shape="rect" id="node14" href="$KVFAZIAIDSiPSA_8h.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiPSA.h" alt="" coords="1925,102,2147,143"/>
+<area shape="rect" id="node16" href="$KVFAZIAIDSiSi_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiSi.cpp" alt="" coords="2171,102,2394,143"/>
+<area shape="rect" id="node17" href="$KVFAZIAIDSiSi__FAZIACOR_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiSi\l_FAZIACOR.cpp" alt="" coords="2419,95,2616,151"/>
+<area shape="rect" id="node18" href="$KVFAZIAIDTelescope_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDTelescope.cpp" alt="" coords="2640,102,2899,143"/>
+<area shape="rect" id="node19" href="$KVFAZIAReconNuc_8cpp.html" title="kaliveda.doxygen/FAZIA\l/particles/KVFAZIAReconNuc.cpp" alt="" coords="2922,102,3145,143"/>
+<area shape="rect" id="node7" href="$KVFAZIACORDetector_8cpp.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIACORDetector.cpp" alt="" coords="939,206,1184,247"/>
+<area shape="rect" id="node11" href="$KVFAZIAIDSiCsI_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiCsI.cpp" alt="" coords="1435,206,1666,247"/>
+<area shape="rect" id="node12" href="$KVFAZIAIDSiCsI__FAZIASYM_8h.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiCs\lI_FAZIASYM.h" alt="" coords="1691,199,1893,255"/>
+<area shape="rect" id="node13" href="$KVFAZIAIDSiCsI__FAZIASYM_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiCs\lI_FAZIASYM.cpp" alt="" coords="1691,303,1893,359"/>
+<area shape="rect" id="node15" href="$KVFAZIAIDSiPSA_8cpp.html" title="kaliveda.doxygen/FAZIA\l/identification/KVFAZIAIDSiPSA.cpp" alt="" coords="1917,206,2155,247"/>
+</map>

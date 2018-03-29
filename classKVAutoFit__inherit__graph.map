@@ -1,0 +1,5 @@
+<map id="KVAutoFit" name="KVAutoFit">
+<area shape="rect" id="node4" href="$classKVGaus1D.html" title="Fit gaussien a une dimension. " alt="" coords="5,229,93,256"/>
+<area shape="rect" id="node5" href="$classKVGaus2D.html" title="Fit gaussien a deux dimensions. " alt="" coords="117,229,205,256"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="70,80,141,107"/>
+</map>

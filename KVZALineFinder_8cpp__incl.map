@@ -1,0 +1,35 @@
+<map id="kaliveda.doxygen/KVMultiDet/gui/KVZALineFinder.cpp" name="kaliveda.doxygen/KVMultiDet/gui/KVZALineFinder.cpp">
+<area shape="rect" id="node2" href="$KVZALineFinder_8h.html" title="KVZALineFinder.h" alt="" coords="561,169,689,196"/>
+<area shape="rect" id="node58" href="$KVIdentificationResult_8h.html" title="KVIdentificationResult.h" alt="" coords="411,617,573,644"/>
+<area shape="rect" id="node59" href="$KVSpiderLine_8h.html" title="KVSpiderLine.h" alt="" coords="245,393,357,420"/>
+<area shape="rect" id="node62" href="$KVIDZALine_8h.html" title="KVIDZALine.h" alt="" coords="2105,319,2212,345"/>
+<area shape="rect" id="node64" href="$KVIDGridEditor_8h.html" title="KVIDGridEditor.h" alt="" coords="1832,95,1955,121"/>
+<area shape="rect" id="node3" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="1250,692,1331,719"/>
+<area shape="rect" id="node22" href="$KVIDZAGrid_8h.html" title="KVIDZAGrid.h" alt="" coords="1793,244,1900,271"/>
+<area shape="rect" id="node9" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="1457,767,1553,793"/>
+<area shape="rect" id="node10" href="$KVString_8h.html" title="KVString.h" alt="" coords="1463,841,1548,868"/>
+<area shape="rect" id="node23" href="$KVIDGrid_8h.html" title="KVIDGrid.h" alt="" coords="1941,319,2030,345"/>
+<area shape="rect" id="node24" href="$KVIDGraph_8h.html" title="KVIDGraph.h" alt="" coords="3118,393,3218,420"/>
+<area shape="rect" id="node52" href="$KVIDLine_8h.html" title="KVIDLine.h" alt="" coords="2693,393,2782,420"/>
+<area shape="rect" id="node26" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="2615,692,2755,719"/>
+<area shape="rect" id="node34" href="$KVIDentifier_8h.html" title="KVIDentifier.h" alt="" coords="2989,468,3093,495"/>
+<area shape="rect" id="node46" href="$KVNumberList_8h.html" title="KVNumberList.h" alt="" coords="3075,617,3194,644"/>
+<area shape="rect" id="node27" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="2365,767,2467,793"/>
+<area shape="rect" id="node32" href="$KVNamedParameter_8h.html" title="KVNamedParameter.h" alt="" coords="2491,767,2645,793"/>
+<area shape="rect" id="node28" href="$KVSeqCollection_8h.html" title="KVSeqCollection.h" alt="" coords="1573,841,1705,868"/>
+<area shape="rect" id="node35" href="$KVNucleus_8h.html" title="KVNucleus.h" alt="" coords="1915,543,2013,569"/>
+<area shape="rect" id="node37" href="$KVParticle_8h.html" title="KVParticle.h" alt="" coords="1867,617,1962,644"/>
+<area shape="rect" id="node50" href="$KVParticleCondition_8h.html" title="KVParticleCondition.h" alt="" coords="1626,617,1777,644"/>
+<area shape="rect" id="node40" href="$KVList_8h.html" title="KVList.h" alt="" coords="2417,692,2489,719"/>
+<area shape="rect" id="node42" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="2134,692,2282,719"/>
+<area shape="rect" id="node44" href="$KVFrameTransform_8h.html" title="KVFrameTransform.h" alt="" coords="1609,692,1756,719"/>
+<area shape="rect" id="node76" href="$KVIDGridEditorCanvas_8h.html" title="KVIDGridEditorCanvas.h" alt="" coords="2435,169,2603,196"/>
+<area shape="rect" id="node80" href="$KVIDGridManager_8h.html" title="KVIDGridManager.h" alt="" coords="3209,319,3348,345"/>
+<area shape="rect" id="node81" href="$KVDropDownDialog_8h.html" title="KVDropDownDialog.h" alt="" coords="3574,543,3725,569"/>
+<area shape="rect" id="node82" href="$KVVirtualIDFitter_8h.html" title="KVVirtualIDFitter.h" alt="" coords="1961,244,2093,271"/>
+<area shape="rect" id="node83" href="$KVInputDialog_8h.html" title="KVInputDialog.h" alt="" coords="3749,543,3867,569"/>
+<area shape="rect" id="node84" href="$KVHistoManipulator_8h.html" title="KVHistoManipulator.h" alt="" coords="1532,393,1681,420"/>
+<area shape="rect" id="node86" href="$KVSpiderIdentificator_8h.html" title="KVSpiderIdentificator.h" alt="" coords="765,319,921,345"/>
+<area shape="rect" id="node77" href="$KVCanvas_8h.html" title="KVCanvas.h" alt="" coords="2516,244,2612,271"/>
+<area shape="rect" id="node87" href="$KVDroite_8h.html" title="KVDroite.h" alt="" coords="777,393,863,420"/>
+</map>

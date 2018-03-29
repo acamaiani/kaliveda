@@ -1,0 +1,20 @@
+<map id="kaliveda.doxygen/KVMultiDet/stopping/KVIonRangeTableMaterial.h" name="kaliveda.doxygen/KVMultiDet/stopping/KVIonRangeTableMaterial.h">
+<area shape="rect" id="node2" href="$KVLightEnergyCsIFull_8h.html" title="kaliveda.doxygen/KVMulti\lDet/calibration/KVLightEnergy\lCsIFull.h" alt="" coords="257,109,454,165"/>
+<area shape="rect" id="node6" href="$KVGeoImport_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVGeoImport.cpp" alt="" coords="479,117,701,158"/>
+<area shape="rect" id="node7" href="$KVRangeTableGeoNavigator_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/geometry/KVRangeTableGeo\lNavigator.cpp" alt="" coords="725,109,943,165"/>
+<area shape="rect" id="node8" href="$KVedaLossMaterial_8h.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVedaLossMaterial.h" alt="" coords="967,117,1191,158"/>
+<area shape="rect" id="node11" href="$KVedaLossRangeFitter_8h.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVedaLossRangeFitter.h" alt="" coords="1208,221,1455,262"/>
+<area shape="rect" id="node13" href="$KVIonRangeTable_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVIonRangeTable.cpp" alt="" coords="1267,117,1497,158"/>
+<area shape="rect" id="node14" href="$KVIonRangeTableMaterial_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVIonRangeTable\lMaterial.cpp" alt="" coords="1521,109,1728,165"/>
+<area shape="rect" id="node15" href="$KVRangeYanezMaterial_8h.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVRangeYanezMaterial.h" alt="" coords="1753,117,2003,158"/>
+<area shape="rect" id="node18" href="$KVSpectroDetector_8cpp.html" title="kaliveda.doxygen/VAMOS\l/geometry/KVSpectroDetector.cpp" alt="" coords="2028,117,2251,158"/>
+<area shape="rect" id="node19" href="$KVVAMOSReconGeoNavigator_8cpp.html" title="kaliveda.doxygen/VAMOS\l/geometry/KVVAMOSReconGeoNavigator.cpp" alt="" coords="2275,117,2569,158"/>
+<area shape="rect" id="node3" href="$KVFAZIADetector_8cpp.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIADetector.cpp" alt="" coords="5,221,220,262"/>
+<area shape="rect" id="node4" href="$KVFAZIAReconNuc_8cpp.html" title="kaliveda.doxygen/FAZIA\l/particles/KVFAZIAReconNuc.cpp" alt="" coords="244,221,467,262"/>
+<area shape="rect" id="node5" href="$KVLightEnergyCsIFull_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/calibration/KVLightEnergy\lCsIFull.cpp" alt="" coords="491,213,689,269"/>
+<area shape="rect" id="node9" href="$KVedaLoss_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVedaLoss.cpp" alt="" coords="729,221,921,262"/>
+<area shape="rect" id="node10" href="$KVedaLossMaterial_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVedaLossMaterial.cpp" alt="" coords="945,221,1184,262"/>
+<area shape="rect" id="node12" href="$KVedaLossRangeFitter_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVedaLossRangeFitter.cpp" alt="" coords="1201,317,1461,359"/>
+<area shape="rect" id="node16" href="$KVRangeYanez_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVRangeYanez.cpp" alt="" coords="1635,221,1854,262"/>
+<area shape="rect" id="node17" href="$KVRangeYanezMaterial_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/stopping/KVRangeYanezMaterial.cpp" alt="" coords="1878,221,2142,262"/>
+</map>

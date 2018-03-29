@@ -1,0 +1,20 @@
+<map id="kaliveda.doxygen/KVMultiDet/gui/KVBatchSystemParametersGUI.h" name="kaliveda.doxygen/KVMultiDet/gui/KVBatchSystemParametersGUI.h">
+<area shape="rect" id="node2" href="$KVNameValueListGUI_8h.html" title="KVNameValueListGUI.h" alt="" coords="105,319,269,345"/>
+<area shape="rect" id="node19" href="$KVDataAnalyser_8h.html" title="KVDataAnalyser.h" alt="" coords="637,95,768,121"/>
+<area shape="rect" id="node5" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="893,393,1033,420"/>
+<area shape="rect" id="node6" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="1777,468,1879,495"/>
+<area shape="rect" id="node15" href="$KVNamedParameter_8h.html" title="KVNamedParameter.h" alt="" coords="1054,468,1207,495"/>
+<area shape="rect" id="node7" href="$KVSeqCollection_8h.html" title="KVSeqCollection.h" alt="" coords="1845,543,1977,569"/>
+<area shape="rect" id="node22" href="$KVList_8h.html" title="KVList.h" alt="" coords="2219,393,2291,420"/>
+<area shape="rect" id="node24" href="$KVBatchSystem_8h.html" title="KVBatchSystem.h" alt="" coords="740,244,871,271"/>
+<area shape="rect" id="node25" href="$KVNumberList_8h.html" title="KVNumberList.h" alt="" coords="462,319,581,345"/>
+<area shape="rect" id="node29" href="$KVString_8h.html" title="KVString.h" alt="" coords="615,543,700,569"/>
+<area shape="rect" id="node35" href="$KV2Body_8h.html" title="KV2Body.h" alt="" coords="577,169,665,196"/>
+<area shape="rect" id="node30" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="1057,393,1138,420"/>
+<area shape="rect" id="node32" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="883,468,979,495"/>
+<area shape="rect" id="node37" href="$KVNucleus_8h.html" title="KVNucleus.h" alt="" coords="1308,244,1407,271"/>
+<area shape="rect" id="node38" href="$KVParticle_8h.html" title="KVParticle.h" alt="" coords="1570,319,1665,345"/>
+<area shape="rect" id="node46" href="$KVParticleCondition_8h.html" title="KVParticleCondition.h" alt="" coords="1062,319,1213,345"/>
+<area shape="rect" id="node42" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="1265,393,1413,420"/>
+<area shape="rect" id="node44" href="$KVFrameTransform_8h.html" title="KVFrameTransform.h" alt="" coords="1703,393,1849,420"/>
+</map>

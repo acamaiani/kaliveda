@@ -1,0 +1,7 @@
+<map id="KVNuclDataTable" name="KVNuclDataTable">
+<area shape="rect" id="node3" href="$classKVAbundanceTable.html" title="Store available values of the relative abundance. " alt="" coords="314,5,451,32"/>
+<area shape="rect" id="node4" href="$classKVChargeRadiusTable.html" title="//Store charge radius information for nuclei " alt="" coords="305,56,460,83"/>
+<area shape="rect" id="node5" href="$classKVElementDensityTable.html" title="Table of atomic elements. " alt="" coords="300,107,465,133"/>
+<area shape="rect" id="node6" href="$classKVLifeTimeTable.html" title="Store life time information of nuclei. " alt="" coords="321,157,444,184"/>
+<area shape="rect" id="node7" href="$classKVMassExcessTable.html" title="manage mass excess data for nuclei " alt="" coords="309,208,457,235"/>
+</map>

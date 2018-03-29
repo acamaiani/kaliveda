@@ -1,0 +1,30 @@
+<map id="KVMaterial" name="KVMaterial">
+<area shape="rect" id="node4" href="$classKVDetector.html" title="KVDetector" alt="" coords="379,171,469,197"/>
+<area shape="rect" id="node30" href="$classKVTarget.html" title="Simulation of passage of particles through a target. " alt="" coords="385,221,463,248"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="125,196,196,223"/>
+<area shape="rect" id="node5" href="$classKVFAZIADetector.html" title="Base class for FAZIA detector. " alt="" coords="521,69,649,96"/>
+<area shape="rect" id="node7" href="$classKVINDRADetector.html" title="Detectors of INDRA array. " alt="" coords="518,171,651,197"/>
+<area shape="rect" id="node23" href="$classKVSpectroDetector.html" title="Base class for the description of detectors in spectrometer. " alt="" coords="517,411,652,437"/>
+<area shape="rect" id="node6" href="$classKVFAZIACORDetector.html" title="re&#45;implementation due to special CSI calibration " alt="" coords="700,19,859,45"/>
+<area shape="rect" id="node8" href="$classKVChIo.html" title="KVChIo" alt="" coords="745,69,813,96"/>
+<area shape="rect" id="node11" href="$classKVCsI.html" title="KVCsI" alt="" coords="749,145,810,172"/>
+<area shape="rect" id="node14" href="$classKVPhoswich.html" title="KVPhoswich" alt="" coords="731,196,828,223"/>
+<area shape="rect" id="node15" href="$classKVSilicon.html" title="KVSilicon" alt="" coords="740,284,819,311"/>
+<area shape="rect" id="node9" href="$classKVBIC.html" title="KVBIC" alt="" coords="936,5,999,32"/>
+<area shape="rect" id="node10" href="$classKVChIo__e475s.html" title="derivation of KVChIo class for E475s experiment " alt="" coords="912,56,1023,83"/>
+<area shape="rect" id="node12" href="$classKVCsI__e475s.html" title="derivation of KVCsI class for E475s experiment " alt="" coords="916,107,1019,133"/>
+<area shape="rect" id="node13" href="$classKVCsIVamos.html" title="KVCsI for Vamos. " alt="" coords="916,157,1019,184"/>
+<area shape="rect" id="node16" href="$classKVSi75.html" title="KVSi75" alt="" coords="934,208,1001,235"/>
+<area shape="rect" id="node18" href="$classKVSiB.html" title="KVSiB" alt="" coords="937,259,998,285"/>
+<area shape="rect" id="node19" href="$classKVSiLi.html" title="KVSiLi" alt="" coords="936,309,999,336"/>
+<area shape="rect" id="node21" href="$classKVSilicon__e475s.html" title="derivation of KVSilicon class for E475s experiment " alt="" coords="907,360,1028,387"/>
+<area shape="rect" id="node22" href="$classKVSiliconVamos.html" title="KVSilicon for Vamos. " alt="" coords="907,411,1027,437"/>
+<area shape="rect" id="node17" href="$classKVSi75__e494s.html" title="Calib Etalons. " alt="" coords="1076,208,1184,235"/>
+<area shape="rect" id="node20" href="$classKVSiLi__e494s.html" title="KVSiLi_e494s" alt="" coords="1078,309,1182,336"/>
+<area shape="rect" id="node24" href="$classKVVAMOSDetector.html" title="KVVAMOSDetector" alt="" coords="710,537,849,564"/>
+<area shape="rect" id="node25" href="$classKVDriftChamber.html" title="Drift Chamber, used at the focal plan of VAMOS. " alt="" coords="908,461,1027,488"/>
+<area shape="rect" id="node26" href="$classKVHarpeeCsI.html" title="KVHarpeeCsI" alt="" coords="916,512,1019,539"/>
+<area shape="rect" id="node27" href="$classKVHarpeeIC.html" title="Ionisiation chamber of Harpee, used at the focal plan of VAMOS. " alt="" coords="919,563,1015,589"/>
+<area shape="rect" id="node28" href="$classKVHarpeeSi.html" title="Silicon detectors of Harpee, used at the focal plan of VAMOS. " alt="" coords="920,613,1015,640"/>
+<area shape="rect" id="node29" href="$classKVSeD.html" title="Secondary Electron Detector, used at the focal plan of VAMOS. " alt="" coords="934,664,1001,691"/>
+</map>

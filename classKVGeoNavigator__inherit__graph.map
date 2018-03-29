@@ -1,0 +1,6 @@
+<map id="KVGeoNavigator" name="KVGeoNavigator">
+<area shape="rect" id="node4" href="$classKVGeoImport.html" title="Import a ROOT geometry into a KVMultiDetArray object. " alt="" coords="5,229,107,256"/>
+<area shape="rect" id="node5" href="$classKVRangeTableGeoNavigator.html" title="Propagate particles through a geometry and calculate their energy losses. " alt="" coords="131,229,322,256"/>
+<area shape="rect" id="node6" href="$classKVVAMOSReconGeoNavigator.html" title="Propagate nuclei through the geometry of VAMOS for their reconstruction/calibrate/identification. " alt="" coords="346,229,553,256"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="191,80,262,107"/>
+</map>

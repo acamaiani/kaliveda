@@ -1,0 +1,10 @@
+<map id="KVFAZIAIDTelescope" name="KVFAZIAIDTelescope">
+<area shape="rect" id="node5" href="$classKVFAZIAIDCsI.html" title="id telescope to manage FAZIA CsI identification " alt="" coords="5,304,119,331"/>
+<area shape="rect" id="node6" href="$classKVFAZIAIDSiCsI.html" title="id telescope to manage FAZIA Si&#45;CsI identification " alt="" coords="143,304,269,331"/>
+<area shape="rect" id="node8" href="$classKVFAZIAIDSiPSA.html" title="PSA identification in first silicon of FAZIA telescopes. " alt="" coords="293,304,423,331"/>
+<area shape="rect" id="node9" href="$classKVFAZIAIDSiSi.html" title="identification telescope for FAZIA Si&#45;Si idcards " alt="" coords="448,304,564,331"/>
+<area shape="rect" id="node10" href="$classKVFAZIAIDSiSi__FAZIACOR.html" title="identification telescope for FAZIA Si&#45;Si idcards " alt="" coords="588,304,779,331"/>
+<area shape="rect" id="node2" href="$classKVIDTelescope.html" title="KVIDTelescope" alt="" coords="301,155,415,181"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="323,80,393,107"/>
+<area shape="rect" id="node7" href="$classKVFAZIAIDSiCsI__FAZIASYM.html" title="identification telescope for FAZIASYM experiment " alt="" coords="107,379,305,405"/>
+</map>

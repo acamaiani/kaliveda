@@ -1,0 +1,7 @@
+<map id="KVTelescope" name="KVTelescope">
+<area shape="rect" id="node6" href="$classKVINDRATelescope.html" title="A detector telescope in the INDRA array. " alt="" coords="5,304,148,331"/>
+<area shape="rect" id="node7" href="$classKVTelBlocking.html" title="KVTelBlocking" alt="" coords="172,304,280,331"/>
+<area shape="rect" id="node2" href="$classKVGeoStrucElement.html" title="A multidetector array geometry structural element. " alt="" coords="11,155,153,181"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="47,80,117,107"/>
+<area shape="rect" id="node5" href="$classKVPosition.html" title="KVPosition" alt="" coords="177,155,264,181"/>
+</map>

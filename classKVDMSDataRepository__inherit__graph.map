@@ -1,0 +1,6 @@
+<map id="KVDMSDataRepository" name="KVDMSDataRepository">
+<area shape="rect" id="node5" href="$classIRODSDataRepository.html" title="Remote data repository using IRODS. " alt="" coords="5,304,161,331"/>
+<area shape="rect" id="node6" href="$classSRBDataRepository.html" title="Remote data repository using SRB. " alt="" coords="186,304,327,331"/>
+<area shape="rect" id="node2" href="$classKVDataRepository.html" title="Base class for managing a collection of data files. " alt="" coords="105,155,235,181"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="135,80,205,107"/>
+</map>

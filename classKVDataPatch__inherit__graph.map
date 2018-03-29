@@ -1,0 +1,5 @@
+<map id="KVDataPatch" name="KVDataPatch">
+<area shape="rect" id="node4" href="$classKVDataPatch__CorrectEtalonModuleIDCode.html" title="Patch for correcting bad id&#45;code &amp; calibration for particles stopping in CsI member of etalon modules..." alt="" coords="5,229,195,271"/>
+<area shape="rect" id="node5" href="$classKVDataPatch__INDRA__camp5__PHDcorrection.html" title="Patch for correcting Silicon PHD on rings 1&#45;9 [INDRA_camp5 before 1.8.10]. " alt="" coords="219,229,418,271"/>
+<area shape="rect" id="node2" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="174,80,245,107"/>
+</map>

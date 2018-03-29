@@ -1,0 +1,30 @@
+<map id="kaliveda.doxygen/KVMultiDet/exp_events/KVDetectorEvent.h" name="kaliveda.doxygen/KVMultiDet/exp_events/KVDetectorEvent.h">
+<area shape="rect" id="node2" href="$KVFAZIAReader_8h.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIAReader.h" alt="" coords="359,102,545,143"/>
+<area shape="rect" id="node8" href="$KVFAZIA_8cpp.html" title="kaliveda.doxygen/FAZIA\l/geometry/KVFAZIA.cpp" alt="" coords="615,102,780,143"/>
+<area shape="rect" id="node9" href="$KVINDRARawDataAnalyser_8h.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRARawDataAnalyser.h" alt="" coords="2099,199,2355,240"/>
+<area shape="rect" id="node19" href="$KVINDRA_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRA.cpp" alt="" coords="1087,102,1270,143"/>
+<area shape="rect" id="node20" href="$KVINDRAReconEvent_8cpp.html" title="kaliveda.doxygen/KVIndra\l/exp_events/KVINDRAReconEvent.cpp" alt="" coords="1294,102,1549,143"/>
+<area shape="rect" id="node21" href="$KVASMultiDetArray_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVASMultiDetArray.cpp" alt="" coords="1573,102,1832,143"/>
+<area shape="rect" id="node22" href="$KVDetectionSimulator_8h.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVDetectionSimulator.h" alt="" coords="804,102,1063,143"/>
+<area shape="rect" id="node24" href="$KVDetectorEvent_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVDetectorEvent.cpp" alt="" coords="1907,102,2152,143"/>
+<area shape="rect" id="node25" href="$KVEventReconstructor_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVEventReconstructor.cpp" alt="" coords="2176,102,2453,143"/>
+<area shape="rect" id="node26" href="$KVMultiDetArray_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVMultiDetArray.cpp" alt="" coords="2478,102,2719,143"/>
+<area shape="rect" id="node27" href="$KVRawDataAnalyser_8h.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVRawDataAnalyser.h" alt="" coords="2744,102,2997,143"/>
+<area shape="rect" id="node29" href="$KVReconstructedEvent_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVReconstructed\lEvent.cpp" alt="" coords="3021,95,3243,151"/>
+<area shape="rect" id="node3" href="$KVFAZIARawDataReader_8h.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIARawDataReader.h" alt="" coords="15,199,257,240"/>
+<area shape="rect" id="node5" href="$KVFAZIARawDataReconstructor_8h.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIARawDataReconstructor.h" alt="" coords="288,199,571,240"/>
+<area shape="rect" id="node7" href="$KVFAZIAReader_8cpp.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIAReader.cpp" alt="" coords="595,199,797,240"/>
+<area shape="rect" id="node4" href="$KVFAZIARawDataReader_8cpp.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIARawDataReader.cpp" alt="" coords="5,288,261,329"/>
+<area shape="rect" id="node6" href="$KVFAZIARawDataReconstructor_8cpp.html" title="kaliveda.doxygen/FAZIA\l/analysis/KVFAZIARawDataReconstructor.cpp" alt="" coords="285,288,581,329"/>
+<area shape="rect" id="node10" href="$KVINDRAOnlineDataAnalyser_8h.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRAOnlineDataAnalyser.h" alt="" coords="2228,288,2495,329"/>
+<area shape="rect" id="node12" href="$KVINDRARawDataAnalyser_8cpp.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRARawDataAnalyser.cpp" alt="" coords="2519,288,2790,329"/>
+<area shape="rect" id="node13" href="$KVINDRARawDataReconstructor_8h.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRARawDataReconstructor.h" alt="" coords="1653,288,1939,329"/>
+<area shape="rect" id="node17" href="$KVIVRawDataAnalyser_8h.html" title="kaliveda.doxygen/VAMOS\l/analysis/KVIVRawDataAnalyser.h" alt="" coords="1977,288,2204,329"/>
+<area shape="rect" id="node11" href="$KVINDRAOnlineDataAnalyser_8cpp.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRAOnlineDataAnalyser.cpp" alt="" coords="2235,377,2515,419"/>
+<area shape="rect" id="node14" href="$KVINDRARawDataReconstructor_8cpp.html" title="kaliveda.doxygen/KVIndra\l/analysis/KVINDRARawDataReconstructor.cpp" alt="" coords="1645,377,1947,419"/>
+<area shape="rect" id="node15" href="$KVIVRawDataReconstructor_8h.html" title="kaliveda.doxygen/VAMOS\l/analysis/KVIVRawDataReconstructor.h" alt="" coords="1363,377,1621,419"/>
+<area shape="rect" id="node16" href="$KVIVRawDataReconstructor_8cpp.html" title="kaliveda.doxygen/VAMOS\l/analysis/KVIVRawDataReconstructor.cpp" alt="" coords="1357,467,1627,508"/>
+<area shape="rect" id="node18" href="$KVIVRawDataAnalyser_8cpp.html" title="kaliveda.doxygen/VAMOS\l/analysis/KVIVRawDataAnalyser.cpp" alt="" coords="1971,377,2211,419"/>
+<area shape="rect" id="node23" href="$KVDetectionSimulator_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVDetectionSimulator.cpp" alt="" coords="821,199,1093,240"/>
+<area shape="rect" id="node28" href="$KVRawDataAnalyser_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/exp_events/KVRawDataAnalyser.cpp" alt="" coords="2737,199,3004,240"/>
+</map>

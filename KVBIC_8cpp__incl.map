@@ -1,0 +1,36 @@
+<map id="kaliveda.doxygen/KVIndra/geometry/KVBIC.cpp" name="kaliveda.doxygen/KVIndra/geometry/KVBIC.cpp">
+<area shape="rect" id="node2" href="$KVBIC_8h.html" title="KVBIC.h" alt="" coords="2279,95,2354,121"/>
+<area shape="rect" id="node48" href="$KVACQParam_8h.html" title="KVACQParam.h" alt="" coords="2124,543,2243,569"/>
+<area shape="rect" id="node63" href="$KVLinCal_8h.html" title="KVLinCal.h" alt="" coords="2273,319,2361,345"/>
+<area shape="rect" id="node3" href="$KVChIo_8h.html" title="KVChIo.h" alt="" coords="2144,169,2223,196"/>
+<area shape="rect" id="node4" href="$KVINDRADetector_8h.html" title="KVINDRADetector.h" alt="" coords="1182,244,1326,271"/>
+<area shape="rect" id="node58" href="$KVChannelVolt_8h.html" title="KVChannelVolt.h" alt="" coords="1931,244,2054,271"/>
+<area shape="rect" id="node61" href="$KVVoltEnergy_8h.html" title="KVVoltEnergy.h" alt="" coords="2078,244,2193,271"/>
+<area shape="rect" id="node62" href="$KVUnits_8h.html" title="KVUnits.h" alt="" coords="2355,244,2438,271"/>
+<area shape="rect" id="node5" href="$KVDetector_8h.html" title="KVDetector.h" alt="" coords="1203,468,1305,495"/>
+<area shape="rect" id="node53" href="$KVINDRATelescope_8h.html" title="KVINDRATelescope.h" alt="" coords="935,319,1090,345"/>
+<area shape="rect" id="node6" href="$KVMaterial_8h.html" title="KVMaterial.h" alt="" coords="1143,617,1240,644"/>
+<area shape="rect" id="node19" href="$KVList_8h.html" title="KVList.h" alt="" coords="878,692,950,719"/>
+<area shape="rect" id="node26" href="$KVPosition_8h.html" title="KVPosition.h" alt="" coords="1265,617,1363,644"/>
+<area shape="rect" id="node29" href="$KVNucleus_8h.html" title="KVNucleus.h" alt="" coords="1575,543,1674,569"/>
+<area shape="rect" id="node34" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="467,692,615,719"/>
+<area shape="rect" id="node49" href="$Binary__t_8h.html" title="Binary_t.h" alt="" coords="2169,617,2251,644"/>
+<area shape="rect" id="node52" href="$KVGeoDetectorNode_8h.html" title="KVGeoDetectorNode.h" alt="" coords="329,617,485,644"/>
+<area shape="rect" id="node8" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="721,692,803,719"/>
+<area shape="rect" id="node13" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="1070,767,1166,793"/>
+<area shape="rect" id="node14" href="$KVString_8h.html" title="KVString.h" alt="" coords="1103,841,1189,868"/>
+<area shape="rect" id="node20" href="$KVSeqCollection_8h.html" title="KVSeqCollection.h" alt="" coords="437,841,569,868"/>
+<area shape="rect" id="node31" href="$KVParticle_8h.html" title="KVParticle.h" alt="" coords="1439,617,1533,644"/>
+<area shape="rect" id="node43" href="$KVNumberList_8h.html" title="KVNumberList.h" alt="" coords="2169,692,2288,719"/>
+<area shape="rect" id="node47" href="$KVParticleCondition_8h.html" title="KVParticleCondition.h" alt="" coords="764,617,915,644"/>
+<area shape="rect" id="node38" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="31,692,171,719"/>
+<area shape="rect" id="node41" href="$KVFrameTransform_8h.html" title="KVFrameTransform.h" alt="" coords="1649,692,1795,719"/>
+<area shape="rect" id="node35" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="467,767,569,793"/>
+<area shape="rect" id="node40" href="$KVNamedParameter_8h.html" title="KVNamedParameter.h" alt="" coords="237,767,391,793"/>
+<area shape="rect" id="node51" href="$Hexa__t_8h.html" title="Hexa_t.h" alt="" coords="2363,692,2438,719"/>
+<area shape="rect" id="node54" href="$KVTelescope_8h.html" title="KVTelescope.h" alt="" coords="847,393,957,420"/>
+<area shape="rect" id="node55" href="$KVGroup_8h.html" title="KVGroup.h" alt="" coords="581,468,668,495"/>
+<area shape="rect" id="node56" href="$KVGeoStrucElement_8h.html" title="KVGeoStrucElement.h" alt="" coords="547,543,702,569"/>
+<area shape="rect" id="node57" href="$KVGeoDNTrajectory_8h.html" title="KVGeoDNTrajectory.h" alt="" coords="331,543,484,569"/>
+<area shape="rect" id="node59" href="$KVCalibrator_8h.html" title="KVCalibrator.h" alt="" coords="1973,393,2079,420"/>
+</map>

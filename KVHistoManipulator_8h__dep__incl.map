@@ -1,0 +1,17 @@
+<map id="kaliveda.doxygen/KVMultiDet/base/KVHistoManipulator.h" name="kaliveda.doxygen/KVMultiDet/base/KVHistoManipulator.h">
+<area shape="rect" id="node2" href="$KVImpactParameter_8h.html" title="kaliveda.doxygen/KVMulti\lDet/analysis/KVImpactParameter.h" alt="" coords="193,95,421,136"/>
+<area shape="rect" id="node7" href="$KVHistoManipulator_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/base/KVHistoManipulator.cpp" alt="" coords="445,95,665,136"/>
+<area shape="rect" id="node8" href="$KVCanvas_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVCanvas.cpp" alt="" coords="689,95,863,136"/>
+<area shape="rect" id="node9" href="$KVIDGridEditor_8h.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVIDGridEditor.h" alt="" coords="887,95,1060,136"/>
+<area shape="rect" id="node16" href="$KVSpIdGUI_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVSpIdGUI.cpp" alt="" coords="1084,95,1257,136"/>
+<area shape="rect" id="node3" href="$KVImpactParameter_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/analysis/KVImpactParameter.cpp" alt="" coords="5,184,248,225"/>
+<area shape="rect" id="node4" href="$KVTreeAnalyzer_8h.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVTreeAnalyzer.h" alt="" coords="273,184,447,225"/>
+<area shape="rect" id="node5" href="$KVIDGridEditor_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVIDGridEditor.cpp" alt="" coords="435,273,618,315"/>
+<area shape="rect" id="node6" href="$KVTreeAnalyzer_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVTreeAnalyzer.cpp" alt="" coords="223,273,411,315"/>
+<area shape="rect" id="node10" href="$KVIDGridEditorCanvas_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVIDGridEditorCanvas.cpp" alt="" coords="565,184,793,225"/>
+<area shape="rect" id="node11" href="$KVIDGridManagerGUI_8h.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVIDGridManagerGUI.h" alt="" coords="817,184,1026,225"/>
+<area shape="rect" id="node13" href="$KVZAFinderDialog_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVZAFinderDialog.cpp" alt="" coords="1050,184,1251,225"/>
+<area shape="rect" id="node14" href="$KVZALineFinder_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVZALineFinder.cpp" alt="" coords="1275,184,1463,225"/>
+<area shape="rect" id="node15" href="$KVIDQAGrid_8cpp.html" title="kaliveda.doxygen/VAMOS\l/identification/KVIDQAGrid.cpp" alt="" coords="1488,184,1691,225"/>
+<area shape="rect" id="node12" href="$KVIDGridManagerGUI_8cpp.html" title="kaliveda.doxygen/KVMulti\lDet/gui/KVIDGridManagerGUI.cpp" alt="" coords="810,273,1033,315"/>
+</map>

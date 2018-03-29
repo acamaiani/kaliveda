@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classKVUpDater.html" title="KVUpDater" alt="" coords="5,56,95,83"/>
+<area shape="rect" id="node2" href="$classKVFAZIAUpDater.html" title="handle FAZIA detectors configuration for a given run " alt="" coords="145,31,272,57"/>
+<area shape="rect" id="node3" href="$classKVINDRAUpDater.html" title="KVINDRAUpDater" alt="" coords="143,81,275,108"/>
+<area shape="rect" id="node4" href="$classKVINDRAUpDater__e416a.html" title="Sets run parameters for INDRA_e416a dataset. " alt="" coords="323,5,497,32"/>
+<area shape="rect" id="node5" href="$classKVINDRAUpDater__e475s.html" title="Sets run parameters for INDRA_e475s dataset. " alt="" coords="323,56,497,83"/>
+<area shape="rect" id="node6" href="$classKVINDRAUpDater__e613.html" title="Sets run parameters for INDRA_e613 dataset. " alt="" coords="327,107,493,133"/>
+<area shape="rect" id="node7" href="$classKVIVUpDater.html" title="KVIVUpDater" alt="" coords="359,157,461,184"/>
+<area shape="rect" id="node8" href="$classKVIVUpDater__e503.html" title="KVIVUpDater_e503" alt="" coords="545,157,683,184"/>
+</map>

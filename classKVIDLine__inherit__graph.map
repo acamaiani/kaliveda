@@ -1,0 +1,8 @@
+<map id="KVIDLine" name="KVIDLine">
+<area shape="rect" id="node4" href="$classKVIDCutLine.html" title="Line in ID grid used to delimit regions where no identification is possible. " alt="" coords="23,229,122,256"/>
+<area shape="rect" id="node5" href="$classKVIDZALine.html" title="KVIDZALine" alt="" coords="147,229,241,256"/>
+<area shape="rect" id="node2" href="$classKVIDentifier.html" title="Base class for graphical cuts used in particle identification. " alt="" coords="86,80,179,107"/>
+<area shape="rect" id="node6" href="$classKVIDCsIRLLine.html" title="KVIDCsIRLLine" alt="" coords="5,304,121,331"/>
+<area shape="rect" id="node7" href="$classKVIDQALine.html" title="Base class for identification ridge lines and spots corresponding to different charge states and mass..." alt="" coords="145,304,243,331"/>
+<area shape="rect" id="node8" href="$classKVIDZLine.html" title="KVIDZLine" alt="" coords="267,304,353,331"/>
+</map>

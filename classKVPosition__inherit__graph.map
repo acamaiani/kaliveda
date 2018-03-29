@@ -1,0 +1,33 @@
+<map id="KVPosition" name="KVPosition">
+<area shape="rect" id="node2" href="$classKVASGroup.html" title="Group in axially&#45;symmetric multidetector. " alt="" coords="143,120,237,147"/>
+<area shape="rect" id="node3" href="$classKVDetector.html" title="KVDetector" alt="" coords="145,171,235,197"/>
+<area shape="rect" id="node29" href="$classKVRing.html" title="KVRing" alt="" coords="157,221,223,248"/>
+<area shape="rect" id="node30" href="$classKVTelescope.html" title="KVTelescope" alt="" coords="140,272,240,299"/>
+<area shape="rect" id="node4" href="$classKVFAZIADetector.html" title="Base class for FAZIA detector. " alt="" coords="295,95,423,121"/>
+<area shape="rect" id="node6" href="$classKVINDRADetector.html" title="Detectors of INDRA array. " alt="" coords="293,171,426,197"/>
+<area shape="rect" id="node22" href="$classKVSpectroDetector.html" title="Base class for the description of detectors in spectrometer. " alt="" coords="292,221,427,248"/>
+<area shape="rect" id="node5" href="$classKVFAZIACORDetector.html" title="re&#45;implementation due to special CSI calibration " alt="" coords="479,19,637,45"/>
+<area shape="rect" id="node7" href="$classKVChIo.html" title="KVChIo" alt="" coords="524,69,592,96"/>
+<area shape="rect" id="node10" href="$classKVCsI.html" title="KVCsI" alt="" coords="527,145,589,172"/>
+<area shape="rect" id="node13" href="$classKVPhoswich.html" title="KVPhoswich" alt="" coords="509,196,607,223"/>
+<area shape="rect" id="node14" href="$classKVSilicon.html" title="KVSilicon" alt="" coords="519,284,597,311"/>
+<area shape="rect" id="node8" href="$classKVBIC.html" title="KVBIC" alt="" coords="715,5,777,32"/>
+<area shape="rect" id="node9" href="$classKVChIo__e475s.html" title="derivation of KVChIo class for E475s experiment " alt="" coords="691,56,801,83"/>
+<area shape="rect" id="node11" href="$classKVCsI__e475s.html" title="derivation of KVCsI class for E475s experiment " alt="" coords="695,107,797,133"/>
+<area shape="rect" id="node12" href="$classKVCsIVamos.html" title="KVCsI for Vamos. " alt="" coords="695,157,797,184"/>
+<area shape="rect" id="node15" href="$classKVSi75.html" title="KVSi75" alt="" coords="713,208,779,235"/>
+<area shape="rect" id="node17" href="$classKVSiB.html" title="KVSiB" alt="" coords="715,259,777,285"/>
+<area shape="rect" id="node18" href="$classKVSiLi.html" title="KVSiLi" alt="" coords="715,309,777,336"/>
+<area shape="rect" id="node20" href="$classKVSilicon__e475s.html" title="derivation of KVSilicon class for E475s experiment " alt="" coords="685,360,807,387"/>
+<area shape="rect" id="node21" href="$classKVSiliconVamos.html" title="KVSilicon for Vamos. " alt="" coords="686,411,806,437"/>
+<area shape="rect" id="node16" href="$classKVSi75__e494s.html" title="Calib Etalons. " alt="" coords="855,208,963,235"/>
+<area shape="rect" id="node19" href="$classKVSiLi__e494s.html" title="KVSiLi_e494s" alt="" coords="857,309,961,336"/>
+<area shape="rect" id="node23" href="$classKVVAMOSDetector.html" title="KVVAMOSDetector" alt="" coords="489,537,627,564"/>
+<area shape="rect" id="node24" href="$classKVDriftChamber.html" title="Drift Chamber, used at the focal plan of VAMOS. " alt="" coords="687,461,805,488"/>
+<area shape="rect" id="node25" href="$classKVHarpeeCsI.html" title="KVHarpeeCsI" alt="" coords="695,512,797,539"/>
+<area shape="rect" id="node26" href="$classKVHarpeeIC.html" title="Ionisiation chamber of Harpee, used at the focal plan of VAMOS. " alt="" coords="698,563,794,589"/>
+<area shape="rect" id="node27" href="$classKVHarpeeSi.html" title="Silicon detectors of Harpee, used at the focal plan of VAMOS. " alt="" coords="699,613,793,640"/>
+<area shape="rect" id="node28" href="$classKVSeD.html" title="Secondary Electron Detector, used at the focal plan of VAMOS. " alt="" coords="713,664,779,691"/>
+<area shape="rect" id="node31" href="$classKVINDRATelescope.html" title="A detector telescope in the INDRA array. " alt="" coords="288,272,431,299"/>
+<area shape="rect" id="node32" href="$classKVTelBlocking.html" title="KVTelBlocking" alt="" coords="305,323,413,349"/>
+</map>

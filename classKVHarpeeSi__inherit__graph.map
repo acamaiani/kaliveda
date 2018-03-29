@@ -1,0 +1,8 @@
+<map id="KVHarpeeSi" name="KVHarpeeSi">
+<area shape="rect" id="node2" href="$classKVVAMOSDetector.html" title="KVVAMOSDetector" alt="" coords="34,379,173,405"/>
+<area shape="rect" id="node3" href="$classKVSpectroDetector.html" title="Base class for the description of detectors in spectrometer. " alt="" coords="36,304,171,331"/>
+<area shape="rect" id="node4" href="$classKVDetector.html" title="KVDetector" alt="" coords="58,229,149,256"/>
+<area shape="rect" id="node5" href="$classKVMaterial.html" title="KVMaterial" alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node6" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="13,80,84,107"/>
+<area shape="rect" id="node8" href="$classKVPosition.html" title="KVPosition" alt="" coords="116,155,203,181"/>
+</map>

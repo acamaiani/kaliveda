@@ -1,0 +1,11 @@
+<map id="KVVAMOSIDTelescope" name="KVVAMOSIDTelescope">
+<area shape="rect" id="node7" href="$classKVIDHarpeeICSi.html" title="DeltaE&#45;E identification telescope in VAMOS with Harpee&#39;s IC&#45;Si detectors. " alt="" coords="31,379,153,405"/>
+<area shape="rect" id="node9" href="$classKVIDHarpeeSiCsI.html" title="DeltaE&#45;E identification telescope in VAMOS with Harpee&#39;s Si&#45;CsI detectors. " alt="" coords="195,379,325,405"/>
+<area shape="rect" id="node11" href="$classKVIDQA.html" title="ID telescope used to identify Q and A with VAMOS. " alt="" coords="349,379,422,405"/>
+<area shape="rect" id="node2" href="$classKVINDRAIDTelescope.html" title="KVINDRAIDTelescope" alt="" coords="181,229,339,256"/>
+<area shape="rect" id="node3" href="$classKVIDTelescope.html" title="KVIDTelescope" alt="" coords="123,155,237,181"/>
+<area shape="rect" id="node4" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="145,80,215,107"/>
+<area shape="rect" id="node6" href="$classKVIDSubCodeManager.html" title="KVIDSubCodeManager" alt="" coords="262,155,421,181"/>
+<area shape="rect" id="node8" href="$classKVIDHarpeeICSi__e503.html" title="DeltaE&#45;E identification with Harpee&#39;s IC&#45;Si detectors for e503. " alt="" coords="5,453,163,480"/>
+<area shape="rect" id="node10" href="$classKVIDHarpeeSiCsI__e503.html" title="KVIDHarpeeSiCsI_e503" alt="" coords="187,453,351,480"/>
+</map>

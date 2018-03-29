@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classKVLogReader.html" title="KVLogReader" alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$classKVBQSLogReader.html" title="Read BQS log files. " alt="" coords="156,5,287,32"/>
+<area shape="rect" id="node3" href="$classKVGELogReader.html" title="Read GE (Grid Engine) log files. " alt="" coords="160,56,283,83"/>
+</map>

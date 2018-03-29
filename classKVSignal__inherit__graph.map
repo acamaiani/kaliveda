@@ -1,0 +1,10 @@
+<map id="KVSignal" name="KVSignal">
+<area shape="rect" id="node3" href="$classKVChargeSignal.html" title="digitized charge signal " alt="" coords="5,155,124,181"/>
+<area shape="rect" id="node4" href="$classKVCurrentSignal.html" title="digitized intensity signal " alt="" coords="148,155,267,181"/>
+<area shape="rect" id="node5" href="$classKVI1.html" title="digitized current signal " alt="" coords="291,155,342,181"/>
+<area shape="rect" id="node6" href="$classKVI2.html" title="digitized intensity signal " alt="" coords="366,155,417,181"/>
+<area shape="rect" id="node7" href="$classKVQ2.html" title="digitized charge signal " alt="" coords="441,155,499,181"/>
+<area shape="rect" id="node8" href="$classKVQ3.html" title="digitized charge signal " alt="" coords="523,155,580,181"/>
+<area shape="rect" id="node9" href="$classKVQH1.html" title="digitized charge signal " alt="" coords="605,155,671,181"/>
+<area shape="rect" id="node10" href="$classKVQL1.html" title="digitized charge signal " alt="" coords="695,155,759,181"/>
+</map>

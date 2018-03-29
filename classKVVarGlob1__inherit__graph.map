@@ -1,0 +1,22 @@
+<map id="KVVarGlob1" name="KVVarGlob1">
+<area shape="rect" id="node5" href="$classKVEkin.html" title="KVEkin" alt="" coords="547,5,614,32"/>
+<area shape="rect" id="node6" href="$classKVEtrans.html" title="KVEtrans" alt="" coords="541,56,620,83"/>
+<area shape="rect" id="node8" href="$classKVFoxH2.html" title="Event shape global variable : second Fox&#45;Wolfram moment, H(2) " alt="" coords="541,107,620,133"/>
+<area shape="rect" id="node9" href="$classKVMultAv.html" title="KVMultAv" alt="" coords="540,157,621,184"/>
+<area shape="rect" id="node10" href="$classKVMultLeg.html" title="KVMultLeg" alt="" coords="537,208,624,235"/>
+<area shape="rect" id="node12" href="$classKVVarGlobMean.html" title="KVVarGlobMean" alt="" coords="521,259,640,285"/>
+<area shape="rect" id="node17" href="$classKVZbound.html" title="KVZbound" alt="" coords="539,360,622,387"/>
+<area shape="rect" id="node21" href="$classKVZtot.html" title="KVZtot" alt="" coords="549,436,612,463"/>
+<area shape="rect" id="node2" href="$classKVVarGlob.html" title="Base class for global variables. " alt="" coords="244,183,331,209"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="125,183,196,209"/>
+<area shape="rect" id="node7" href="$classKVEtransLCP.html" title="KVEtransLCP" alt="" coords="703,56,807,83"/>
+<area shape="rect" id="node11" href="$classKVMultLegAv.html" title="KVMultLegAv" alt="" coords="704,107,807,133"/>
+<area shape="rect" id="node13" href="$classKVRelativeVelocity.html" title="calculate for a given group of particles the mean relative velocity " alt="" coords="688,157,823,184"/>
+<area shape="rect" id="node14" href="$classKVVGSum.html" title="KVVGSum" alt="" coords="712,208,799,235"/>
+<area shape="rect" id="node15" href="$classKVZBoundMean.html" title="Global variable returning the mean value and the standard deviation of the charge. " alt="" coords="697,259,814,285"/>
+<area shape="rect" id="node16" href="$classKVZmean.html" title="KVZmean" alt="" coords="715,309,795,336"/>
+<area shape="rect" id="node18" href="$classKVMultIMF.html" title="KVMultIMF" alt="" coords="711,360,799,387"/>
+<area shape="rect" id="node20" href="$classKVZboundAv.html" title="KVZboundAv" alt="" coords="706,411,805,437"/>
+<area shape="rect" id="node19" href="$classKVMultIMFAv.html" title="KVMultIMFAv" alt="" coords="871,360,975,387"/>
+<area shape="rect" id="node22" href="$classKVZtotAv.html" title="KVZtotAv" alt="" coords="716,461,795,488"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="KVParticle" name="KVParticle">
+<area shape="rect" id="node3" href="$classKVNucleus.html" title="KVNucleus" alt="" coords="281,155,369,181"/>
+<area shape="rect" id="node4" href="$classKVReconstructedNucleus.html" title="KVReconstructedNucleus" alt="" coords="155,229,329,256"/>
+<area shape="rect" id="node8" href="$classKVSimNucleus.html" title="Classe dérivée de KVNucleus pour gérer des simulations dans KaliVeda. " alt="" coords="353,229,464,256"/>
+<area shape="rect" id="node5" href="$classKVFAZIAReconNuc.html" title="KVFAZIAReconNuc" alt="" coords="5,304,145,331"/>
+<area shape="rect" id="node6" href="$classKVINDRAReconNuc.html" title="KVINDRAReconNuc" alt="" coords="169,304,315,331"/>
+<area shape="rect" id="node7" href="$classKVVAMOSReconNuc.html" title="KVVAMOSReconNuc" alt="" coords="339,304,489,331"/>
+</map>

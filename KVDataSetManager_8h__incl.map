@@ -1,0 +1,17 @@
+<map id="kaliveda.doxygen/KVMultiDet/data_management/KVDataSetManager.h" name="kaliveda.doxygen/KVMultiDet/data_management/KVDataSetManager.h">
+<area shape="rect" id="node2" href="$KVUniqueNameList_8h.html" title="KVUniqueNameList.h" alt="" coords="209,109,357,136"/>
+<area shape="rect" id="node11" href="$KVNameValueList_8h.html" title="KVNameValueList.h" alt="" coords="281,184,421,211"/>
+<area shape="rect" id="node17" href="$KVDataSet_8h.html" title="KVDataSet.h" alt="" coords="769,259,868,285"/>
+<area shape="rect" id="node33" href="$KVDataAnalysisTask_8h.html" title="KVDataAnalysisTask.h" alt="" coords="571,333,730,360"/>
+<area shape="rect" id="node34" href="$KVDataRepository_8h.html" title="KVDataRepository.h" alt="" coords="873,109,1015,136"/>
+<area shape="rect" id="node3" href="$KVHashList_8h.html" title="KVHashList.h" alt="" coords="129,259,231,285"/>
+<area shape="rect" id="node4" href="$KVSeqCollection_8h.html" title="KVSeqCollection.h" alt="" coords="174,483,306,509"/>
+<area shape="rect" id="node14" href="$KVNamedParameter_8h.html" title="KVNamedParameter.h" alt="" coords="418,259,571,285"/>
+<area shape="rect" id="node18" href="$KVString_8h.html" title="KVString.h" alt="" coords="879,557,964,584"/>
+<area shape="rect" id="node21" href="$KVBase_8h.html" title="KVBase.h" alt="" coords="787,408,869,435"/>
+<area shape="rect" id="node26" href="$KVList_8h.html" title="KVList.h" alt="" coords="496,408,568,435"/>
+<area shape="rect" id="node28" href="$KVNumberList_8h.html" title="KVNumberList.h" alt="" coords="1070,333,1189,360"/>
+<area shape="rect" id="node23" href="$KVLockfile_8h.html" title="KVLockfile.h" alt="" coords="1153,483,1249,509"/>
+<area shape="rect" id="node35" href="$KVAvailableRunsFile_8h.html" title="KVAvailableRunsFile.h" alt="" coords="1097,184,1253,211"/>
+<area shape="rect" id="node36" href="$KVDatime_8h.html" title="KVDatime.h" alt="" coords="1263,259,1356,285"/>
+</map>

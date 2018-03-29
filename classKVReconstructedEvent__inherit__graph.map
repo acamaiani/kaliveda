@@ -1,0 +1,7 @@
+<map id="KVReconstructedEvent" name="KVReconstructedEvent">
+<area shape="rect" id="node5" href="$classKVINDRAReconEvent.html" title="KVINDRAReconEvent" alt="" coords="5,304,160,331"/>
+<area shape="rect" id="node7" href="$classKVVAMOSReconEvent.html" title="Event reconstructed from energy losses in VAMOS spectrometer. " alt="" coords="184,304,344,331"/>
+<area shape="rect" id="node2" href="$classKVEvent.html" title="Base class for all types of multiparticle event consisting of KVNucleus objects. " alt="" coords="136,155,211,181"/>
+<area shape="rect" id="node3" href="$classKVBase.html" title="Base class for KaliVeda framework. " alt="" coords="138,80,209,107"/>
+<area shape="rect" id="node6" href="$classKVIVReconEvent.html" title="Event reconstructed from energy losses in INDRA array and VAMOS spectrometer. " alt="" coords="20,379,145,405"/>
+</map>
