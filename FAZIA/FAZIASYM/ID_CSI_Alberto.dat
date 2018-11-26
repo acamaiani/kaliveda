@@ -23150,7 +23150,7 @@ below
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
 <PARAMETER> IDTelescopes=ID_CSI_11
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 +KVIDCsIRLLine
 ID:Z=1 A=1
 1	1
@@ -23496,7 +23496,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_12
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -23868,7 +23868,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_13
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -24211,7 +24211,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_14
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -24552,7 +24552,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_22
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -24953,7 +24953,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=8157-11445
+<PARAMETER> Runlist=8157-12691
 <PARAMETER> IDTelescopes=ID_CSI_23
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -25348,7 +25348,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_24
 OnlyZId 0
 +KVIDCsIRLLine
@@ -25708,7 +25708,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=8157-11445
+<PARAMETER> Runlist=8157-12691
 <PARAMETER> IDTelescopes=ID_CSI_32
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -27024,7 +27024,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=8157-11445
+<PARAMETER> Runlist=8157-12691
 <PARAMETER> IDTelescopes=ID_CSI_34
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -27419,7 +27419,7 @@ below
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
 <PARAMETER> IDTelescopes=ID_CSI_41
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 +KVIDCsIRLLine
 ID:Z=1 A=1
 1	1
@@ -27886,7 +27886,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_42
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -28367,7 +28367,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_43
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -28823,7 +28823,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_44
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -29191,7 +29191,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_111
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -29661,7 +29661,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_112
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -30139,7 +30139,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_113
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -30527,7 +30527,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_121
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -30989,7 +30989,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_122
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -31331,7 +31331,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_123
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -31732,7 +31732,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_124
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -32196,7 +32196,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_131
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -32721,7 +32721,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_132
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -33219,7 +33219,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_133
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -33659,7 +33659,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_134
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -34111,7 +34111,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_141
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -34616,7 +34616,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_143
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -35164,7 +35164,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_144
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -35652,7 +35652,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=8157-11445
+<PARAMETER> Runlist=8157-12691
 <PARAMETER> IDTelescopes=ID_CSI_211
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -36001,7 +36001,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_212
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -36452,7 +36452,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_213
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -36913,7 +36913,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_214
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -37308,7 +37308,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_221
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -37761,7 +37761,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=8157-11445
+<PARAMETER> Runlist=8157-12691
 <PARAMETER> IDTelescopes=ID_CSI_222
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -38172,7 +38172,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_223
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -38665,7 +38665,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_224
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -39161,7 +39161,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_231
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -39611,7 +39611,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_232
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -40053,7 +40053,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_233
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -40409,7 +40409,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_234
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -40816,7 +40816,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_241
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -41206,7 +41206,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_242
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -41652,7 +41652,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_243
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -42055,7 +42055,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_244
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -42469,7 +42469,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_311
 OnlyZId 0
 +KVIDCsIRLLine
@@ -42606,7 +42606,7 @@ below
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
 <PARAMETER> IDTelescopes=ID_CSI_312
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 +KVIDCsIRLLine
 ID:Z=1 A=1
 1	1
@@ -43035,7 +43035,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_313
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -43432,7 +43432,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_314
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -43890,7 +43890,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_321
 OnlyZId 0
 +KVIDCsIRLLine
@@ -44040,7 +44040,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_322
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -44374,7 +44374,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_323
 OnlyZId 0
 +KVIDCsIRLLine
@@ -44774,7 +44774,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_324
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -45161,7 +45161,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_331
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -45634,7 +45634,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_334
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -46060,7 +46060,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_341
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -46541,7 +46541,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_342
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -47002,7 +47002,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_343
 +KVIDCsIRLLine
 ID:Z=1 A=1
@@ -47490,7 +47490,7 @@ below
 ++KVIDGCsI
 <VARX> GetQ3SlowAmplitude
 <VARY> GetQ3FastAmplitude
-<PARAMETER> Runlist=7000-11445
+<PARAMETER> Runlist=7000-12691
 <PARAMETER> IDTelescopes=ID_CSI_344
 +KVIDCsIRLLine
 ID:Z=1 A=1
