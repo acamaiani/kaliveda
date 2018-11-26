@@ -234,7 +234,7 @@ void KVFAZIAReconNuc::Identify()
             IDR->IDattempted = kTRUE;
             IDR->IDOK = kFALSE;
             idt->Identify(IDR);
-            if (IDR->IDOK && !(IDR->Z >= 3 && IDR->IDcode == 33)) { //Correspond to Quality code <=3 !!!!!Condizione rigetto Z>3 da CSI
+            if (IDR->IDOK && !(IDR->Z >= 3 && IDR->IDcode == 33)) { //Correspond to Quality code <=3 !!!!!Condizione rigetto Z>=3 da CSI
                SetIdentification(IDR);
                SetIdentifyingTelescope(idt);
                SetIsIdentified();
