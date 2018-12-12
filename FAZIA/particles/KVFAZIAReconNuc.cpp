@@ -318,15 +318,27 @@ Bool_t KVFAZIAReconNuc::CoherencySiCsI(KVIdentificationResult& theID)
    // Unsuccessful/no CsI id attempt with successful Si-CsI id
    // Then use Si-CsI identification result
 
+
+
    //Standard
 
    if (IDsicsi && IDsicsi->IDOK)    {
       theID = *IDsicsi;
+      //cout << "IDSICSI -> " << IDsicsi->Z << " " << IDcsi->Z<< " -> Delta E ped: "<< IDsicsi->deltaEpedestal << endl;
       return kTRUE;
    } else if (IDcsi && IDcsi->IDOK && IDcsi->Z <= 2) {
-      theID = *IDcsi;
-      return kTRUE;
+      //cout << "IDCSI -> " << IDsicsi->Z << " " << IDcsi->Z<< " -> Delta E ped: "<< IDsicsi->deltaEpedestal << endl;
+      if (IDsicsi->deltaEpedestal == 1) { //roba nel cut PIEDESTAL in Si2-CSI
+         IDcsi->IDquality = 99;
+         theID = *IDcsi;
+         return kTRUE;
+      } else {
+         theID = *IDcsi;
+         return kTRUE;
+      }
    }
+
+
 
 
 
